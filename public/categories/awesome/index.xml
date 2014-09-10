@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Awesome on ig.nore.me </title>
+      <generator uri="https://hugo.spf13.com">Hugo</generator>
+    <link>http://localhost:1313/categories/awesome/index.xml/</link>
+    
+    
+    
+    <updated>Fri, 06 Sep 2013 00:00:00 UTC</updated>
+    
+    <item>
+      <title>The SCUMM Diary: Stories behind one of the greatest game engines ever made</title>
+      <link>http://localhost:1313/2013/09/the-scumm-diary-stories-behind-one-of-the-greatest-game-engines-ever-made/</link>
+      <pubDate>Fri, 06 Sep 2013 00:00:00 UTC</pubDate>
+      
+      <guid>http://localhost:1313/2013/09/the-scumm-diary-stories-behind-one-of-the-greatest-game-engines-ever-made/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;The version of SCUMM that was used for Maniac probably shared 80 percent or more of the commands used in later games such as Full Throttle.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;A great in-depth breakdown of one of the best classical tools for making games. I&amp;rsquo;ve enjoyed playing many of the games running on SCUMM and aside from the technical details, this article also shows the fun the developers must have had while building it. Definitely worth a read.&lt;/p&gt;
+
+&lt;p&gt;Via &lt;a href=&#34;http://alrayyes.tumblr.com/&#34;&gt;Alrayyes&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Earth Life Likely Came from Mars, Study Suggests</title>
+      <link>http://localhost:1313/2013/08/Earth-Life-Likely-Came-from-Mars-Study-Suggests/</link>
+      <pubDate>Thu, 29 Aug 2013 14:21:06 EST</pubDate>
+      
+      <guid>http://localhost:1313/2013/08/Earth-Life-Likely-Came-from-Mars-Study-Suggests/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;It’s yet another piece of evidence which makes it more likely life came to Earth on a Martian meteorite, rather than starting on this planet.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;While I have my doubts this is close to conclusive proof, the idea of life starting elsewhere isn&amp;rsquo;t exactly new. And to me personally it&amp;rsquo;s always been a fascinating theory, as it makes it more likely for there to be life on other planets as well.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Best release manager out there</title>
+      <link>http://localhost:1313/2013/08/best-release-manager-out-there/</link>
+      <pubDate>Sun, 25 Aug 2013 08:02:40 EST</pubDate>
+      
+      <guid>http://localhost:1313/2013/08/best-release-manager-out-there/</guid>
+      <description>&lt;p&gt;Who wouldn&amp;rsquo;t want their deployments to go like this?&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<article class="post">
+    <header>
+      <h1>
+          <a href="{{ .RelPermalink }}" rel="bookmark" title="{{ .Title }}">{{ .Title }}</a>
+      </h1>
+      <aside class="post-meta">
+          <span class="post-date">{{ .Date.Format "January 2, 2006" }}, </span>
+          <span class="post-category">in
+          {{ range $taxonomy := .Params.categories }}
+          <a href="/categories/{{ $taxonomy }}" title="View all posts in {{ $taxonomy }}" rel="category tag">{{ $taxonomy }}</a>
+          {{ end }}
+          </span>
+      </aside>
+  </header>
+  <section class="entry">
+      <p>{{ .Summary }}</p>
+  </section>
+  <footer class="post-more">
+      <a class="button" href="{{ .RelPermalink }}" title="Continue Reading">Continue Reading</a>
+  </footer>
+</article>

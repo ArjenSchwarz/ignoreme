@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Profiling on ig.nore.me </title>
+      <generator uri="https://hugo.spf13.com">Hugo</generator>
+    <link>http://localhost:1313/tags/profiling/index.xml/</link>
+    
+    
+    
+    <updated>Wed, 19 Jun 2013 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Nitro : A quick and simple profiler for Go</title>
+      <link>http://localhost:1313/aws/2013/06/Nitro--A-quick-and-simple-profiler-for-Go/</link>
+      <pubDate>Wed, 19 Jun 2013 00:00:00 UTC</pubDate>
+      
+      <guid>http://localhost:1313/aws/2013/06/Nitro--A-quick-and-simple-profiler-for-Go/</guid>
+      <description>
+
+&lt;h1 id=&#34;toc_0&#34;&gt;Nitro&lt;/h1&gt;
+
+&lt;p&gt;Quick and easy performance analyzer library for Go.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;Overview&lt;/h2&gt;
+
+&lt;p&gt;Nitro is a quick and easy performance analyzer library for Go.
+It is useful for comparing A/B against different drafts of functions
+or different functions.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;Implementing Nitro&lt;/h2&gt;
+
+&lt;p&gt;Using Nitro is simple. First use go get to install the latest version
+of the library.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ go get github.com/spf13/nitro
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Next include nitro in your application.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

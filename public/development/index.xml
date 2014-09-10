@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Developments on ig.nore.me </title>
+      <generator uri="https://hugo.spf13.com">Hugo</generator>
+    <link>http://localhost:1313/development/index.xml/</link>
+    
+    
+    
+    <updated>Wed, 18 Sep 2013 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Dungeons &amp; Developers</title>
+      <link>http://localhost:1313/development/dungeons_and_developers/</link>
+      <pubDate>Wed, 18 Sep 2013 00:00:00 UTC</pubDate>
+      
+      <guid>http://localhost:1313/development/dungeons_and_developers/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;As professional nerds, we love role-playing games. And we love web development. Naturally, we wondered what a character talent tree for a web developer might look like.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is just a fun thing, but can still be used to discover areas to improve yourself in. And of course, it&amp;rsquo;s one of those sites that shows how much fun web development can be.&lt;/p&gt;
+
+&lt;p&gt;Via &lt;a href=&#34;http://www.loopinsight.com/2013/09/16/dungeons-and-developers/&#34;&gt;The Loop&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

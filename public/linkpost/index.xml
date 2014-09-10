@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Linkposts on ig.nore.me </title>
+      <generator uri="https://hugo.spf13.com">Hugo</generator>
+    <link>http://localhost:1313/linkpost/index.xml/</link>
+    
+    
+    
+    <updated>Wed, 18 Sep 2013 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Dungeons &amp; Developers</title>
+      <link>http://localhost:1313/2013/09/dungeons-developers/</link>
+      <pubDate>Wed, 18 Sep 2013 00:00:00 UTC</pubDate>
+      
+      <guid>http://localhost:1313/2013/09/dungeons-developers/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;As professional nerds, we love role-playing games. And we love web development. Naturally, we wondered what a character talent tree for a web developer might look like.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is just a fun thing, but can still be used to discover areas to improve yourself in. And of course, it&amp;rsquo;s one of those sites that shows how much fun web development can be.&lt;/p&gt;
+
+&lt;p&gt;Via &lt;a href=&#34;http://www.loopinsight.com/2013/09/16/dungeons-and-developers/&#34;&gt;The Loop&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Technical Debt</title>
+      <link>http://localhost:1313/2013/09/technical-debt/</link>
+      <pubDate>Sun, 08 Sep 2013 00:00:00 UTC</pubDate>
+      
+      <guid>http://localhost:1313/2013/09/technical-debt/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;On the one hand, technical debt refers to the quick and dirty shortcuts we take and the effect they have on future development. On the other hand, technical debt is also about the things that we don’t do, such as not commenting our code, not developing documentation, not doing proper testing, etc.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Technical debt is an interesting subject, and one that every developer should take into account. In most cases as a developer you will want to have the most elegant solution for your problem, preferably using the latest or coolest technology. Depending on the situation though this might not always be the solution your boss or client wants, usually because that solution is more expensive than the quick hack you were forced to also mention.
+That&amp;rsquo;s why before you then end up implementing the quick hack it is imperative to make it clear this will only postpone the &amp;ldquo;saved&amp;rdquo; time until a later moment. To be fair, often enough that trade-off might be worth it, even if this would lead to more time in the future.&lt;/p&gt;
+
+&lt;p&gt;Another case of technical debt that isn&amp;rsquo;t really touched on in this article is caused by using old technology. When there is an existing codebase that makes it easy to build something new, but makes use of older or even no longer supported tools it&amp;rsquo;s important to weigh the downsides of that very carefully. Especially when it comes to a project that will have to be supported for a long time.&lt;br /&gt;
+In the short term using this might bring about a successful result faster, and using something new will undoubtedly lead to new and unexpected bugs as well. However, looking at the longer term, there are a fair number of problems that might crop up. Ranging from the obvious security problems, upgrade trouble, and performance issues, to even the decreased ability of the future developers to understand the use of the code base.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The SCUMM Diary: Stories behind one of the greatest game engines ever made</title>
+      <link>http://localhost:1313/2013/09/the-scumm-diary-stories-behind-one-of-the-greatest-game-engines-ever-made/</link>
+      <pubDate>Fri, 06 Sep 2013 00:00:00 UTC</pubDate>
+      
+      <guid>http://localhost:1313/2013/09/the-scumm-diary-stories-behind-one-of-the-greatest-game-engines-ever-made/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;The version of SCUMM that was used for Maniac probably shared 80 percent or more of the commands used in later games such as Full Throttle.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;A great in-depth breakdown of one of the best classical tools for making games. I&amp;rsquo;ve enjoyed playing many of the games running on SCUMM and aside from the technical details, this article also shows the fun the developers must have had while building it. Definitely worth a read.&lt;/p&gt;
+
+&lt;p&gt;Via &lt;a href=&#34;http://alrayyes.tumblr.com/&#34;&gt;Alrayyes&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Xdebug – Professional PHP Debugging</title>
+      <link>http://localhost:1313/2013/08/xdebug-professional-php-debugging/</link>
+      <pubDate>Sat, 31 Aug 2013 00:00:00 UTC</pubDate>
+      
+      <guid>http://localhost:1313/2013/08/xdebug-professional-php-debugging/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Now lastly, have you ever wished to be able to step through your code, line by line, watch expressions, and even step into a function call to see why it’s producing the wrong return value?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;While I don&amp;rsquo;t agree with running your development server on your Mac instead of using a Vagrant box, this is  still a pretty good introduction into a very important debugging tool. Having Xdebug set up correctly can save you a lot of time and headaches, and is an actual good reason for using an IDE.&lt;br /&gt;
+Of course, after the debugging you can continue as normal in &lt;a href=&#34;http://www.sublimetext.com/&#34;&gt;Sublime Text&lt;/a&gt;, &lt;a href=&#34;http://macromates.com/&#34;&gt;TextMate&lt;/a&gt;, or &lt;a href=&#34;http://www.vim.org/&#34;&gt;Vim&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New Zealand Parliament adopts UK approach to software patents, allows broad swaths of them</title>
+      <link>http://localhost:1313/2013/08/new-zealand-parliament-adopts-uk-approach-to-software-patents-allows-broad-swaths-of-them/</link>
+      <pubDate>Fri, 30 Aug 2013 00:00:00 UTC</pubDate>
+      
+      <guid>http://localhost:1313/2013/08/new-zealand-parliament-adopts-uk-approach-to-software-patents-allows-broad-swaths-of-them/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;At best, one can read between the lines of that bill that there was some pressure to be restrictive in connection with software patents&lt;/p&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It seems like I might have been celebrating too early with my link yesterday. According to this article there is far too much wriggle room left, so that it&amp;rsquo;s pretty easy to get software patented after all. Unfortunately, for some strange reason laws are written in a way that you need to be an expert to understand them; and I&amp;rsquo;m not.&lt;/p&gt;
+
+&lt;p&gt;Which means I can&amp;rsquo;t say for certain if this article is correct, but it seems likely. Now, if only the NSA hadn&amp;rsquo;t caused Groklaw to &lt;a href=&#34;http://www.groklaw.net/article.php?story=20130818120421175&#34;&gt;shut down&lt;/a&gt; it might have been dissected and explained there.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Earth Life Likely Came from Mars, Study Suggests</title>
+      <link>http://localhost:1313/2013/08/Earth-Life-Likely-Came-from-Mars-Study-Suggests/</link>
+      <pubDate>Thu, 29 Aug 2013 14:21:06 EST</pubDate>
+      
+      <guid>http://localhost:1313/2013/08/Earth-Life-Likely-Came-from-Mars-Study-Suggests/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;It’s yet another piece of evidence which makes it more likely life came to Earth on a Martian meteorite, rather than starting on this planet.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;While I have my doubts this is close to conclusive proof, the idea of life starting elsewhere isn&amp;rsquo;t exactly new. And to me personally it&amp;rsquo;s always been a fascinating theory, as it makes it more likely for there to be life on other planets as well.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New Zealand bans software patents</title>
+      <link>http://localhost:1313/2013/08/new-zealand-bans-software-patents/</link>
+      <pubDate>Thu, 29 Aug 2013 08:35:15 EST</pubDate>
+      
+      <guid>http://localhost:1313/2013/08/new-zealand-bans-software-patents/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;The patents system doesn’t work for software because it is almost impossible for genuine technology companies to create new software without breaching some of the hundreds of thousands of software patents that exist, often for very obvious work&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Smart decision in New Zealand, making the country an even more awesome place!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Researchers reverse-engineer the Dropbox client: What it means</title>
+      <link>http://localhost:1313/2013/08/researchers-reverse-engineer-the-dropbox-client-what-it-means/</link>
+      <pubDate>Wed, 28 Aug 2013 00:00:00 UTC</pubDate>
+      
+      <guid>http://localhost:1313/2013/08/researchers-reverse-engineer-the-dropbox-client-what-it-means/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;[T]he techniques described in this section are generic enough and also work for reversing other frozen Python applications.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It seems that lately every week there is some new security measure is broken. While part of the actual research shows that security through obscurity in the end never seems to work, I am not happy to see that they managed to bypass the two-factor authentication. In defence of Dropbox though, their security keeps improving with every version.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lessons Learned from Mistakes Made Scaling to 1 Billion Pageviews a Month</title>
+      <link>http://localhost:1313/2013/08/lessons-learned-from-mistakes-made-scaling-to-1-billion-pageviews-a-month/</link>
+      <pubDate>Tue, 27 Aug 2013 00:00:00 UTC</pubDate>
+      
+      <guid>http://localhost:1313/2013/08/lessons-learned-from-mistakes-made-scaling-to-1-billion-pageviews-a-month/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Amazon doesn’t even know what some of their limits are&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;A nice writeup of a presentation about the way Reddit scaled their architecture using AWS. I always like it when the pros, cons and the learned lessons of choices are laid out like this.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Peru&#39;s archaeologists turn to drones to help protect and explore ancient ruins</title>
+      <link>http://localhost:1313/2013/08/perus-archaeologists-turn-to-drones-to-help-protect-and-explore-ancient-ruins/</link>
+      <pubDate>Mon, 26 Aug 2013 22:36:13 EST</pubDate>
+      
+      <guid>http://localhost:1313/2013/08/perus-archaeologists-turn-to-drones-to-help-protect-and-explore-ancient-ruins/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Small drones have been helping a growing number of researchers produce three-dimensional models of Peruvian sites instead of the usual flat maps – and in days and weeks instead of months and years.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;As a child I always wanted to become an archaeologist, and on that basis alone this kind of thing is just great. Using drones like this shows how useful they can actually be when they are used for a good purpose. And as the prices keep going down it&amp;rsquo;s a matter of time before we see more and more uses these drones can be applied to.&lt;/p&gt;
+
+&lt;p&gt;Of course, we shouldn&amp;rsquo;t forget about the other side of the coin of &lt;a href=&#34;http://www.dailykos.com/story/2012/05/28/1094024/-Droney&#34;&gt;Droney&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Explaining My Choices Further</title>
+      <link>http://localhost:1313/2013/08/explaining-my-choices-further/</link>
+      <pubDate>Sun, 25 Aug 2013 08:16:23 EST</pubDate>
+      
+      <guid>http://localhost:1313/2013/08/explaining-my-choices-further/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Developers everywhere - PHP is not the same as it was even two years ago. Stop acting like it.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;As someone who has had to deal with applications in Drupal, Magento, and similar frameworks I can only agree with Jarrod&amp;rsquo;s statements here. While those are indeed a good reason to look at PHP as something horrible, the way PHP has grown is spectacular. In fact, I believe that it the tools in the community have improved so much that it is probably quicker and faster right now to start a new project while pulling in useful tools with Composer than try to fix an existing codebase.&lt;/p&gt;
+
+&lt;p&gt;Via &lt;a href=&#34;http://alrayyes.tumblr.com/&#34;&gt;Alrayyes&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

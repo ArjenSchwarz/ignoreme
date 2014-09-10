@@ -1,0 +1,84 @@
+{{ partial "header.html" . }}
+
+<body class="single single-post postid-81 single-format-standard chrome alt-style-default layout-default">
+{{ partial "gtm.html" . }}
+
+<div id="wrapper">
+    <div id="inner-wrapper">
+
+    {{ partial "sidebar.html" . }}
+
+    <div id="content" class="col-full">
+        <section id="main">
+            <article class="post type-post status-publish format-standard hentry">
+                {{ range $taxonomy := .Params.categories }}
+                <header style="background-image: url('//assets2.nore.me/categories/category-{{ $taxonomy }}-full.jpg' ); ?>); background-size: cover; background-position: center center;" >
+                {{ end }}
+                    <section class="header-content">
+                        <h1>{{ .Title }}</h1>
+                            <aside class="post-meta">
+                                <span class="post-date">{{ .Date.Format "January 2, 2006" }}</span>
+                                <span class="post-category">in
+                                    {{ range $taxonomy := .Params.categories }}
+                                        <a href="/categories/{{ $taxonomy }}" title="View all posts in {{ $taxonomy }}" rel="category tag">{{ $taxonomy }}</a>
+                                    {{ end }}
+                                </span>
+                            </aside>
+                    </section>
+
+                    <nav id="post-entries" class="fix">
+                        <div class="nav-prev fl"><a href="http://ig.nore.me/aws/2014/08/securing-ssh-access-with-cloudformation/" rel="prev">Securing SSH access with CloudFormation</a></div>
+                        <div class="nav-next fr"></div>
+                    </nav><!-- #post-entries -->
+
+                    </header>
+
+                <section class="entry fix">
+
+                {{ .Content }}
+
+                </section>
+
+                </article><!-- .post -->
+
+
+                </section><!-- #main -->
+
+
+    </div><!-- #content -->
+
+{{ partial "footer.html" . }}
+
+    </div><!-- /#inner-wrapper -->
+</div><!-- /#wrapper -->
+    <script type="text/javascript">
+    // <![CDATA[
+        var disqus_shortname = 'ignoreme';
+        (function () {
+            var nodes = document.getElementsByTagName('span');
+            for (var i = 0, url; i < nodes.length; i++) {
+                if (nodes[i].className.indexOf('dsq-postid') != -1) {
+                    nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('rel'));
+                    url = nodes[i].parentNode.href.split('#', 1);
+                    if (url.length == 1) url = url[0];
+                    else url = url[1]
+                    nodes[i].parentNode.href = url + '#disqus_thread';
+                }
+            }
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    //]]>
+    </script>
+    <div style="display:none">
+    </div>
+
+<!--[if lt IE 9]>
+<script src="/js/respond.js"></script>
+<![endif]-->
+<script type='text/javascript' src='/js/prism.js'></script>
+
+</body>
+</html>

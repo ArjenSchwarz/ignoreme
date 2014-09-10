@@ -1,0 +1,255 @@
+/*
+WOO CUSTOM STYLESHEET
+---------------------
+
+Instructions:
+
+Add your custom styles in this file instead of style.css so it
+is easier to update the theme. Simply copy an existing style
+from style.css to this file, and modify it to your liking. */
+
+
+/*
+GLOBAL STYLES
+----------------
+Add styles beneath this line that you want to be applied across your entire site */
+@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+@import url(//fonts.googleapis.com/css?family=Source+Code+Pro:400,700);
+
+body {
+    font-family: 'Source Sans Pro';
+    font-weight: 300;
+}
+
+#articles .post header h1 a:hover {
+    color: #111;
+}
+
+#home-tabs .post h1.ignore_link_post_title a, body.category h1.ignore_link_post_title a {
+    font-size: 28px;
+    color: #ff7377;
+
+}
+#home-tabs .post h1.ignore_link_post_title a:hover, body.category h1.ignore_link_post_title a:hover {
+    color: #dd5155;
+}
+
+#home-tabs .post h1.ignore_link_post_title a.secondary_link {
+    font-size: 18px;
+    color: #dd5155;
+}
+
+#home-tabs .post h1.ignore_link_post_title a.secondary_link:hover {
+    color: #ff7377;
+}
+
+.post-meta {
+    font-weight: 200;
+}
+
+#content p {
+    line-height: 1.5;
+}
+
+body .nav {
+    font-family: 'Source Sans Pro';
+    font-weight: 500;
+}
+
+.home #header a {
+    font-weight: bold;
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Source Sans Pro';
+    font-weight: 600 !important;
+}
+
+.home #articles h1, body.category h1 {
+    font-variant: small-caps;
+}
+
+.post .entry h1 {
+    margin: 1.218em 0 1.018em;
+}
+
+.post .entry h2 {
+    margin: 1.818em 0 1.187em;
+}
+
+.post .entry img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* http://prismjs.com/download.html?themes=prism-okaidia&languages=markup+css+css-extras+clike+javascript+php+php-extras+bash+c+http+go+swift+objectivec&plugins=line-numbers */
+/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+    color: #f8f8f2;
+    text-shadow: 0 1px rgba(0,0,0,0.3);
+    font-family: 'Source Code Pro', monospace !important;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+    padding: 1em;
+    margin: .5em 0;
+    overflow: auto;
+    border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+    background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+    padding: .1em;
+    border-radius: .3em;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: slategray;
+}
+
+.token.punctuation {
+    color: #f8f8f2;
+}
+
+.namespace {
+    opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol {
+    color: #f92672;
+}
+
+.token.boolean,
+.token.number{
+    color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.builtin {
+    color: #a6e22e;
+}
+
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+    color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value
+{
+    color: #e6db74;
+}
+
+
+.token.keyword{
+color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+    color: #fd971f;
+}
+
+.token.important {
+    font-weight: bold;
+}
+
+.token.entity {
+    cursor: help;
+}
+
+pre.line-numbers {
+    position: relative;
+    padding-left: 3.8em;
+    counter-reset: linenumber;
+}
+
+pre.line-numbers > code {
+    position: relative;
+}
+
+.line-numbers .line-numbers-rows {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    font-size: 100%;
+    left: -3.8em;
+    width: 3em; /* works for line-numbers below 1000 lines */
+    letter-spacing: -1px;
+    border-right: 1px solid #999;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+    .line-numbers-rows > span {
+        pointer-events: none;
+        display: block;
+        counter-increment: linenumber;
+    }
+
+        .line-numbers-rows > span:before {
+            content: counter(linenumber);
+            color: #999;
+            display: block;
+            padding-right: 0.8em;
+            text-align: right;
+        }
+
+
+/*
+DESKTOP STYLES
+-----------------
+Add styles inside the media query below that you only want to be applied to the desktop layout of your site */
+
+@media only screen and (min-width: 768px) {
+	/* Desktop styles go here */
+    #home-tabs .post, #home-tabs .type-page, body.archive .post {
+        margin: 4.505em 0 !important;
+        padding: 0 0 4.505em !important;
+    }
+}

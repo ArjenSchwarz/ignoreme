@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Pages on ig.nore.me </title>
+      <generator uri="https://hugo.spf13.com">Hugo</generator>
+    <link>http://localhost:1313/pages/index.xml/</link>
+    
+    
+    
+    <updated>Sat, 24 Aug 2013 20:24:11 EST</updated>
+    
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/pages/about/</link>
+      <pubDate>Sat, 24 Aug 2013 20:24:11 EST</pubDate>
+      
+      <guid>http://localhost:1313/pages/about/</guid>
+      <description>
+
+&lt;p&gt;Obviously, this site is focused on the things I find interesting and useful. As this is a one-man show, that means I decide what shows up here. Which leads to two natural questions:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;What do I think is interesting?&lt;/li&gt;
+&lt;li&gt;Who am I?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;Interesting&lt;/h2&gt;
+
+&lt;p&gt;Let&amp;rsquo;s start with what I find interesting. Actually, that is a fairly wide range of subjects, but my main focus on this site will be related to programming and everything around it. Where everything around it is mostly defined by me, and can change at any time. This means things about programming languages, programming techniques, technology, design, project management, and no doubt will turn out to be a bit broader than these subjects.&lt;/p&gt;
+
+&lt;p&gt;The posts on the site consist of a mixture of links to other sites, with my own comments added, and my own personal posts.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;About me&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://assets2.nore.me/wp-content/uploads/2013/08/profilepicsmall.jpg&#34; alt=&#34;Profilepicsmall&#34; title=&#34;profilepicsmall.jpg&#34; border=&#34;0&#34; width=&#34;226&#34; height=&#34;223&#34; style=&#34;float:right;&#34; /&gt;
+My name is Arjen, and I&amp;rsquo;m a Dutch guy currently living in Melbourne, Australia. I ended up here after travelling around for a bit and decided to stick around. At the moment I&amp;rsquo;m a developer in a web company, and simply enjoying live here. If you want more information about who I am and my travels, you can do so on my travel blog at &lt;a href=&#34;http://www.arjen.eu&#34;&gt;arjen.eu&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;As for my experience in the matters on this site; since 2005 I&amp;rsquo;ve been either a developer, project manager or manager of a development team at any one time. I am happy in all of these roles and will always try to learn from anyone I meet.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;Wait, what&amp;rsquo;s with the photos?&lt;/h2&gt;
+
+&lt;p&gt;A fair question, as I&amp;rsquo;ve just explained that this is a technology and programming focused site. Why would I put photos of nature here? The TL;DR is simple: because I like it.&lt;/p&gt;
+
+&lt;p&gt;The slightly longer version is that I&amp;rsquo;ve started to get a bit tired of seeing that all the various blogs and sites believe they have to show either the same photos or none at all. Neither option felt attractive to me, so I decided to instead use photos from my time traveling through some of the planet&amp;rsquo;s most beautiful regions.&lt;br /&gt;
+If you like it, enjoy the photos.&lt;br /&gt;
+If you don&amp;rsquo;t, just read the name of the site.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

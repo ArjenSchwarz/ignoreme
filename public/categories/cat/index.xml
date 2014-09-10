@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Cat on ig.nore.me </title>
+      <generator uri="https://hugo.spf13.com">Hugo</generator>
+    <link>http://localhost:1313/categories/cat/index.xml/</link>
+    
+    
+    
+    <updated>Wed, 03 Sep 2014 20:24:11 EST</updated>
+    
+    <item>
+      <title>about</title>
+      <link>http://localhost:1313/pages/about/</link>
+      <pubDate>Wed, 03 Sep 2014 20:24:11 EST</pubDate>
+      
+      <guid>http://localhost:1313/pages/about/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Phps on ig.nore.me </title>
+      <generator uri="https://hugo.spf13.com">Hugo</generator>
+    <link>http://localhost:1313/php/index.xml/</link>
+    
+    
+    
+    <updated>Thu, 17 Jul 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>PHP Quality</title>
+      <link>http://localhost:1313/php/PHP-QA-Tools/</link>
+      <pubDate>Thu, 17 Jul 2014 00:00:00 UTC</pubDate>
+      
+      <guid>http://localhost:1313/php/PHP-QA-Tools/</guid>
+      <description>
+
+&lt;p&gt;When it comes to software development, quality is often a difficult thing to measure. Often you will be able to recognize it when you see it, but defining why something is well done is harder. Luckily there are a number of &lt;a href=&#34;http://phpqatools.org&#34;&gt;tools&lt;/a&gt; and &lt;a href=&#34;http://www.php-fig.org/psr/&#34;&gt;standards&lt;/a&gt; out there that will enable you to put metrics against your code.&lt;/p&gt;
+
+&lt;p&gt;The question is how and when to use these tools? There are two moments when you want checks done against your code. Before you commit your code - in order to prevent fatal errors from entering your codebase - and after your code is pushed up - when you can gather more in-depth information without it interfering with your workflow.&lt;/p&gt;
+
+&lt;p&gt;If you are a developer, you will most likely already be aware of the solutions to these problems. &lt;a href=&#34;http://git-scm.com/book/en/Customizing-Git-Git-Hooks&#34; title=&#34;Git - Git Hooks&#34;&gt;Git Hooks&lt;/a&gt; (or the equivalent in your VCS of choice) and a Continuous Integration system like &lt;a href=&#34;http://travis-ci.org&#34; title=&#34;Travis CI - Free Hosted Continuous Integration Platform for the Open Source Community&#34;&gt;Travis&lt;/a&gt; or &lt;a href=&#34;http://jenkins-ci.org&#34; title=&#34;Welcome to Jenkins CI! | Jenkins CI&#34;&gt;Jenkins&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This article introduces a &lt;a href=&#34;http://github.com/evolution7/qa-tools&#34;&gt;evolution7/qa-tools library&lt;/a&gt; that can ease the setup and sharing across team members for both of these steps.&lt;/p&gt;
+
+&lt;h1 id=&#34;toc_0&#34;&gt;Continuous Integration&lt;/h1&gt;
+
+&lt;p&gt;While I am long time user of Jenkins for my Continuous Integration tool. For the library the actual CI tool being used is irrelevant as all that matters is what you can do with it, but I will use Jenkins as the example CI in this article as I know it best.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;How this usually works&lt;/h2&gt;
+
+&lt;p&gt;Just a few years ago when you wanted to set up Continuous Integration for a PHP project you would end up with a server (or VM) on which you would install all the different PEAR packages. This process was greatly eased by the &lt;a href=&#34;http://jenkins-php.org&#34; title=&#34;Template for Jenkins Jobs for PHP Projects&#34;&gt;Jenkins PHP&lt;/a&gt; site, which has provided a nice overview of PEAR packages and example &lt;code&gt;build.xml&lt;/code&gt; files that should be installed.&lt;br /&gt;
+As PEAR has fallen out of favour, the site has been updated to reflect that all these requirements should be installed through either downloading PHAR files or installing them globally with Composer.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;The problems with this approach&lt;/h2&gt;
+
+&lt;p&gt;While this generally works well, installing the tools at the server/virtual machine level has a couple of downsides. First of all is that you have to keep each server up to date.&lt;br /&gt;
+While that isn&amp;rsquo;t very hard, it just doesn&amp;rsquo;t scale. If you need multiple servers to handle different versions of PHP or distributed builds, you need to keep each server up to date and in sync with each other. Additionally with the rise of containers such as &lt;a href=&#34;http://www.docker.com/&#34; title=&#34;Docker - Build, Ship, and Run Any App, Anywhere&#34;&gt;Docker&lt;/a&gt; you have the option of spinning up a container for each application, but you would have to ensure these tools are installed on those containers.&lt;/p&gt;
+
+&lt;p&gt;Another potential issue is that when a developer wants to run a test locally to see if something is fixed that same tool and configuration would need to be present on their development machine.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_3&#34;&gt;My solution&lt;/h2&gt;
+
+&lt;p&gt;The &lt;a href=&#34;http://github.com/evolution7/qa-tools&#34; title=&#34;Evolution 7 - QA Tools&#34;&gt;evolution7/qa-tools&lt;/a&gt; is a single bundle you can add to the require-dev section of your &lt;code&gt;composer.json&lt;/code&gt; file. It can simply be installed with a &lt;code&gt;composer require --dev &amp;quot;evolution7/qa-tools=1.*&amp;quot;&lt;/code&gt; command and will contain the tools mentioned on the Jenkins PHP site.&lt;/p&gt;
+
+&lt;p&gt;Putting a single library in your require-dev means that you will have access to these tools on your development and CI machines, but don&amp;rsquo;t need to deploy them to your production server.&lt;br /&gt;
+Additionally, the library contains sample CI configuration. At the moment this is only for Jenkins, but the advantage of the Jenkins &lt;a href=&#34;http://ant.apache.org&#34;&gt;ant&lt;/a&gt; controlled &lt;code&gt;build.xml&lt;/code&gt; files is that you can run the commands in there easily from the command line as well.&lt;/p&gt;
+
+&lt;h1 id=&#34;toc_4&#34;&gt;Git Hooks&lt;/h1&gt;
+
+&lt;p&gt;The other tool offered by the &lt;a href=&#34;http://github.com/evolution7/qa-tools&#34; title=&#34;Evolution 7 - QA Tools&#34;&gt;evolution7/qa-tools&lt;/a&gt; is a number of Git Hooks. The two main issues with git hooks are generally that you need to combine everything in a single hook, and that it&amp;rsquo;s not easy to share these hooks among your team.
+Both of these issues are solved with the great &lt;a href=&#34;https://github.com/icefox/git-hooks&#34;&gt;git-hooks library&lt;/a&gt;, which I would recommend anyone to install and use. Using this tool you can use the hooks provided in our library to prevent most common mistakes among your project.&lt;/p&gt;
+
+&lt;p&gt;In order to use the hooks, you will need to have the git-hooks tool installed, but once you have you can create a &lt;code&gt;git_hooks&lt;/code&gt; directory in the root of your project, put your hooks there, and share them with the rest of your team.&lt;br /&gt;
+And of course, if you want it really easy, just create a symlink to the hooks that come with the qa-tools bundle.&lt;/p&gt;
+
+&lt;h1 id=&#34;toc_5&#34;&gt;What will the future bring?&lt;/h1&gt;
+
+&lt;p&gt;This release is version 1.0 of the library, and at the moment it is limited to the most common tools we use across our projects. This means that we expect to add more tools, as well as more configuration examples (including for other CI tools) and git hooks.&lt;/p&gt;
+
+&lt;p&gt;As we love to see quality improve in all code, please use the &lt;a href=&#34;http://github.com/evolution7/qa-tools&#34; title=&#34;Evolution 7 - QA Tools&#34;&gt;evolution7/qa-tools&lt;/a&gt; as much as you see fit. Fork it so you can customize it to your needs or create pull requests to have your favorite tools included.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
