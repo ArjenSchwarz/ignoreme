@@ -26,7 +26,7 @@ The main reason for this is efficiency. While you can do many things with the Co
 
 The images for this article are pushed up to an S3 bucket after I create them, and then I insert a Markdown image tag in my text editor with that URL. While I can upload them through the Console that takes more attention away from writing than I care to. So instead I use a command to push them up from the command line.
 
-```language-bash
+```bash
 aws s3api put-object --bucket assets2.nore.me --key posts/PermissionsIAM.png --body PermissionsIAM.png --profile blogs
 ```
 
@@ -34,7 +34,7 @@ I can now use a [TextExpander][4] snippet for this so that it will only take me 
 
 However, this is just the first step in what's possible. To improve on this I created a small script that will handle the second step of my process as well.
 
-```language-bash
+```bash
 ignoreimage() {
   aws s3api put-object --bucket assets2.nore.me --key posts/$1 --body $1 --profile blogs;
   echo "![alttext](http://assets2.nore.me/posts/$1)" | pbcopy;
@@ -79,7 +79,7 @@ This is done by creating a config file in `~/.aws/config`. This file has a very 
 As an illustration the below setup is based on the credentials I used earlier. 
 > Before you try if these keys work, that user was deleted before I posted this article.
 
-```language-ini
+```ini
 [default]
 output = json
 region = us-east-1

@@ -22,7 +22,7 @@ Of course, when I did that I had a perfectly valid reason for it, as I wanted to
 
 The easiest solution was of course to restrict access to my IP address, and that's how I started. This meant I needed my external IP address. Easy enough to find, but as usual a bit of a hassle to go to the [whatismyip.com website][1]. So, after finding my IP and updating the security group in my CloudFormation configuration, I decided that was enough and I made a [TextExpander][2] snippet to find the IP for me in the future.
 
-```language-bash
+```bash
 #!/bin/sh
 /bin/echo -n `curl -s checkip.dyndns.org|sed -e 's/.*Current IP Address: //' -e 's/<.*$//'`
 ```
@@ -31,7 +31,7 @@ Useful of course, but not the main reason for this article. The result of my cha
 
 This could be done in an easier way. I just had to change the CloudFormation template so that I could provide the IP as a parameter.
 
-```language-json
+```json
   "Parameters" : {
       "SshIp" : {
          "Type" : "String",
@@ -44,7 +44,7 @@ By default it is set to only receive SSH connections from within its subnet, but
 
 Combined with the TextExpander snippet I now had a fairly easy way to enable SSH access from my current IP, but it could still be easier. So, I wrote another function to include in my [oh-my-zsh config][3].
 
-```language-bash
+```bash
 # Update the cloudformation stack with my current external IP address
 blogcfssh() {
   externalip=`curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//'`
