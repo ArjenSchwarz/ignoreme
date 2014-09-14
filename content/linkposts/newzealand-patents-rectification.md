@@ -5,7 +5,7 @@ Redirect: http://www.fosspatents.com/2013/08/new-zealand-parliament-adopts-uk.ht
 Slug: new-zealand-parliament-adopts-uk-approach-to-software-patents-allows-broad-swaths-of-them
 Aliases: ["/patents/2013/08/new-zealand-parliament-adopts-uk-approach-to-software-patents-allows-broad-swaths-of-them/"]
 Title: New Zealand Parliament adopts UK approach to software patents, allows broad swaths of them
-date: 2013-08-30
+date: 2013-08-30T07:58:40+10:00
 ---
 
 > At best, one can read between the lines of that bill that there was some pressure to be restrictive in connection with software patents</p>

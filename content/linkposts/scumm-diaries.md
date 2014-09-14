@@ -1,7 +1,7 @@
 ---
 Title: "The SCUMM Diary: Stories behind one of the greatest game engines ever made"
 Slug: the-scumm-diary-stories-behind-one-of-the-greatest-game-engines-ever-made
-Date: 2013-09-06
+Date: 2013-09-06T04:54:40+10:00
 Redirect: http://www.gamasutra.com/view/feature/196009/the_scumm_diary_stories_behind_.php
 Categories: ["awesome"]
 Aliases: ["/awesome/2013/09/the-scumm-diary-stories-behind-one-of-the-greatest-game-engines-ever-made/"]

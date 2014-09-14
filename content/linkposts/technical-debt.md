@@ -1,7 +1,7 @@
 ---
 Title: Technical Debt
 Slug: technical-debt
-Date: 2013-09-08
+Date: 2013-09-08T05:39:40+10:00
 Redirect: http://www.sitepoint.com/technical-debt/
 Aliases: ["/development/2013/09/technical-debt/"]
 Categories: ["development"]

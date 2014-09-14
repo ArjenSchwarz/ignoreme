@@ -2,7 +2,7 @@
 Title:        Securing SSH access with Cloudformation  
 Blog:         ig.nore.me  
 Author:       Arjen Schwarz  
-Date:         2014-08-10
+Date:         2014-08-10T21:18:40+10:00
 Date started: 10-08-2014  
 Date posted:  10-08-2014  
 Categories:   ["aws"]

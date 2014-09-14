@@ -4,7 +4,7 @@ Slug: xdebug-professional-php-debugging
 Aliases: ["/php/2013/08/xdebug-professional-php-debugging-nettuts/"]
 Categories: ["php"]
 Title: Xdebug – Professional PHP Debugging
-date: 2013-08-31
+date: 2013-08-31T22:59:40+10:00
 ---
 
 >Now lastly, have you ever wished to be able to step through your code, line by line, watch expressions, and even step into a function call to see why it’s producing the wrong return value?

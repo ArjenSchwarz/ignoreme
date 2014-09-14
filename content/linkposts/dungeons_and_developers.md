@@ -1,6 +1,6 @@
 ---
 Title: Dungeons & Developers
-Date: 2013-09-18
+Date: 2013-09-18T02:52:40+10:00
 Redirect: http://www.dungeonsanddevelopers.com/
 Slug: dungeons-developers
 Categories: ["development"]

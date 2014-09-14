@@ -4,7 +4,7 @@ Categories:
 Redirect: http://www.techrepublic.com/blog/it-security/researchers-reverse-engineer-the-dropbox-client-what-it-means/
 Slug: researchers-reverse-engineer-the-dropbox-client-what-it-means
 Title: "Researchers reverse-engineer the Dropbox client: What it means"
-date: 2013-08-28
+date: 2013-08-28T22:10:40+10:00
 Aliases: ["/security/2013/08/researchers-reverse-engineer-the-dropbox-client-what-it-means/"]
 ---
 

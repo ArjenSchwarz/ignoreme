@@ -2,7 +2,7 @@
 Title:        The first babysteps with CloudFormation  
 Blog:         ig.nore.me  
 Author:       Arjen Schwarz  
-Date:         2014-08-25
+Date:         2014-08-25T21:53:40+10:00
 Date started: 12-08-2014  
 Date posted:  25-08-2014  
 Slug:         the-first-babysteps-with-cloudformation

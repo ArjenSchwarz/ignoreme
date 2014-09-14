@@ -2,7 +2,7 @@
 Title:        PHP Quality  
 Blog:         ig.nore.me  
 Author:       Arjen Schwarz  
-Date:         2014-07-17
+Date:         2014-07-17T10:32:40+10:00
 Date started: 12-07-2014  
 Date posted:  17-07-2014  
 Slug:         php-quality  

@@ -2,7 +2,7 @@
 Title:        Introduction to the AWS CLI  
 Blog:         ig.nore.me  
 Author:       Arjen Schwarz  
-Date:         2014-07-27
+Date:         2014-07-27T14:43:40+10:00  
 Date started: 22-07-2014  
 Date posted:  27-07-2014
 Categories:   ["aws"]

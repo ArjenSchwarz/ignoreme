@@ -4,7 +4,7 @@ Categories:
 Redirect: http://highscalability.com/blog/2013/8/26/reddit-lessons-learned-from-mistakes-made-scaling-to-1-billi.html  
 Slug: lessons-learned-from-mistakes-made-scaling-to-1-billion-pageviews-a-month  
 Title: Lessons Learned from Mistakes Made Scaling to 1 Billion Pageviews a Month  
-date: 2013-08-27  
+date: 2013-08-27T21:55:40+10:00  
 Aliases: ["/aws/2013/08/lessons-learned-from-mistakes-made-scaling-to-1-billion-pageviews-a-month/"]  
 ---
 
