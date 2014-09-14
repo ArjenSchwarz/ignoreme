@@ -1,5 +1,5 @@
 ---
-baseurl: "http://localhost/"
+baseurl: "http://ig.nore.me/"
 title: "ig.nore.me"
 permalinks:
   posts: /:year/:month/:slug/
