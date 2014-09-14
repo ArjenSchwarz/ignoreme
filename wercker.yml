@@ -1,0 +1,18 @@
+box: wercker/default
+build:
+  steps:
+    - script:
+        name: build hugo
+        code: |
+          wget https://github.com/spf13/hugo/releases/download/v0.12/hugo_0.12_linux_amd64.tar.gz
+          tar xzf hugo_0.12_linux_amd64.tar.gz
+          cp hugo_0.12_linux_amd64/hugo_0.12_linux_amd64 hugo
+          ./hugo
+deploy:
+  steps:
+    # Execute the s3sync deploy step, a step provided by wercker
+    - s3sync:
+        key_id: $AWS_ACCESS_KEY_ID
+        key_secret: $AWS_SECRET_ACCESS_KEY
+        bucket_url: $AWS_BUCKET_URL
+        source_dir: public/
