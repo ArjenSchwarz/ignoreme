@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 
-<body class="archive category category-aws category-5 chrome alt-style-default layout-right-content">
+<body class="archive category alt-style-default layout-right-content">
 {{ partial "gtm.html" . }}
 
 
@@ -14,7 +14,6 @@
     <div id="content" class="col-full">
         <section id="main" class="col-left">
             <header class="archive-header">
-                <span class="archive-rss"><a href="{{ .Url }}index.xml">RSS feed for this section</a></span>
                 <h1>Archive | {{ .Title }}</h1>
             </header>
             <div class="fix"></div>
@@ -30,35 +29,6 @@
 
     </div><!-- /#inner-wrapper -->
 </div><!-- /#wrapper -->
-
-    <script type="text/javascript">
-    // <![CDATA[
-        var disqus_shortname = 'ignoreme';
-        (function () {
-            var nodes = document.getElementsByTagName('span');
-            for (var i = 0, url; i < nodes.length; i++) {
-                if (nodes[i].className.indexOf('dsq-postid') != -1) {
-                    nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('rel'));
-                    url = nodes[i].parentNode.href.split('#', 1);
-                    if (url.length == 1) url = url[0];
-                    else url = url[1]
-                    nodes[i].parentNode.href = url + '#disqus_thread';
-                }
-            }
-            var s = document.createElement('script'); s.async = true;
-            s.type = 'text/javascript';
-            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-        }());
-    //]]>
-    </script>
-    <div style="display:none">
-    </div>
-
-<!--[if lt IE 9]>
-<script src="/js/respond.js"></script>
-<![endif]-->
-<script type='text/javascript' src='/js/prism.js'></script>
 
 </body>
 </html>
