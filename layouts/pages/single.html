@@ -1,0 +1,40 @@
+{{ partial "header.html" . }}
+
+<body class="home blog alt-style-default layout-right-content">
+{{ partial "gtm.html" . }}
+
+<div id="wrapper">
+    <div id="inner-wrapper">
+
+    {{ partial "sidebar.html" . }}
+
+    <div id="content">
+        <section id="main">
+            <article class="post type-post status-publish format-standard hentry">
+                {{ range $taxonomy := .Params.categories }}
+                <header style="background-image: url('//assets2.nore.me/categories/category-{{ $taxonomy }}-full.jpg' ); ?>); background-size: cover; background-position: center center;" >
+                {{ end }}
+
+
+
+                <section class="entry fix">
+                <h1>{{ .Title }}</h1>
+
+                {{ .Content }}
+
+                </section>
+
+                </article><!-- .post -->
+
+
+                </section><!-- #main -->
+
+    </div><!-- #content -->
+
+{{ partial "footer.html" . }}
+
+    </div><!-- /#inner-wrapper -->
+</div><!-- /#wrapper -->
+
+</body>
+</html>
