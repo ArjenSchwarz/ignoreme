@@ -4,7 +4,7 @@ title: "ig.nore.me"
 permalinks:
   posts: /:year/:month/:slug/
   linkposts: /:year/:month/:slug/
-  pages: /:title
+  pages: /:slug/
 params:
   Subtitle: "Connecting the dots"
   AuthorName: "Arjen Schwarz"
