@@ -1,4 +1,4 @@
----
+
 Title:        Securing SSH access with Cloudformation  
 Blog:         ig.nore.me  
 Author:       Arjen Schwarz  
@@ -31,7 +31,7 @@ Useful of course, but not the main reason for this article. The result of my cha
 
 This could be done in an easier way. I just had to change the CloudFormation template so that I could provide the IP as a parameter.
 
-```json
+```javascript
   "Parameters" : {
       "SshIp" : {
          "Type" : "String",
