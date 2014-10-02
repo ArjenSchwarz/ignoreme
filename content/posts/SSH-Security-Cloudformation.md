@@ -1,4 +1,4 @@
-
+---
 Title:        Securing SSH access with Cloudformation  
 Blog:         ig.nore.me  
 Author:       Arjen Schwarz  
