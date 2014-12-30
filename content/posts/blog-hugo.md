@@ -5,6 +5,7 @@ blog: ig.nore.me
 date: 2014-09-15T08:19:53+10:00  
 title: And we've gone static  
 slug: and-we-ve-gone-static  
+Description: "As I actually started writing again for this site, I found that I just wasn't happy with Wordpress. I originally chose Wordpress because it was the path of least resistance, but it turns out that it doesn't suit my needs."
 ---
 
 As I actually started writing again for this site, I found that I just wasn't happy with Wordpress. I originally chose Wordpress because it was the path of least resistance, but it turns out that it doesn't suit my needs.

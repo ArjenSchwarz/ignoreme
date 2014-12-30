@@ -7,6 +7,7 @@ date started: 03-12-2014
 date posted:  04-12-2014
 categories:   ["aws"]
 slug:         "setting-up-ssl-for-an-elb"
+Description:  "Enabling SSL on an Elastic Load Balancer in AWS is fairly straightforward and well documented, but that’s only one part of the whole process. When I needed to set it up again last week I figured that this time I would document the entire thing, from getting the keys to incorporating it into a CloudFormation template."
 ---
 
 Enabling SSL on an Elastic Load Balancer in AWS is fairly straightforward and [well documented][1], but that’s only one part of the whole process. When I needed to set it up again last week I figured that this time I would document the entire thing, from getting the keys to incorporating it into a CloudFormation template. 

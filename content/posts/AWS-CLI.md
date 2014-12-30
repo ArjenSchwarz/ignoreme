@@ -8,6 +8,7 @@ Date posted:  27-07-2014
 Categories:   ["aws"]
 aliases:      ["/aws/2014/07/introduction-to-the-aws-cli"]
 Slug:         "introduction-to-the-aws-cli"
+Description:  "As I'll be writing a number of articles about AWS in the future, I figured it would be a good idea to first introduce the basics. This article will therefore introduce the AWS API, and guide you through setting it up for your own use."
 ---
 
 As I'll be writing a number of articles about AWS in the future, I figured it would be a good idea to first introduce the basics. This article will therefore introduce the AWS API, and guide you through setting it up for your own use.

@@ -13,7 +13,7 @@
       </aside>
   </header>
   <section class="entry">
-      <p>{{ .Summary }}</p>
+      <p>{{ if .Description }}{{.Description}}{{ else }}{{ .Summary }}{{ end }}</p>
   </section>
   <footer class="post-more">
       <a class="button" href="{{ .RelPermalink }}" title="Continue Reading">Continue Reading</a>
