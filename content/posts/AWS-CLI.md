@@ -38,7 +38,7 @@ However, this is just the first step in what's possible. To improve on this I cr
 ```bash
 ignoreimage() {
   aws s3api put-object --bucket assets2.nore.me --key posts/$1 --body $1 --profile blogs;
-  echo "![alttext](/img/posts/$1)" | pbcopy;
+  echo "![alttext](http://assets2.nore.me/posts/$1)" | pbcopy;
 }
 ```
 
