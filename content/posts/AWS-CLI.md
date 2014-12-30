@@ -38,7 +38,7 @@ However, this is just the first step in what's possible. To improve on this I cr
 ```bash
 ignoreimage() {
   aws s3api put-object --bucket assets2.nore.me --key posts/$1 --body $1 --profile blogs;
-  echo "![alttext](http://assets2.nore.me/posts/$1)" | pbcopy;
+  echo "![alttext](/img/posts/$1)" | pbcopy;
 }
 ```
 
@@ -111,6 +111,6 @@ One last tip, while you're playing around it might be a good idea to either rest
 [8]: http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html
 [9]: https://github.com/robbyrussell/oh-my-zsh
 [10]: https://console.aws.amazon.com
-[11]: http://assets2.nore.me/posts/SelectIAM.png
-[12]: http://assets2.nore.me/posts/DownloadIAM.png
-[13]: http://assets2.nore.me/posts/PermissionsIAM.png
+[11]: /img/posts/SelectIAM.png
+[12]: /img/posts/DownloadIAM.png
+[13]: /img/posts/PermissionsIAM.png

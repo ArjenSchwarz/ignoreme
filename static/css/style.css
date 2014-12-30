@@ -1023,6 +1023,20 @@ ul.nav li.current-menu-item>a {
     float: right;
     line-height: 2;
 }
+#navigation ul.github li a:after {
+    font-family: 'FontAwesome';
+    font-size: 100%;
+    margin-left: .618em;
+    font-weight: normal;
+    line-height: 1em;
+    width: 1em;
+    text-align: right;
+    display: inline-block;
+    content:"\f09b";
+    /*color: orange;*/
+    float: right;
+    line-height: 2;
+}
 #navigation ul.rss li.sub-email {
     color: #1c1c1c;
 }
@@ -1411,7 +1425,7 @@ img.ui-datepicker-trigger {
 @media only screen and (min-width: 1024px) {
     #header  {
         background-color: ;
-        background-image: url('//assets2.nore.me/hero-image.jpg');
+        background-image: url('/img/hero-image.jpg');
         background-position: top left;
         background-repeat: no-repeat;
         background-size: cover;

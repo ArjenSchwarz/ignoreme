@@ -7,7 +7,7 @@ Date:         2014-10-08T08:20:59+11:00
 Date started: 29-09-2014   
 Categories:   ["development"]   
 Description:  "When generating frontend assets, you don't want to add these generated files to your repository but it's not always possible or easy to generate them on the production server either. In this article I'll describe how to solve this issue using Jenkins."
-ogimage:      "http://assets2.nore.me/posts/deploybot.png"
+ogimage:      "/img/posts/deploybot.png"
 ---
 
 When generating frontend assets, you don't want to add these generated files to your repository but it's not always possible or easy to generate them on the production server either. In this article I'll describe how to solve this issue using Jenkins.
@@ -125,19 +125,19 @@ And lastly we will add these generated files, using the `-f` flag because this d
 
 When Jenkins runs it will carry out all of these actions so that if everything succeeds the end result is a single commit containing all of the generated files. Don't forget to configure Jenkin's git credentials, especially as you will need these for pushing up your changes later as well. Create an account for it, and dress it up in a nice way to make it all more fun.
 
-![Our beloved deploybot](http://assets2.nore.me/posts/deploybot.png)
+![Our beloved deploybot](/img/posts/deploybot.png)
 
 ## Jenkins project configuration
 
 So far, Jenkins will create this commit for us, and now we need to push this back up to origin. As it happens, the Jenkins git plugin has a post-build tool for this called the Git Publisher. With the help of [this article](http://www.benhallbenhall.com/2013/03/hudson-jenkins-create-git-tags-branches-automatically/) I set it up like this.
 
-![Git publisher image](http://assets2.nore.me/posts/jenkins-git-publisher.png)
+![Git publisher image](/img/posts/jenkins-git-publisher.png)
 
 As you can see in the image, our configuration will create a tag as well as pushing it up to our `release/staging` branch. While you will need to push the result up to a branch, adding a tag as well is mostly a matter of taste.
 
 Pulling in the staging branch and then pushing up these changes as well as the generated code will lead to conflicts because of previous sets of generated code that weren't deployed. In order to prevent this we will therefore need to merge the `release/staging` branch into our checked out branch. We do this by adding the `Merge before build` additional behaviour in the Git configuration for the project.
 
-![Merge before build](http://assets2.nore.me/posts/jenkins-merge-before-build.png)
+![Merge before build](/img/posts/jenkins-merge-before-build.png)
 
 To complete the setup, you then create a similar configuration for a Jenkins project that only checks the `master` branch, which will push its results up to the `release/master` branch.
 

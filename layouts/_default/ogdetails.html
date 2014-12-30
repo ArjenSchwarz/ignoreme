@@ -13,5 +13,8 @@
 {{ if .Params.ogimage }}
     <meta property="og:image" content="{{ .Params.ogimage }}" />
 {{ else }}
-    {{ range .Params.categories }}<meta property="og:image" content="//assets2.nore.me/categories/category-{{ . }}-full.jpg" />{{ end }}
+    {{ range .Params.categories }}
+    <meta property="og:image" content="http://ig.nore.me/img//categories/category-{{ . }}-full.jpg" />
+    <meta name="twitter:image:src" content="http://ig.nore.me/img/categories/category-{{ . }}-130x130.jpg">
+    {{ end }}
 {{ end }}

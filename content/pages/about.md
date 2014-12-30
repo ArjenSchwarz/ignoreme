@@ -17,7 +17,8 @@ The posts on the site consist of a mixture of links to other sites, with my own 
 
 ## About me
 
-<img src="http://assets2.nore.me/wp-content/uploads/2013/08/profilepicsmall.jpg" alt="Profilepicsmall" title="profilepicsmall.jpg" border="0" width="226" height="223" style="float:right;" />
+{{% figure src="/img/profilepicsmall.jpg" title="This is me" class="fr" %}}
+
 My name is Arjen, and I'm a Dutch guy currently living in Melbourne, Australia. I ended up here after travelling around for a bit and decided to stick around. At the moment I'm a developer in a web company, and simply enjoying live here. If you want more information about who I am and my travels, you can do so on my travel blog at [arjen.eu](http://www.arjen.eu).
 
 As for my experience in the matters on this site; since 2005 I've been either a developer, project manager or manager of a development team at any one time. I am happy in all of these roles and will always try to learn from anyone I meet.

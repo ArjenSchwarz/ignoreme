@@ -9,10 +9,6 @@ params:
   Subtitle: "Connecting the dots"
   AuthorName: "Arjen Schwarz"
   GitHubUser: "ArjenSchwarz"
-  ListOfFoo:
-    - "foo1"
-    - "foo2"
-  SidebarRecentLimit: 5
 taxonomies:
   category: "categories"
 MetaDataFormat: yaml
