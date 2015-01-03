@@ -1,13 +1,8 @@
 box: wercker/default
 build:
   steps:
-    - script:
-        name: build hugo
-        code: |
-          wget https://github.com/spf13/hugo/releases/download/v0.12/hugo_0.12_linux_amd64.tar.gz
-          tar xzf hugo_0.12_linux_amd64.tar.gz
-          cp hugo_0.12_linux_amd64/hugo_0.12_linux_amd64 hugo
-          ./hugo
+    - arjen/hugo-build:
+        version: 0.12
 deploy:
   steps:
     # Execute the s3sync deploy step, a step provided by wercker
