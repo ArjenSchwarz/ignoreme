@@ -858,6 +858,26 @@ body.page article.page>header {
 #top, .top-navigation {
     display: none;
 }
+
+ul.pagination {
+    list-style: none;
+    text-align: center;
+}
+
+ul.pagination li {
+    display: inline;
+    font-size: 110%;
+    margin: 0 0.5em;
+}
+
+ul.pagination li.disabled {
+    display: none;
+}
+
+ul.pagination li.active a {
+    color: black;
+}
+
 ul.nav li a {
     padding: .53em 1em;
     display: block;

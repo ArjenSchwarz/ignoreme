@@ -13,3 +13,4 @@ taxonomies:
   category: "categories"
 MetaDataFormat: yaml
 disqusShortname: ignoreme
+Paginate: 10

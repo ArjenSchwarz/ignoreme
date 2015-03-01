@@ -18,9 +18,11 @@
             </header>
             <div class="fix"></div>
 
-            {{ range first 10 .Data.Pages }}
+            {{ range .Paginator.Pages }}
                 {{ .Render "summary" }}
             {{ end }}
+
+            {{ template "_internal/pagination.html" . }}
 
     </div><!-- /#content -->
 
