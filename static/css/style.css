@@ -450,6 +450,17 @@ dl dd {
     box-shadow: 0 0 0 3px #eaeaea;
     -webkit-box-shadow: 0 0 0 3px #eaeaea;
 }
+img.topic-image {
+    float: left;
+    margin: .618em 0 0 0;
+    -webkit-border-radius: 300px;
+    border-radius: 300px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    box-shadow: 0 0 0 3px #eaeaea;
+    -webkit-box-shadow: 0 0 0 3px #eaeaea;
+}
 #footer {
     margin: 0 -2.244em;
     padding: 2.618em;
@@ -487,13 +498,15 @@ dl dd {
     width: 100%;
     margin: 0 0 1.618em;
     padding: 0 0 1em;
-    text-align: center;
+    text-align: left;
     border-bottom: #eaeaea 1px solid;
 }
 .archive-header h1 {
     font-size: 1.387em;
     font-weight: 900;
     text-transform: uppercase;
+    text-align: center;
+    padding-right: 130px;
 }
 .archive-header h1:after {
     font-family: 'FontAwesome';
@@ -510,7 +523,7 @@ dl dd {
     position: absolute;
     bottom: -12px;
     left: 50%;
-    margin-left: -10px;
+    /*margin-left: -10px;*/
 }
 .archive-header h1 em {
     display: block;

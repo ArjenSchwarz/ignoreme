@@ -7,12 +7,11 @@
 <div id="wrapper">
     <div id="inner-wrapper">
 
-
     {{ partial "sidebar.html" . }}
-
 
     <div id="content" class="col-full">
         <section id="main" class="col-left">
+            <img class="topic-image" src="/img/categories/category-{{ .Title | urlize }}-130x130.jpg" height="98" width="130">
             <header class="archive-header">
                 <h1>Archive | {{ .Title }}</h1>
             </header>
@@ -25,7 +24,6 @@
             {{ template "_internal/pagination.html" . }}
 
     </div><!-- /#content -->
-
 
     {{ partial "footer.html" . }}
 
