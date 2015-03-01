@@ -1397,11 +1397,11 @@ img.ui-datepicker-trigger {
     color: #111;
 }
 
-.home #header a {
+.home #header a, #header #navigation a {
     font-weight: bold;
 }
 
-.home #articles h1, body.category h1 {
+.home #articles h1, body.category h1, h1.site-title {
     font-variant: small-caps;
 }
 
