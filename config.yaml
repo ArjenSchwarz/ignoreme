@@ -11,6 +11,7 @@ params:
   GitHubUser: "ArjenSchwarz"
 taxonomies:
   category: "categories"
+  series: "series"
 MetaDataFormat: yaml
 disqusShortname: ignoreme
 Paginate: 10
