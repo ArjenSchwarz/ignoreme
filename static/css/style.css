@@ -388,14 +388,19 @@ dl dd {
     margin: 0 0 9.505em 0;
     border-bottom: 3px solid #eaeaea;
 }
-#topics:after {
+#series {
+    display: block;
+    margin: 0 0 9.505em 0;
+    border-bottom: 3px solid #eaeaea;
+}
+#topics:after, #series:after {
     content: "\0020";
     display: block;
     height: 0;
     overflow: hidden;
     clear: both;
 }
-#topics ul li {
+#topics ul li, #series ul li {
     padding: 5%;
     list-style: none;
     border-bottom: 1px solid #eaeaea;
@@ -403,28 +408,28 @@ dl dd {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-#topics ul li:last-child {
+#topics ul li:last-child, #series ul li:last-child {
     border-bottom: 0;
 }
-#topics ul li h1 {
+#topics ul li h1, #series ul li h1 {
     margin: 0;
     font-size: 1em;
     overflow: hidden;
     word-wrap: break-word;
 }
-#topics ul li h1 a {
+#topics ul li h1 a, #series ul li h1 a {
     color: #1c1c1c;
 }
-#topics ul li p {
+#topics ul li p, #series ul li p {
     margin: 0 0 1.387em 0;
     font-size: .95em;
     color: #828282;
 }
-#topics ul li a.articles-link {
+#topics ul li a.articles-link, #series ul li a.articles-link {
     font-size: .857em;
     text-transform: uppercase;
 }
-#topics ul li a.articles-link:after {
+#topics ul li a.articles-link:after, #series ul li a.articles-link:after {
     font-family: 'FontAwesome';
     display: inline-block;
     font-size: 100%;
@@ -436,10 +441,10 @@ dl dd {
     content: '\f054';
     font-size: .9em;
 }
-#topics ul li a.articles-link:hover {
+#topics ul li a.articles-link:hover, #series ul li a.articles-link:hover {
     text-decoration: none;
 }
-#topics ul li img {
+#topics ul li img, #series ul li img {
     float: left;
     margin: .618em 2.244em 0 0;
     -webkit-border-radius: 300px;
@@ -460,6 +465,7 @@ img.topic-image {
     background-clip: padding-box;
     box-shadow: 0 0 0 3px #eaeaea;
     -webkit-box-shadow: 0 0 0 3px #eaeaea;
+    z-index: 2;
 }
 #footer {
     margin: 0 -2.244em;
@@ -1896,10 +1902,10 @@ img.ui-datepicker-trigger {
     .home-tabber li a {
         font-size: 1.387em;
     }
-    #topics {
+    #topics, #series {
         margin: -1.6em 0 9.505em 0;
     }
-    #topics ul li {
+    #topics ul li, #series ul li {
         float: left;
         clear: left;
         width: 49.5%;
@@ -1910,12 +1916,12 @@ img.ui-datepicker-trigger {
         -moz-box-sizing: border-box;
         box-sizing: border-box;
     }
-    #topics ul li:nth-child(2n+2) {
+    #topics ul li:nth-child(2n+2), #series ul li:nth-child(2n+2) {
         border-width: 0 0 1px 1px;
         margin-left: -1px;
         clear: right;
     }
-    #topics ul li:last-child {
+    #topics ul li:last-child, #series ul li:last-child {
         border-bottom: 1px solid #eaeaea;
     }
     body.single-product #content {

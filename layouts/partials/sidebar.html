@@ -9,10 +9,11 @@
 
         <nav id="navigation" class="col-full" role="navigation">
             <section class="menus">
-            <a href="/" class="nav-home"><span>Home</span></a>
             <ul id="main-nav" class="nav">
-                <li class="page_item"><a href="/">Home</a></li>
-                <li class="page_item"><a href="/about/">About</a></li>
+            {{ $currentNode := . }}
+            {{ range .Site.Menus.main }}
+                <li class="page_item{{if $currentNode.IsMenuCurrent "main" . }} current-menu-item{{end}}"><a href="{{ .Url }}">{{ .Name }}</a></li>
+            {{ end }}
             </ul><!-- /#nav -->
             <ul class="nav rss">
                 <li class="sub-rss"><a href="/index.xml">RSS</a></li>

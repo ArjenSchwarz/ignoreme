@@ -1,0 +1,40 @@
+{{ partial "header.html" . }}
+
+<body class="archive category alt-style-default layout-right-content">
+{{ partial "gtm.html" . }}
+
+
+<div id="wrapper">
+    <div id="inner-wrapper">
+
+    {{ partial "sidebar.html" . }}
+
+    <div id="content" class="col-full">
+        <section id="main">
+            <header class="archive-header">
+                <h1 style="margin-left: 130px;">Series</h1>
+            </header>
+            <div class="fix"></div>
+
+            <div id="series">
+                <ul>
+                    {{ range $name, $taxonomy := .Site.Taxonomies.series }}
+                        <li>
+                            <h2><a href="/series/{{ $name | urlize }}">{{ range $key, $value := $.Site.Data.series.conversion }}{{ if eq $key $name }}{{ $value }}{{ end }}{{ end }}</a></h2>
+                            <p class="meta">{{ $num := len $taxonomy.Pages }}{{ if eq $num 1 }} 1 Article {{ else }} {{ $num }} Articles{{ end }}</p>
+                        </li>
+                  {{ end }}
+
+                </ul>
+
+            </div>
+
+    </div><!-- /#content -->
+
+    {{ partial "footer.html" . }}
+
+    </div><!-- /#inner-wrapper -->
+</div><!-- /#wrapper -->
+
+</body>
+</html>

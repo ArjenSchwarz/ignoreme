@@ -2,6 +2,9 @@
 date: 2013-08-24T20:24:11+10:00
 title: About
 slug: about
+menu: 
+    main:
+        weight: 3
 ---
 
 Obviously, this site is focused on the things I find interesting and useful. As this is a one-man show, that means I decide what shows up here. Which leads to two natural questions:

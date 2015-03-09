@@ -15,3 +15,13 @@ taxonomies:
 MetaDataFormat: yaml
 disqusShortname: ignoreme
 Paginate: 10
+menu:
+  main:
+      - Name: "Home"
+        Identifier: "home"
+        Url: "/"
+        Weight: 1
+      - Name: "Series"
+        Identifier: "series"
+        Url: "/series/"
+        Weight: 2

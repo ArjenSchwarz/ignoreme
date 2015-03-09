@@ -30,7 +30,7 @@
                         <li>
                             <a href="/categories/{{ $key | urlize }}" title="{{ $key }}"><img src="/img/categories/category-{{ $key }}-130x130.jpg" height="98" width="130"></a>
                             <h1><a href="/categories/{{ $key | urlize }}" title="{{ $key }}">{{ $key }}</a></h1>
-                            <p class="meta">{{ $num := len $taxonomy.Pages }}{{ if eq $num 1 }} 1 Post {{ else }} {{ $num }} Posts{{ end }}</p>
+                            <p class="meta">{{ $num := len $taxonomy.Pages }}{{ if eq $num 1 }} 1 Article {{ else }} {{ $num }} Articles{{ end }}</p>
                             <a class="articles-link" href="/categories/{{ $key | urlize }}" title="{{ $key }}">Articles</a>
                         </li>
                         {{ end }}
