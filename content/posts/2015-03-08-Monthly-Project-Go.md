@@ -9,7 +9,6 @@ series:       ["Learning Golang"]
 slug:         "monthly-project-golang"
 Description:  "In an attempt to stop my mind from constantly jumping to the next interesting thing I encounter, I decided to start doing monthly research projects. I'm starting this with something that has been on my list for quite a while now, learning the language Go (or Golang as it's often called)."
 ---
-# Monthly project: Golang
 
 In an attempt to stop my mind from constantly jumping to the next interesting thing I encounter, I decided to start doing monthly research projects. What that means is that I'll be spending a month looking into and learning a single subject. In some cases this will be one big thing, like learning a new programming language, and sometimes a collection of related smaller things.
 
