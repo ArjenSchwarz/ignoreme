@@ -425,6 +425,12 @@ dl dd {
     font-size: .95em;
     color: #828282;
 }
+
+#series ul li .presentation-summary p {
+    margin: 0 0 1.387em 0;
+    font-size: .95em;
+    color: #1c1c1c;
+}
 #topics ul li a.articles-link, #series ul li a.articles-link {
     font-size: .857em;
     text-transform: uppercase;
@@ -626,6 +632,12 @@ body.page article.page>header {
     color: #000;
 }
 .post .post-meta, .type-page .post-meta {
+    margin: 0 0 2.618em 0;
+    font-size: .95em;
+    color: #828282;
+    font-weight: 200;
+}
+.presentation-summary .post-meta, .type-page .post-meta {
     margin: 0 0 2.618em 0;
     font-size: .95em;
     color: #828282;
@@ -1898,6 +1910,10 @@ img.ui-datepicker-trigger {
     }
     .post header h1, .type-page header h1 {
         font-size: 2.244em;
+    }
+
+    .presentation-summary header h1 {
+        font-size: 2.244em !important;
     }
     .home-tabber li a {
         font-size: 1.387em;
