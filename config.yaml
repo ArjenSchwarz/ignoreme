@@ -5,6 +5,7 @@ permalinks:
   posts: /:year/:month/:slug/
   linkposts: /:year/:month/:slug/
   pages: /:slug/
+  presentations: /presentations/:year/:month/:slug
 params:
   Subtitle: "Connecting the dots"
   AuthorName: "Arjen Schwarz"
@@ -25,3 +26,7 @@ menu:
         Identifier: "series"
         Url: "/series/"
         Weight: 2
+      - Name: "Presentations"
+        Identifier: "presentations"
+        Url: "/presentations/"
+        Weight: 3

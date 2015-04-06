@@ -1,0 +1,61 @@
+{{ partial "header.html" . }}
+
+<body class="single single-post single-format-standard alt-style-default layout-default">
+{{ partial "gtm.html" . }}
+
+<div id="wrapper">
+    <div id="inner-wrapper">
+
+    {{ partial "sidebar.html" . }}
+
+    <div id="content" class="col-full">
+        <section id="main">
+            <article class="post type-post status-publish format-standard hentry">
+                {{ range $taxonomy := .Params.categories }}
+                <header style="background-image: url('/img/categories/category-{{ $taxonomy }}-full.jpg' ); ?>); background-size: cover; background-position: center center;" >
+                {{ end }}
+                    <section class="header-content">
+                        <h1>{{ .Title }}</h1>
+                        <h2>Given for {{ .Params.location }} on {{ .Params.presentation_date }}</h2>
+                            <aside class="post-meta">
+                                <span class="post-date">{{ .Date.Format "January 2, 2006" }}</span>
+                                <span class="post-category">in
+                                    {{ range $taxonomy := .Params.categories }}
+                                        <a href="/categories/{{ $taxonomy }}" title="View all posts in {{ $taxonomy }}" rel="category tag">{{ $taxonomy }}</a>
+                                    {{ end }}
+                                </span>
+                            </aside>
+                    </section>
+
+                    <nav id="post-entries" class="fix">
+                        {{ if .Prev }}
+                        <div class="nav-prev fl"><a href="{{ .Prev.RelPermalink }}" rel="prev">{{ .Prev.Title}}</a></div>
+                        {{ end }}
+                        {{ if .Next }}
+                        <div class="nav-next fr"><a href="{{ .Next.RelPermalink }}" rel="prev">{{ .Next.Title}}</a></div>
+                        {{ end }}
+                    </nav><!-- #post-entries -->
+
+                    </header>
+
+                <section class="entry fix">
+
+                {{ .Content }}
+
+                </section>
+
+                </article><!-- .post -->
+
+
+                </section><!-- #main -->
+
+    {{ template "_internal/disqus.html" . }}
+    </div><!-- #content -->
+
+{{ partial "footer.html" . }}
+
+    </div><!-- /#inner-wrapper -->
+</div><!-- /#wrapper -->
+
+</body>
+</html>

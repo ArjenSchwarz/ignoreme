@@ -1,0 +1,55 @@
+{{ partial "header.html" . }}
+
+<body class="archive category alt-style-default layout-right-content">
+{{ partial "gtm.html" . }}
+
+
+<div id="wrapper">
+    <div id="inner-wrapper">
+
+    {{ partial "sidebar.html" . }}
+
+    <div id="content" class="col-full">
+        <section id="main">
+            <header class="archive-header">
+                <h1 style="margin-left: 130px;">Presentations</h1>
+            </header>
+            <div class="fix"></div>
+
+            <div id="series">
+                <ul>
+                    {{ range .Paginator.Pages.ByPublishDate.Reverse }}
+                        <li>
+                            <article class="presentation-summary">
+                                <header>
+                                  <h1>
+                                      <a href="{{ .RelPermalink }}" rel="bookmark" title="{{ .Title }}">{{ .Title }}</a>
+                                  </h1>
+                                  <aside class="post-meta">
+                                      <span class="post-category">{{ .Params.location }}</span>
+                                      <span class="post-date">{{ .Params.presentation_date }}</span>
+                                  </aside>
+                              </header>
+                              <section class="entry">
+                                  <p>{{ if .Description }}{{.Description}}{{ else }}{{ .Summary }}{{ end }}</p>
+                              </section>
+                              <footer class="post-more">
+                                  <a class="button" href="{{ .RelPermalink }}" title="Watch the presentation">Watch the presentation</a>
+                              </footer>
+                            </article>
+                        </li>
+                  {{ end }}
+
+                </ul>
+
+            </div>
+
+    </div><!-- /#content -->
+
+    {{ partial "footer.html" . }}
+
+    </div><!-- /#inner-wrapper -->
+</div><!-- /#wrapper -->
+
+</body>
+</html>
