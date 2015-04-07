@@ -231,7 +231,7 @@ Since starting on Tribal Football (which at the time I write this has unfortunat
 * [Interactive Service Description][11] - a tool mentioned in the discussion after the presentation that we use for mimicking the service calls made by the Guzzle client.
 
 
-[1]: www.tribalfootball.com
+[1]: http://www.tribalfootball.com
 [2]: http://symfony.com/
 [3]: https://github.com/symfony/symfony-standard/issues/584#issuecomment-23148928
 [4]: http://symfony.com/doc/current/book/routing.html
