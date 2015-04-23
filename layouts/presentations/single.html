@@ -8,17 +8,17 @@
 
     {{ partial "sidebar.html" . }}
 
-    <div id="content" class="col-full">
+    <div itemscope itemtype="http://schema.org/Article" id="content" class="col-full">
         <section id="main">
             <article class="post type-post status-publish format-standard hentry">
                 {{ range $taxonomy := .Params.categories }}
                 <header style="background-image: url('/img/categories/category-{{ $taxonomy }}-full.jpg' ); ?>); background-size: cover; background-position: center center;" >
                 {{ end }}
                     <section class="header-content">
-                        <h1>{{ .Title }}</h1>
+                        <h1 itemprop="name">{{ .Title }}</h1>
                         <h2>Given for {{ .Params.location }} on {{ .Params.presentation_date }}</h2>
                             <aside class="post-meta">
-                                <span class="post-date">{{ .Date.Format "January 2, 2006" }}</span>
+                                <span itemprop="datePublished" content="{{ .Date.Format "2006-01-02" }}" class="post-date">{{ .Date.Format "January 2, 2006" }}</span>
                                 <span class="post-category">in
                                     {{ range $taxonomy := .Params.categories }}
                                         <a href="/categories/{{ $taxonomy }}" title="View all posts in {{ $taxonomy }}" rel="category tag">{{ $taxonomy }}</a>
@@ -50,6 +50,10 @@
                 </section><!-- #main -->
 
     {{ template "_internal/disqus.html" . }}
+    <meta itemprop="url" content="{{.Permalink}}">
+    <span itemprop="author" itemscope itemptype="http://schema.org/Person">
+    <meta itemprop="name" content="{{.Params.author}}">
+    </span>
     </div><!-- #content -->
 
 {{ partial "footer.html" . }}
