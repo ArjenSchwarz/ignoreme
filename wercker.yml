@@ -2,7 +2,7 @@ box: wercker/default
 build:
   steps:
     - arjen/hugo-build:
-        version: 0.13
+        version: 0.14
 deploy:
   steps:
     # Execute the s3sync deploy step, a step provided by wercker
