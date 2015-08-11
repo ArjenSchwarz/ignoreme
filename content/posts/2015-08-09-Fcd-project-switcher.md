@@ -2,7 +2,7 @@
 title:        "fcd: A fuzzy project switcher"
 blog:         ig.nore.me  
 author:       Arjen Schwarz  
-Date:         2015-08-22T10:30:14+10:00  
+Date:         2015-08-09T22:30:14+10:00  
 date started: 01-08-2015
 date posted:  09-08-2015
 categories:   ["development"]
