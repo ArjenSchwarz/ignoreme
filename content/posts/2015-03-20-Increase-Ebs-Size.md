@@ -86,7 +86,7 @@ aws ec2 stop-instances --instance-ids i-123456 --profile demo
 Then we create a snapshot of the root volume. The output of the command to create this snapshot also will provide the snapshot id.
 
 ```bash
-aws create-snapshot --volume-id vol-123456 --description "backup for test server" --profile demo
+aws ec2 create-snapshot --volume-id vol-123456 --description "backup for test server" --profile demo
 ```
 
 Now we can create a volume based on this snapshot. When doing so we provide the size in GiB, the id of the snapshot, the availability zone, and the volume type.
