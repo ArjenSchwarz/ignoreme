@@ -2245,6 +2245,15 @@ img.ui-datepicker-trigger {
     }
 }
 
+.ignoreme-cta {
+    display: block;
+    background-color: #f9f9f9;
+    border: 1px solid #666;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
 /* http://prismjs.com/download.html?themes=prism-okaidia&languages=markup+css+css-extras+clike+javascript+php+php-extras+bash+c+http+go+swift+objectivec&plugins=line-numbers */
 /**
  * okaidia theme for JavaScript, CSS and HTML

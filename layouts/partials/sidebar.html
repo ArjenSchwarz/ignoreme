@@ -15,9 +15,6 @@
                 <li class="page_item{{if $currentNode.IsMenuCurrent "main" . }} current-menu-item{{end}}"><a href="{{ .URL }}">{{ .Name }}</a></li>
             {{ end }}
             </ul><!-- /#nav -->
-            <ul class="nav rss">
-                <li class="sub-rss"><a href="/index.xml">RSS</a></li>
-            </ul>
             <ul class="nav github">
                 <li class="sub-github"><a href="https://www.github.com/{{ .Site.Params.GitHubUser }}">GitHub</a></li>
             </ul>
