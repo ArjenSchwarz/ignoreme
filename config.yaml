@@ -6,6 +6,7 @@ permalinks:
   linkposts: /:year/:month/:slug/
   pages: /:slug/
   presentations: /presentations/:year/:month/:slug
+  weeklynotes: /weekly-notes/:slug/
 params:
   Subtitle: "Connecting the dots"
   AuthorName: "Arjen Schwarz"
