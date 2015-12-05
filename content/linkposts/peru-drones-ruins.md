@@ -1,6 +1,6 @@
 ---
 Categories:
-- robotics
+- Robotics
 Redirect: http://www.theguardian.com/world/2013/aug/25/peru-archaeologists-drones-ancient-ruins
 Slug: perus-archaeologists-turn-to-drones-to-help-protect-and-explore-ancient-ruins
 Title: Peru's archaeologists turn to drones to help protect and explore ancient ruins

@@ -4,7 +4,7 @@ blog:         ig.nore.me
 author:       Arjen Schwarz  
 Date:         2015-01-03T17:28:01+11:00   
 date started: 03-01-2015  
-categories:   ["development"]
+categories:   ["Development"]
 slug:         "hugo-build-step-for-wercker"
 Description:  "I mentioned that I was planning on building a step for making it easier to deploy Hugo sites using Wercker, and I've done so."
 ogimage:      "http://ig.nore.me/img/posts/hugo-build.png"

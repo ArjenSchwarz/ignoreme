@@ -4,7 +4,7 @@ Slug: technical-debt
 Date: 2013-09-08T05:39:40+10:00
 Redirect: http://www.sitepoint.com/technical-debt/
 Aliases: ["/development/2013/09/technical-debt/"]
-Categories: ["development"]
+Categories: ["Development"]
 ---
 
 > On the one hand, technical debt refers to the quick and dirty shortcuts we take and the effect they have on future development. On the other hand, technical debt is also about the things that we don’t do, such as not commenting our code, not developing documentation, not doing proper testing, etc.

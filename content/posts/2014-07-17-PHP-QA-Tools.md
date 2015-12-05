@@ -6,7 +6,7 @@ Date:         2014-07-17T10:32:40+10:00
 Date started: 12-07-2014  
 Date posted:  17-07-2014  
 Slug:         php-quality  
-Categories:   ["php"]
+Categories:   ["PHP"]
 Aliases:     ["/php/2014/07/php-quality"]
 Description:  "When it comes to software development, quality is often a difficult thing to measure. Often you will be able to recognize it when you see it, but defining why something is well done is harder. Luckily there are a number of tools and standards out there that will enable you to put metrics against your code. This article shows an easy way to combine these."
 ---

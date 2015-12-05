@@ -5,7 +5,7 @@ author:       Arjen Schwarz
 Date:         2015-11-25T15:43:23+11:00
 presentation_date:  "November 24, 2015"
 location:     "the DevOps meetup in Melbourne"
-categories:   ["development"]
+categories:   ["Development"]
 slug:         "prepare-deployable-code-using-docker-and-jenkins"
 Description:  "For the DevOps meetup in Melbourne I gave a presentation on preparing deployable code using Docker and Jenkins. The presentation is based on articles I've written about the same subject."
 ---

@@ -26,12 +26,12 @@
 
                 <div id="topics">
                     <ul>
-                        {{ range $key, $taxonomy := .Site.Taxonomies.categories }}
+                        {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
                         <li>
-                            <a href="/categories/{{ $key | urlize }}" title="{{ $key }}"><img src="/img/categories/category-{{ $key }}-130x130.jpg" height="98" width="130"></a>
-                            <h1><a href="/categories/{{ $key | urlize }}" title="{{ $key }}">{{ $key }}</a></h1>
+                            <a href="/categories/{{ $name | urlize }}" title="{{ $name }}"><img src="/img/categories/category-{{ $name | urlize }}-130x130.jpg" height="98" width="130"></a>
+                            <h1><a href="/categories/{{ $name | urlize }}" title="{{ $name }}">{{ $name }}</a></h1>
                             <p class="meta">{{ $num := len $taxonomy.Pages }}{{ if eq $num 1 }} 1 Article {{ else }} {{ $num }} Articles{{ end }}</p>
-                            <a class="articles-link" href="/categories/{{ $key | urlize }}" title="{{ $key }}">Articles</a>
+                            <a class="articles-link" href="/categories/{{ $name | urlize }}" title="{{ $name }}">Articles</a>
                         </li>
                         {{ end }}
                     </ul>

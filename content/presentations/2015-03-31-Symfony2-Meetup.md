@@ -5,7 +5,7 @@ author:       Arjen Schwarz
 Date:         2015-04-06T13:00:00Z
 presentation_date:  "March 31, 2015"
 location:     "the Symfony2 meetup in Melbourne"
-categories:   ["php"]
+categories:   ["PHP"]
 slug:         "splitting-a-symfony-project-into-separate-tiers"
 Description:  "For the Symfony2 meetup in Melbourne I gave a presentation on splitting a project into separate layers, why you might want to do this, how it works, what some of the downsides are, and why Symfony2 is a good fit for this."
 ---

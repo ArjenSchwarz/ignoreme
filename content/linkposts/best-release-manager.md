@@ -1,6 +1,6 @@
 ---
 Categories:
-- awesome
+- Awesome
 Redirect: https://vine.co/v/heaOxhb3w5p
 Slug: best-release-manager-out-there
 Title: Best release manager out there

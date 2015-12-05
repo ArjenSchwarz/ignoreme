@@ -2,7 +2,7 @@
 Redirect: http://net.tutsplus.com/tutorials/tools-and-tips/xdebug-professional-php-debugging/
 Slug: xdebug-professional-php-debugging
 Aliases: ["/php/2013/08/xdebug-professional-php-debugging-nettuts/"]
-Categories: ["php"]
+Categories: ["PHP"]
 Title: Xdebug – Professional PHP Debugging
 date: 2013-08-31T22:59:40+10:00
 ---

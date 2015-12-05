@@ -5,7 +5,7 @@ author:       Arjen Schwarz
 Date:         2015-08-09T22:30:14+10:00  
 date started: 01-08-2015
 date posted:  09-08-2015
-categories:   ["development"]
+categories:   ["Development"]
 slug:         "fcd-a-fuzzy-project-switcher"
 Description:  "fcd is a zsh plugin I built for easily switching between different projects on the command line."
 ---

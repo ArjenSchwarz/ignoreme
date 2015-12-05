@@ -1,6 +1,6 @@
 ---
 Categories:
-- php
+- PHP
 Redirect: https://gist.github.com//Blackshawk/5327505
 Slug: explaining-my-choices-further
 Title: Explaining My Choices Further

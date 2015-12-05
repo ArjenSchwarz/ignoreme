@@ -4,7 +4,7 @@ blog:         ig.nore.me
 author:       Arjen Schwarz  
 Date:         2015-01-18T22:35:34+11:00   
 date started: 18-01-2015  
-categories:   ["aws"]
+categories:   ["AWS"]
 slug:         "personal-access-to-your-servers"
 Description:  "This article describes setting up a single security group with cloudformation that you can use to ensure you can easily gain access to your servers wherever you are. And as a bonus it describes how you can update the parameters of your stack from the command line without needing access to its template."
 ---

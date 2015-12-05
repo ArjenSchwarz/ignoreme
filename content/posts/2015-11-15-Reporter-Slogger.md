@@ -5,7 +5,7 @@ author:       Arjen Schwarz
 Date:         2015-11-15T18:16:40+11:00
 date started: 15-11-2015
 date posted:  15-11-2015
-categories:   ["development"]
+categories:   ["Development"]
 slug:         "reporter-plugin-for-slogger"
 Description:  "I wanted something that could ensure my usage of the Reporter app would be logged in my journaling app of choice, so I built it."
 ---

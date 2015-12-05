@@ -1,6 +1,6 @@
 ---
 Categories:
-- patents
+- Patents
 Redirect: http://www.fosspatents.com/2013/08/new-zealand-parliament-adopts-uk.html
 Slug: new-zealand-parliament-adopts-uk-approach-to-software-patents-allows-broad-swaths-of-them
 Aliases: ["/patents/2013/08/new-zealand-parliament-adopts-uk-approach-to-software-patents-allows-broad-swaths-of-them/"]

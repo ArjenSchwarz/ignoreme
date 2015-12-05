@@ -1,6 +1,6 @@
 ---
 Categories:
-- patents
+- Patents
 Redirect: http://www.zdnet.com/new-zealand-bans-software-patents-7000019955/
 Slug: new-zealand-bans-software-patents
 Aliases: ["/patents/2013/08/new-zealand-bans-software-patents/"]

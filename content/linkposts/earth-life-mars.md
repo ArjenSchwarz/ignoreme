@@ -1,6 +1,6 @@
 ---
 Categories:
-- awesome
+- Awesome
 Redirect: http://www.space.com/22577-earth-life-from-mars-theory.html
 Slug: Earth Life Likely Came from Mars, Study Suggests
 Title: Earth Life Likely Came from Mars, Study Suggests

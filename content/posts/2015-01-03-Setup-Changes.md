@@ -4,7 +4,7 @@ blog:         ig.nore.me
 author:       Arjen Schwarz  
 Date:         2015-01-03T12:55:14+11:00   
 date started: 03-01-2015  
-categories:   ["aws"]
+categories:   ["AWS"]
 slug:         "changes-to-my-setup"
 Description:  "Over the Christmas break I made some time to implement changes to my AWS setup that I've been thinking of. As this invalidates some of the things I've written about in other articles I felt I should point them out here as well."
 ---

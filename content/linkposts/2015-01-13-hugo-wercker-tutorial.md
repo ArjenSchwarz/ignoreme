@@ -1,6 +1,6 @@
 ---
 Categories:
-- development
+- Development
 Redirect: http://bit.ly/1C1CV10
 Slug: automated-deployments-tutorial-for-hugo
 Title: Automated deployments tutorial for Hugo

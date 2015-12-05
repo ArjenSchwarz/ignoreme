@@ -4,7 +4,7 @@ blog:         ig.nore.me
 author:       Arjen Schwarz  
 Date:         2015-03-08T19:13:06+11:00   
 date started: 08-03-2015  
-categories:   ["golang"]
+categories:   ["Golang"]
 series:       ["Learning Golang"]
 slug:         "monthly-project-golang"
 Description:  "In an attempt to stop my mind from constantly jumping to the next interesting thing I encounter, I decided to start doing monthly research projects. I'm starting this with something that has been on my list for quite a while now, learning the language Go (or Golang as it's often called)."

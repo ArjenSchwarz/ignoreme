@@ -5,7 +5,7 @@ Blog:         ig.nore.me
 Author:       Arjen Schwarz   
 Date:         2014-10-08T08:20:59+11:00
 Date started: 29-09-2014   
-Categories:   ["development"]   
+Categories:   ["Development"]   
 Description:  "When generating frontend assets, you don't want to add these generated files to your repository but it's not always possible or easy to generate them on the production server either. In this article I'll describe how to solve this issue using Jenkins."
 ogimage:      "http://ig.nore.me/img/posts/deploybot.png"
 ---

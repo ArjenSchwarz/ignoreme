@@ -97,7 +97,7 @@ body {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     position: relative;
-    background: #fcfbf7;
+    background: #fff;
     height: 100%;
     font-family: "Source Sans Pro", "Varela", sans-serif;
     font-weight: 300;
@@ -423,7 +423,7 @@ dl dd {
 #topics ul li p, #series ul li p {
     margin: 0 0 1.387em 0;
     font-size: .95em;
-    color: #828282;
+    color: #778899;
 }
 
 #series ul li .presentation-summary p {
@@ -512,6 +512,7 @@ img.topic-image {
     padding: 0 0 1em;
     text-align: left;
     border-bottom: #eaeaea 1px solid;
+    z-index: -1;
 }
 .archive-header h1 {
     font-size: 1.387em;
@@ -607,11 +608,11 @@ img.topic-image {
     margin: 1.618em 0 3em 3.631em;
 }
 .single-post {
-    background-color: #fcfbf7;
+    background-color: #fff;
 }
-.single-post .entry {
+/*.single-post .entry {
     border-bottom: 3px solid #eaeaea;
-}
+}*/
 body.page article.page>header {
     margin: 0;
 }
@@ -634,17 +635,17 @@ body.page article.page>header {
 .post .post-meta, .type-page .post-meta {
     margin: 0 0 2.618em 0;
     font-size: .95em;
-    color: #828282;
+    color: #778899;
     font-weight: 200;
 }
 .presentation-summary .post-meta, .type-page .post-meta {
     margin: 0 0 2.618em 0;
     font-size: .95em;
-    color: #828282;
+    color: #778899;
     font-weight: 200;
 }
 .post .post-meta a, .type-page .post-meta a {
-    color: #828282;
+    color: #778899;
 }
 .post .post-more, .type-page .post-more {
     margin-top: 2.618em;
@@ -669,10 +670,10 @@ body.page article.page>header {
     clear: both;
     font-size: .857em;
     font-style: italic;
-    color: #828282;
+    color: #778899;
 }
 .post div.tags a, .type-page div.tags a {
-    color: #828282;
+    color: #778899;
 }
 .post .entry h1, .type-page .entry h1, .post .entry h2, .type-page .entry h2, .post .entry h3, .type-page .entry h3, .post .entry h4, .type-page .entry h4, .post .entry h5, .type-page .entry h5 {
     margin: 2.618em 0 1.387em;
@@ -1178,7 +1179,7 @@ ul.nav li.current-menu-item>a {
 }
 #respond .logged-in-as {
     font-style: italic;
-    color: #828282;
+    color: #778899;
     text-align: center;
 }
 #respond label {
@@ -1411,11 +1412,13 @@ img.ui-datepicker-trigger {
 }
 
 .post .entry h1 {
-    margin: 1.218em 0 1.018em;
+    margin: 0.7em 0 0.5em;
+    color: #778899;
 }
 
 .post .entry h2 {
-    margin: 1.818em 0 1.187em;
+    margin: 0.7em 0 0.5em;
+    color: #778899;
 }
 
 .post .entry img {
@@ -1452,7 +1455,7 @@ img.ui-datepicker-trigger {
     font-weight: bold;
 }
 
-.home #articles h1, body.category h1, h1.site-title {
+.home #articles h1, body.category h1 {
     font-variant: small-caps;
 }
 
@@ -2247,8 +2250,8 @@ img.ui-datepicker-trigger {
 
 .ignoreme-cta {
     display: block;
-    background-color: #f9f9f9;
-    border: 1px solid #666;
+    background-color: #FCFBF7;
+    border: 2px solid #FF7377;
     text-align: center;
     padding-top: 1em;
     padding-bottom: 1em;

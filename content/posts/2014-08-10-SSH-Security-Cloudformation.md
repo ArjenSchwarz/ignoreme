@@ -5,7 +5,7 @@ Author:       Arjen Schwarz
 Date:         2014-08-10T21:18:40+10:00
 Date started: 10-08-2014  
 Date posted:  10-08-2014  
-Categories:   ["aws"]
+Categories:   ["AWS"]
 Slug:         securing-ssh-access-with-cloudformation
 Aliases:     ["/aws/2014/08/securing-ssh-access-with-cloudformation"]
 Description:  "In order to improve security for my EC2-instance, but still keep it useful, I came up with a script that automatically opens up SSH access for my current IP address."

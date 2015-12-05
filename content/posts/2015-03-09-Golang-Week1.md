@@ -4,7 +4,7 @@ blog:         ig.nore.me
 author:       Arjen Schwarz  
 Date:         2015-03-09T11:02:39+11:00   
 date started: 08-03-2015  
-categories:   ["golang"]
+categories:   ["Golang"]
 series:       ["Learning Golang"]
 slug:         "starting-with-golang"
 Description:  "The first weekly update for my month of Golang. I'll start this out with various resources I used to get up to speed with the language, before I'll move on to idea behind the structure for the Bugsnag SDK and how this is progressing."

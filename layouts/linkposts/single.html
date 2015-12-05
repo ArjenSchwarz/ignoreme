@@ -12,7 +12,7 @@
         <section id="main">
             <article class="post type-post status-publish format-standard hentry">
                 {{ range $taxonomy := .Params.categories }}
-                <header style="background-image: url('/img/categories/category-{{ $taxonomy }}-full.jpg' ); ?>); background-size: cover; background-position: center center;" >
+                <header style="background-image: url('/img/categories/category-{{ $taxonomy | urlize }}-full.jpg' ); ?>); background-size: cover; background-position: center center;" >
                 {{ end }}
                     <section class="header-content">
                         <h1><a href="{{ .Params.redirect }}">{{ .Title }}</a></h1>
@@ -42,6 +42,8 @@
                 {{ .Content }}
 
                 <p><a href="{{ .Params.redirect }}">Read article</a></p>
+
+                {{ template "partials/cta_subscribe.html" }}
                 </section>
 
                 </article><!-- .post -->
