@@ -10,7 +10,7 @@ slug:         "looking-at-cloudformation-designer"
 Description:  "Recently AWS introduced their CloudFormation Designer tool. Part of CloudFormation, this Designer allows you to visually design and edit your templates. In this article I try to show you how you can use the tool and fit it into your workflow."
 ---
 
-As part of the build up to their re:Invent conference in September, AWS [introduced](https://aws.amazon.com/blogs/aws/new-aws-cloudformation-designer-support-for-more-services/) their new CloudFormation Designer tool. This tool will allow you to visually create a new stack, or edit an existing one. In fact, it allows you to do all of that in the browser without ever needing to open a text editor. However, as [mentioned](http://ig.nore.me/2014/08/the-first-babysteps-with-cloudformation/) before I'm not a fan of the JSON syntax that Cloudformation uses.
+As part of the build up to their re:Invent conference in September, AWS [introduced](https://aws.amazon.com/blogs/aws/new-aws-cloudformation-designer-support-for-more-services/) their new CloudFormation Designer tool. This tool will allow you to visually create a new stack, or edit an existing one. In fact, it allows you to do all of that in the browser without ever needing to open a text editor. However, as [mentioned](https://ig.nore.me/2014/08/the-first-babysteps-with-cloudformation/) before I'm not a fan of the JSON syntax that Cloudformation uses.
 
 The below screencast shows you how to work with the Designer, and below that you can find my impression and how it fits.
 

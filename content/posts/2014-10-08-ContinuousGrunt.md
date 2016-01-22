@@ -7,7 +7,7 @@ Date:         2014-10-08T08:20:59+11:00
 Date started: 29-09-2014   
 Categories:   ["Development"]   
 Description:  "When generating frontend assets, you don't want to add these generated files to your repository but it's not always possible or easy to generate them on the production server either. In this article I'll describe how to solve this issue using Jenkins."
-ogimage:      "http://ig.nore.me/img/posts/deploybot.png"
+ogimage:      "https://ig.nore.me/img/posts/deploybot.png"
 ---
 
 When generating frontend assets, you don't want to add these generated files to your repository but it's not always possible or easy to generate them on the production server either. In this article I'll describe how to solve this issue using Jenkins.
@@ -62,7 +62,7 @@ To summarise, we don't want to store the generated files in the repository as th
 
 Enter [Jenkins](http://jenkins-ci.org). 
 
-Regardless of what you're building, a Continuous Integration system is useful. As I've explained in a [previous article](http://ig.nore.me/2014/09/and-we-ve-gone-static/), I generate and deploy this site using a similar tool. While an introduction to Jenkins falls outside of the purpose of this article, you should still be able to follow along without any knowledge of the system.
+Regardless of what you're building, a Continuous Integration system is useful. As I've explained in a [previous article](https://ig.nore.me/2014/09/and-we-ve-gone-static/), I generate and deploy this site using a similar tool. While an introduction to Jenkins falls outside of the purpose of this article, you should still be able to follow along without any knowledge of the system.
 
 In a way similar to how I generate this site, we can have all this generation take place on the Jenkins server. After executing all the usual checks, Jenkins will run the commands for the frontend generation and if successful will commit the results of this and push it up to a special release branch.
 

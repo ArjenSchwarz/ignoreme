@@ -407,14 +407,14 @@ In future articles I plan to show more extensive examples; going past the basics
 [1]: http://aws.amazon.com/cloudformation/
 [2]: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html
 [3]: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html
-[4]: http://ig.nore.me/aws/2014/07/introduction-to-the-aws-cli/
+[4]: https://ig.nore.me/aws/2014/07/introduction-to-the-aws-cli/
 [5]: /img/posts/babysteps_in_progress.png
 [6]: /img/posts/babysteps_failed.png
 [7]: https://github.com/stevenjack/cfndsl
 [8]: https://github.com/ArjenSchwarz/cloudformation-templates/blob/master/cfn1-babysteps/cfn1-babysteps.rb
 [9]: https://github.com/ArjenSchwarz/cloudformation-templates/blob/master/cfn1-babysteps/cfn1-babysteps.json
 [10]: http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html
-[11]: http://ig.nore.me/aws/2014/08/securing-ssh-access-with-cloudformation/
+[11]: https://ig.nore.me/aws/2014/08/securing-ssh-access-with-cloudformation/
 [12]: http://aws.amazon.com/vpc/ "Marketing documentation for VPC"
 [13]: http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Subnets.html "Technical documentation for VPC and Subnets"
 [14]: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-findinmap.html

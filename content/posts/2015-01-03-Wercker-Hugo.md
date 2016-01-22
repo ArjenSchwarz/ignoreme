@@ -7,7 +7,7 @@ date started: 03-01-2015
 categories:   ["Development"]
 slug:         "hugo-build-step-for-wercker"
 Description:  "I mentioned that I was planning on building a step for making it easier to deploy Hugo sites using Wercker, and I've done so."
-ogimage:      "http://ig.nore.me/img/posts/hugo-build.png"
+ogimage:      "https://ig.nore.me/img/posts/hugo-build.png"
 ---
 
 I mentioned that I was planning on building a step for making it easier to deploy [Hugo](http://gohugo.io) sites using [Wercker](http://wercker.com), and I've done so.
