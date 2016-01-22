@@ -7,7 +7,7 @@
           <span class="post-date">{{ .Date.Format "January 2, 2006" }}, </span>
           <span class="post-category">in
           {{ range $taxonomy := .Params.categories }}
-          <a href="/categories/{{ $taxonomy }}" title="View all posts in {{ $taxonomy }}" rel="category tag">{{ $taxonomy }}</a>
+          <a href="/categories/{{ $taxonomy | urlize }}" title="View all posts in {{ $taxonomy }}" rel="category tag">{{ $taxonomy }}</a>
           {{ end }}
           </span>
       </aside>
