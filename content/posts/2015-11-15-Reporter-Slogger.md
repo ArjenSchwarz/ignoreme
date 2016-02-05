@@ -91,6 +91,10 @@ As I said, the plugin isn't very complex but I'm quite happy with the result. Wh
 * Reporter App: [website][5], [iOS appstore][6]
 * Slogger: [GitHub][7]
 
+**Update February 5, 2016**
+
+The original version of Day One is no longer available, so I updated the links to point to the new one.
+
 [^journaling]: As many others, I've started and stopped journaling many times and in fact looking back over the past 4 years there are still some unfortunate holes where I skipped it for a several days or weeks.
 [^dayoneappstore]: Direct links to [Mac][4] and [iOS][3] appstores.
 [^weight]: Yes, I log all of these things.
@@ -100,8 +104,8 @@ As I said, the plugin isn't very complex but I'm quite happy with the result. Wh
 
 [1]: https://github.com/ttscoff/Slogger/blob/master/plugins_disabled/reporterlogger.rb
 [2]: http://dayoneapp.com
-[3]: https://geo.itunes.apple.com/us/app/day-one-journal-notes-diary/id421706526?mt=8&at=1000l9pK
-[4]: https://itunes.apple.com/us/app/day-one/id422304217?mt=12&uo=4&at=1000l9pK&ct=dayoneappcom-mac
+[3]: https://itunes.apple.com/au/app/day-one-2-journal-+-notes/id1044867788?mt=8&uo=4&at=1000l9pK
+[4]: https://itunes.apple.com/au/app/day-one-2-journal-+-notes/id1055511498?mt=12&uo=4&at=1000l9pK
 [5]: http://www.reporter-app.com
 [6]: https://geo.itunes.apple.com/us/app/reporter-app/id779697486?mt=8&at=1000l9pK
 [7]: https://github.com/ttscoff/Slogger
