@@ -2264,6 +2264,15 @@ img.ui-datepicker-trigger {
     padding-bottom: 1em;
 }
 
+
+.ignoreme-update {
+    display: block;
+    background-color: #FCFBF7;
+    border: 2px solid #FF7377;
+    text-align: left;
+    padding: 1em;
+}
+
 /* http://prismjs.com/download.html?themes=prism-okaidia&languages=markup+css+css-extras+clike+javascript+php+php-extras+bash+c+http+go+swift+objectivec&plugins=line-numbers */
 /**
  * okaidia theme for JavaScript, CSS and HTML
