@@ -4,6 +4,7 @@ blog:         ig.nore.me
 author:       Arjen Schwarz  
 Date:         2015-01-03T17:28:01+11:00   
 date started: 03-01-2015  
+lastmod:      2016-02-11T18:17:39+11:00
 categories:   ["Development"]
 slug:         "hugo-build-step-for-wercker"
 Description:  "I mentioned that I was planning on building a step for making it easier to deploy Hugo sites using Wercker, and I've done so."
@@ -15,6 +16,10 @@ I mentioned that I was planning on building a step for making it easier to deplo
 ![Showing Hugo Build in Wercker](/img/posts/hugo-build.png)
 
 If you're familiar with both Hugo and Wercker, all you require to know is that the step is called `arjen/hugo-build` and you can easily find it in the Wercker steps repository.
+
+<div class='ignoreme-update'>
+<strong>Update February 11, 2015:</strong> This article describes the original work and functionality of the plugin. For an up to date tutorial please see the <a href="http://bit.ly/1C1CV10">Hugo documentation.</a> Similarly, for advice on deploying a Wercker site to GitHub please read <a href="/2016/01/deploying-a-static-site-to-github-pages/">this article.</a>
+</div>
 
 # Short Wercker introduction
 
