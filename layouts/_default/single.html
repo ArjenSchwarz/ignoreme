@@ -12,7 +12,7 @@
         <section id="main">
             <article class="post type-post status-publish format-standard hentry">
                 {{ range $taxonomy := .Params.categories }}
-                <header style="background-image: url('/img/categories/category-{{ $taxonomy | urlize }}-full.jpg' ); ?>); background-size: cover; background-position: center center;" >
+                <header style="background-image: url('/img/categories/category-{{ $taxonomy | urlize }}-full.jpg' ); background-size: cover; background-position: center center;" >
                 {{ end }}
                     <section class="header-content">
                         <h1 itemprop="name">{{ .Title }}</h1>
