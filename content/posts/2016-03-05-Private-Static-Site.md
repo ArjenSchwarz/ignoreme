@@ -4,6 +4,7 @@ slug:         "private-static-site-hosting"
 blog:         ig.nore.me  
 author:       Arjen Schwarz  
 Date:         2016-03-05T14:03:29+11:00
+lastmod:      2016-03-05T23:48:50+11:00
 categories:   ["Development"]
 Description:  "Today someone asked me if it's possible to host a Hugo site on AWS that is only accessible from their company IP. Of course it is, let me explain how."
 ---
@@ -27,7 +28,7 @@ So, now we have our bucket. First, we should enable the site hosting. This is an
 
 ![Enable hosting][enablehosting]
 
-For a Hugo site (and most other static sites), just select the **Enable website hosting** section and fill in `index.html` as the Index document.
+For a Hugo site (and most other static sites), just select the **Enable website hosting** section and fill in `index.html` as the Index document and `404.html` as the Error document.
 
 Now a site can be hosted on the bucket, but we're not done yet. You now need to limit the access. By default S3 buckets are limited to access only be the person who created it, but we want to whitelist one IP to have access to the site as well. We'll do this using a Bucket policy. You can find this in the section about Permissions, which is at the top of the properties.
 
