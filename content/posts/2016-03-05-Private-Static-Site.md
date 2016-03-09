@@ -80,6 +80,8 @@ The values for the variables are set in the Wercker config (again, see the afore
 
 When you now deploy the site, it will only be accessible from the IP address we specified earlier. And that's all there is to it.
 
+[automated-deployment]: http://gohugo.io/tutorials/automated-deployments/
+
 [question]: https://discuss.gohugo.io/t/howto-deploying-hugo-on-s3-and-cloudfront/2800/6
 
 [createbucket]: /img/posts/2016-03-05-create-bucket.png
