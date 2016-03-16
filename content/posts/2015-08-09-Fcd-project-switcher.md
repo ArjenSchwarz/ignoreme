@@ -5,6 +5,7 @@ author:       Arjen Schwarz
 Date:         2015-08-09T22:30:14+10:00  
 date started: 01-08-2015
 date posted:  09-08-2015
+lastmod: 2016-03-16T18:57:30+11:00
 categories:   ["Development"]
 slug:         "fcd-a-fuzzy-project-switcher"
 Description:  "fcd is a zsh plugin I built for easily switching between different projects on the command line."
@@ -68,6 +69,6 @@ _fcd_get_list() {
 And finally, there is `_fcd_get_list()` itself, which simply prints a list of the same result we would get when running the command itself. The only difference being that it will only print the final directory name instead of the whole path.
 
 ## What does it look like?
-The below video is a 18 second demonstration of fcd, but you're of course welcome to [copy the code](https://github.com/ArjenSchwarz/oh-my-zsh/blob/master/plugins/fcd/fcd.plugin.zsh) for your own use.
+The below gif is a short demonstration of fcd, but you're of course welcome to [copy the code](https://github.com/ArjenSchwarz/oh-my-zsh/blob/master/plugins/fcd/fcd.plugin.zsh) for your own use.
 
-{{% youtube hHuch6aMq6s %}}
+![fcd in action](/img/posts/fcd-example.gif)
