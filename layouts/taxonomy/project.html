@@ -1,0 +1,33 @@
+{{ partial "header.html" . }}
+
+<body class="archive category alt-style-default layout-right-content">
+{{ partial "gtm.html" . }}
+
+
+<div id="wrapper">
+    <div id="inner-wrapper">
+
+    {{ partial "sidebar.html" . }}
+
+    <div id="content" class="col-full">
+        <section id="main" class="col-left">
+            <header class="archive-header">
+                <h1 style="margin-left: 130px;">{{ .Title }}</h1>
+            </header>
+            <div class="fix"></div>
+
+            {{ range .Paginator.Pages.ByPublishDate.Reverse }}
+                {{ .Render "summary" }}
+            {{ end }}
+
+            {{ template "_internal/pagination.html" . }}
+
+    </div><!-- /#content -->
+
+    {{ partial "footer.html" . }}
+
+    </div><!-- /#inner-wrapper -->
+</div><!-- /#wrapper -->
+
+</body>
+</html>

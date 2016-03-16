@@ -1,0 +1,51 @@
+{{ partial "header.html" . }}
+
+<body class="archive category alt-style-default layout-right-content">
+{{ partial "gtm.html" . }}
+
+
+<div id="wrapper">
+    <div id="inner-wrapper">
+
+    {{ partial "sidebar.html" . }}
+
+    <div id="content" class="col-full">
+        <section id="main">
+            <header class="archive-header">
+                <h1 style="margin-left: 130px;">Projects</h1>
+            </header>
+            <div class="fix"></div>
+
+            <div id="projects">
+                <ul>
+                    {{ range $name, $taxonomy := .Site.Taxonomies.projects }}
+                        <li class="projectdetails">
+                            <h2><a href="/projects/{{ $name | urlize }}">{{ range $key, $value := $.Site.Data.projects.conversion }}{{ if eq $key $name }}{{ $value }}{{ end }}{{ end }}</a></h2>
+                            {{ range $detailskey, $details := $.Site.Data.projects.details }}
+                            {{ if eq $detailskey $name }}
+                            <p>{{ $details.description }}</p>
+                            <a href="{{$details.github}}">See the project on GitHub</a>
+                            {{ end }}
+                            {{ end }}
+                            <h3>{{ $num := len $taxonomy.Pages }}{{ if eq $num 1 }} 1 Article {{ else }} {{ $num }} Articles{{ end }} (click to expand)</h3>
+                            <div class="articles-list" style="display:none">
+                            {{ range $taxonomy.Pages }}
+                                {{ .Render "projectsummary" }}
+                            {{ end }}
+                            </div>
+                        </li>
+                  {{ end }}
+
+                </ul>
+
+            </div>
+
+    </div><!-- /#content -->
+
+    {{ partial "footer.html" . }}
+
+    </div><!-- /#inner-wrapper -->
+</div><!-- /#wrapper -->
+
+</body>
+</html>

@@ -6,6 +6,7 @@ Date:         2015-01-03T17:28:01+11:00
 date started: 03-01-2015  
 lastmod:      2016-02-11T18:17:39+11:00
 categories:   ["Development"]
+projects:     ["Hugo Build Step for Wercker"]
 slug:         "hugo-build-step-for-wercker"
 Description:  "I mentioned that I was planning on building a step for making it easier to deploy Hugo sites using Wercker, and I've done so."
 ogimage:      "https://ig.nore.me/img/posts/hugo-build.png"

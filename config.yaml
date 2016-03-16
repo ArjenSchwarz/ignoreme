@@ -14,15 +14,16 @@ params:
 taxonomies:
   category: "categories"
   series: "series"
+  project: "projects"
 MetaDataFormat: yaml
 disqusShortname: ignoreme
 Paginate: 10
 menu:
   main:
-      - Name: "Home"
-        Identifier: "home"
-        Url: "/"
-        Weight: 1
+      - Name: "Projects"
+        Identifier: "projects"
+        Url: "/projects/"
+        Weight: 2
       - Name: "Presentations"
         Identifier: "presentations"
         Url: "/presentations/"

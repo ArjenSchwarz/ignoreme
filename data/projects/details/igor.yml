@@ -1,0 +1,2 @@
+github: "https://github.com/ArjenSchwarz/igor"
+description: "Igor is a Slack slash command, that acts like a bot. Written in Go and designed to run on AWS Lambda."

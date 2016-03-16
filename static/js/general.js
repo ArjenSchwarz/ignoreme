@@ -102,6 +102,10 @@ jQuery(document).ready(function(){
 	    true);
 	}
 
+    jQuery("#projects h3").click(function(){
+        jQuery(this).closest(".projectdetails").find(".articles-list").toggle();
+    });
+
 	/**
 	 * Homepage Tabber
 	 */
