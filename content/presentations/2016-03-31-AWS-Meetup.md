@@ -2,7 +2,7 @@
 title:        Automating Gateway Creation  
 blog:         ig.nore.me  
 author:       Arjen Schwarz  
-Date:         2016-03-30T14:33:05+11:00
+Date:         2016-03-31T18:39:31+11:00
 presentation_date:  "March 30, 2016"
 location:     "the AWS Meetup in Melbourne"
 categories:   ["AWS"]
