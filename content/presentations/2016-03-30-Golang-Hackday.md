@@ -3,7 +3,7 @@ title:        /igor introduce yourself
 blog:         ig.nore.me  
 author:       Arjen Schwarz  
 Date:         2016-03-30T14:33:05+11:00
-presentation_date:  "March 30, 2016"
+presentation_date:  "March 19, 2016"
 location:     "the Golang Hackday in Melbourne"
 categories:   ["Go"]
 slug:         "igor-introduce-yourself"
