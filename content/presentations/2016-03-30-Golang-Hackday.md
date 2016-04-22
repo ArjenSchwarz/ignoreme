@@ -5,7 +5,7 @@ author:       Arjen Schwarz
 Date:         2016-03-30T14:33:05+11:00
 presentation_date:  "March 19, 2016"
 location:     "the Golang Hackday in Melbourne"
-categories:   ["Go"]
+categories:   ["Golang"]
 slug:         "igor-introduce-yourself"
 projects:      ["Igor"]
 Description:  "For the Golang Hackday in Melbourne I gave a short presentation about Igor, my Slack bot written in Go and running on AWS Lambda. The presentation was partially aimed at beginners of Go."

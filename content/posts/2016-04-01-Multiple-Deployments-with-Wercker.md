@@ -4,7 +4,7 @@ slug:         "multiple-deployments-with-wercker"
 blog:         ig.nore.me  
 author:       Arjen Schwarz  
 Date:         2016-04-01T14:05:25+11:00
-categories:   ["Development"]
+categories:   ["CI-CD"]
 projects:     ["Igor"]
 Description:  "At the Docker birthday event last week I decided that instead of working on the Birthday Challenge I would make Igor work on Docker as well. That meant I need to deploy two versions from a single build however, and in this article I'll explain how that works."
 ---
@@ -13,7 +13,7 @@ At the Docker birthday event last week I decided that instead of working on the 
 
 # The requirements
 
-First of all, before doing anything else I needed to make some changes to Igor. The requirements for running from Docker are quite different to running it from Lambda. For one, it needed to work in a server mode, and secondly I needed to be able to pass along configuration as environment variables[^errorhandling]. 
+First of all, before doing anything else I needed to make some changes to Igor. The requirements for running from Docker are quite different to running it from Lambda. For one, it needed to work in a server mode, and secondly I needed to be able to pass along configuration as environment variables[^errorhandling].
 While the second part isn't technically needed, it means you don't need to build an extra container and can just simply run it by passing the configuration to the run command. Of course, as I had my configuration using YAML that also meant I had to support JSON. YAML is a good and very readable language for configuration files, but as it depends on indentation it isn't well suited for providing it as a variable.
 
 Making these changes wasn't too hard, so now it's possible to provide Igor with different types of configuration and you can run it in server mode with the `-server` flag. Next up is then turning it into a Docker container. This of course means building a Dockerfile for the project. My initial plan was to use an Alpine base, but eventually I realized that was unnecessary so I changed it to build [FROM scratch](https://hub.docker.com/_/scratch/). This means that the container doesn't have *anything* except what I put into it.

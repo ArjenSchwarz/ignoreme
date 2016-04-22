@@ -3,7 +3,7 @@ title:        "Publishing Go binaries with Wercker"
 blog:         ig.nore.me  
 author:       Arjen Schwarz  
 Date:         2016-03-18T13:25:53+11:00  
-categories:   ["Development"]
+categories:   ["CI-CD"]
 projects:     ["Igor"]
 slug:         "publishing-go-binaries-with-wercker"
 Description:  "For Igor I wanted to make sure that there is always a compiled, and up to date, binary ready for download. The obvious way for me to do this was using Wercker, but this turned out to be a bit more work than I expected, so I'm documenting it here."
@@ -76,9 +76,9 @@ This final build step is simply a matter of zipping everything up, copying it to
 
 # Deploying this to GitHub
 
-For the actual deployment I found a good and easy to use step. The [tcnksm/ghr](https://github.com/tcnksm/ghr) step does exactly what I need it to. It will upload all the files in a directory to a release version, and offers the ability to replace these files if they already exist. 
+For the actual deployment I found a good and easy to use step. The [tcnksm/ghr](https://github.com/tcnksm/ghr) step does exactly what I need it to. It will upload all the files in a directory to a release version, and offers the ability to replace these files if they already exist.
 
-```yaml 
+```yaml
 deploy:
  steps:
    - tcnksm/ghr:

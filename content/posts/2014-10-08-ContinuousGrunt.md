@@ -5,7 +5,7 @@ Blog:         ig.nore.me
 Author:       Arjen Schwarz   
 Date:         2014-10-08T08:20:59+11:00
 Date started: 29-09-2014   
-Categories:   ["Development"]   
+Categories:   ["CI-CD"]   
 Description:  "When generating frontend assets, you don't want to add these generated files to your repository but it's not always possible or easy to generate them on the production server either. In this article I'll describe how to solve this issue using Jenkins."
 ogimage:      "https://ig.nore.me/img/posts/deploybot.png"
 ---
@@ -49,7 +49,7 @@ namespace :grunt do
 end
 ```
 
-Unfortunately, this solution has its own problems. 
+Unfortunately, this solution has its own problems.
 
 The first issue is one of server maintenance. If you only have one server to deal with and you have complete control over it that might not be a problem, but scaling once again kicks in here.    
 While tools like [Puppet](http://puppetlabs.com), [Chef](https://www.getchef.com), or [Ansible](http://www.ansible.com) help a lot in ensuring your servers have a consistent setup it is still a lot of potential extra maintenance work. And if you build your site or web app for a client you might not have the level of control over the server that you would need for this anyway.
@@ -60,7 +60,7 @@ To summarise, we don't want to store the generated files in the repository as th
 
 # How do we solve this?
 
-Enter [Jenkins](http://jenkins-ci.org). 
+Enter [Jenkins](http://jenkins-ci.org).
 
 Regardless of what you're building, a Continuous Integration system is useful. As I've explained in a [previous article](https://ig.nore.me/2014/09/and-we-ve-gone-static/), I generate and deploy this site using a similar tool. While an introduction to Jenkins falls outside of the purpose of this article, you should still be able to follow along without any knowledge of the system.
 

@@ -5,7 +5,7 @@ author:       Arjen Schwarz
 Date:         2015-01-03T17:28:01+11:00   
 date started: 03-01-2015  
 lastmod:      2016-02-11T18:17:39+11:00
-categories:   ["Development"]
+categories:   ["CI-CD"]
 projects:     ["Hugo Build Step for Wercker"]
 slug:         "hugo-build-step-for-wercker"
 Description:  "I mentioned that I was planning on building a step for making it easier to deploy Hugo sites using Wercker, and I've done so."
@@ -24,7 +24,7 @@ If you're familiar with both Hugo and Wercker, all you require to know is that t
 
 # Short Wercker introduction
 
-Wercker is a continuous integration tool. This basically means you can make it do all the hard and boring work for you that you don't really want or need to do. 
+Wercker is a continuous integration tool. This basically means you can make it do all the hard and boring work for you that you don't really want or need to do.
 
 It does this by using steps. These steps can be anything from running jshint to building entire applications.
 

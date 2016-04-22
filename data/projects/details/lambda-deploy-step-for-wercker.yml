@@ -1,0 +1,2 @@
+github: "https://github.com/ArjenSchwarz/wercker-step-deploy-lambda"
+description: "A deploy step for Wercker that allows you to deploy Lambda functions"
