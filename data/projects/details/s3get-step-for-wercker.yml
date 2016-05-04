@@ -1,0 +1,2 @@
+github: https://github.com/ArjenSchwarz/wercker-step-s3get
+description: A Wercker step for retrieving single files from S3
