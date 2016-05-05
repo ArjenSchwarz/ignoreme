@@ -19,11 +19,11 @@
             <div id="projects">
                 <ul>
                     {{ range $name, $taxonomy := .Site.Taxonomies.projects }}
+                    {{ $urlname := $name | urlize }}
                         <li class="projectdetails">
                           {{ range $key, $projectdetails := $.Site.Data.projects.details }}
-                          {{ if eq $key $name }}
-                            <h2><a href="/projects/{{ $name | urlize }}">{{ $projectdetails.name }}</a></h2>
-
+                          {{ if eq $key $urlname }}
+                            <h2><a href="/projects/{{ $urlname }}">{{ $name }}</a></h2>
                             <p>{{ $projectdetails.description }}</p>
                             <a href="{{$projectdetails.github}}">See the project on GitHub</a>
                             <h3>{{ $num := len $taxonomy.Pages }}{{ if eq $num 1 }} 1 Article {{ else }} {{ $num }} Articles{{ end }} (click to expand)</h3>
