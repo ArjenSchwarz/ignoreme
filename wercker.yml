@@ -3,7 +3,7 @@ build:
   steps:
     - arjen/hugo-build:
         version: "0.15"
-        disable_pygments: "true"
+        disable_pygments: true
         flags: --preserveTaxonomyNames=true
 deploy:
   steps:
