@@ -1,2 +1,3 @@
+name: "Hugo Build Step for Wercker"
 github: "https://github.com/ArjenSchwarz/wercker-step-hugo-build"
 description: "A build step for Wercker that allows you to create your Hugo site automatically"

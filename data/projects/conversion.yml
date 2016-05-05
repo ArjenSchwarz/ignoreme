@@ -1,5 +1,0 @@
-hugo-build-step-for-wercker: "Hugo Build Step for Wercker"
-igor: "Igor"
-aqua: "Aqua"
-lambda-deploy-step-for-wercker: "Lambda Deploy Step for Wercker"
-s3get-step-for-wercker: "S3Get Step for Wercker"

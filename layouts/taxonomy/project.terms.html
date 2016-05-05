@@ -20,19 +20,19 @@
                 <ul>
                     {{ range $name, $taxonomy := .Site.Taxonomies.projects }}
                         <li class="projectdetails">
-                            <h2><a href="/projects/{{ $name | urlize }}">{{ range $key, $value := $.Site.Data.projects.conversion }}{{ if eq $key $name }}{{ $value }}{{ end }}{{ end }}</a></h2>
-                            {{ range $detailskey, $details := $.Site.Data.projects.details }}
-                            {{ if eq $detailskey $name }}
-                            <p>{{ $details.description }}</p>
-                            <a href="{{$details.github}}">See the project on GitHub</a>
-                            {{ end }}
-                            {{ end }}
+                          {{ range $key, $projectdetails := $.Site.Data.projects.details }}
+                          {{ if eq $key $name }}
+                            <h2><a href="/projects/{{ $name | urlize }}">{{ $projectdetails.name }}</a></h2>
+
+                            <p>{{ $projectdetails.description }}</p>
+                            <a href="{{$projectdetails.github}}">See the project on GitHub</a>
                             <h3>{{ $num := len $taxonomy.Pages }}{{ if eq $num 1 }} 1 Article {{ else }} {{ $num }} Articles{{ end }} (click to expand)</h3>
                             <div class="articles-list" style="display:none">
                             {{ range $taxonomy.Pages }}
                                 {{ .Render "projectsummary" }}
                             {{ end }}
                             </div>
+                            {{ end }}{{ end }}
                         </li>
                   {{ end }}
 
