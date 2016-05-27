@@ -4,6 +4,7 @@ slug:         "bitbucket-pipelines-a-first-look"
 blog:         ig.nore.me  
 author:       Arjen Schwarz  
 Date:         2016-05-26T21:10:45+10:00
+lastmod:    2016-05-27T15:30:53+10:00
 categories:   ["CI-CD"]
 Description:  "Pipelines seems to be almost as popular as machine learning right now and earlier this week Atlassian announced that Bitbucket now has them built in as well. Or rather, it's in beta. Naturally, I was interested so I decided to take it for a spin. This article shows how I set it up for one of my existing projects, and I'll go into the good parts and the limitations."
 ---
@@ -121,17 +122,27 @@ There is also a log overview available if you click on one of these. This provid
 
 # Limitations
 
-Setting up this configuration took a couple of hours, and a lot of that was figuring out what does and doesn't work. Doing so I therefore ran into a number of limitations and things I'd like to see improved. There is a [list of known limitations][limitations] already (which includes things like building Docker containers) but there were others I ran into. I provided these to Atlassian using the ubiquitous feedback forms, but I'll list my main points here as well.
+<div class='ignoreme-update'>
+<strong>Update May 27, 2016:</strong>I saw the correct place to file feature requests, so I added them there and put links to these proposals in the relevant section below.
+</div>
+
+Setting up this configuration took a couple of hours, and a lot of that was figuring out what does and doesn't work. Doing so I therefore ran into a number of limitations and things I'd like to see improved. There is a [list of known limitations][limitations] already (which includes things like building Docker containers) but there were others I ran into. I provided these to Atlassian using their bug tracker, but I'll list my main points here as well.
 
 ## No inheritance
+
+[#12749 - Inheritance/extending of steps](https://bitbucket.org/site/master/issues/12749/inheritance-extending-of-steps)
 
 The downside of the branches/default structure is that only ever one path will be chosen. That means if you have an extensive build configuration, but your master branch should also do a deployment, you will need to define this whole setup multiple times. Defining the same thing in multiple places will eventually almost always end up causing issues, so I'd really like it if there was some sort of inheritance structure possible. Maybe a way to define an `all:` section with shared commands, or an `extend:` command.
 
 ## Just one step
 
+[#12750 - Allow multiple steps](https://bitbucket.org/site/master/issues/12750/allow-multiple-steps)
+
 Having one step per section is annoying as it means you can't organize your commands properly. Everything turns into one long list, without a way to see why something is done. Splitting a list up in sections like `prepare`, `build`, and `deploy` will make this far more legible and therefore more maintainable. I suspect this is something they'll be looking at regardless of my feature request.
 
 ## Only a script option
+
+[#12751 - Allow more capable steps that can be reused](https://bitbucket.org/site/master/issues/12751/allow-more-capable-steps-that-can-be)
 
 Right now it's only possible to write a script, or rather a list of commands. To make it a lot more powerful I'd love to see them offer the ability to use custom steps that you can share across projects. For example, the AWS integration for [posting something to Lambda][lambdaintegration] right now involves adding a file to your project and installing its dependencies through your yaml file. Having a specific and reusable step that includes all the requirements to do this instead allows for far greater flexibility.
 
