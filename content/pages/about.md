@@ -1,9 +1,9 @@
 ---
 date: 2013-08-24T20:24:11+10:00
-lastmod: 2016-03-05T14:05:10+11:00
+lastmod: 2016-06-09T17:10:19+10:00
 title: About
 slug: about
-menu: 
+menu:
     main:
         weight: 4
 ---
@@ -23,7 +23,7 @@ The posts on the site are mostly posts by me, with the occasional linkpost to ot
 
 {{% figure src="/img/profilepicsmall.jpg" title="This is me" class="fr" %}}
 
-My name is Arjen, and I'm a Dutch guy currently living in Melbourne, Australia. I ended up here after travelling around for a bit and decided to stick around. At the moment I'm simply enjoying live here, and waiting for my new visa to come through so I can start my new job as ☁️🔧. If you want more information about who I am and my travels, you can do so on my travel blog at [arjen.eu](http://www.arjen.eu).
+My name is Arjen, and I'm a Dutch guy currently living in Melbourne, Australia. I ended up here after travelling around for a bit and decided to stick around. At the moment I'm simply enjoying live here, and have recently started my new job as Cloud Solutions Engineer at [Bulletproof](http://www.bulletproof.net). If you want more information about who I am and my travels, you can do so on my travel blog at [arjen.eu](https://www.arjen.eu).
 
 As for my experience in the matters on this site; since 2005 I've been either a developer, project manager or manager of a development team at any one time. I am happy in all of these roles and will always try to learn from anyone I meet.
 Aside from that, I'm also an AWS certified Solutions Architect which hopefully proves that I know at least a little bit about that.
