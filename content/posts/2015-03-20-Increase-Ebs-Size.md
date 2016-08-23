@@ -5,6 +5,7 @@ author:       Arjen Schwarz
 Date:         2015-03-20T08:13:14+11:00  
 date started: 19-03-2015
 date posted:  20-03-2015
+lastmod:      2016-08-23T17:47:39+10:00
 categories:   ["AWS"]
 slug:         "increasing-the-size-of-a-root-ebs-volume"
 Description:  "Sometimes the default size for your root volume in an EC2 instance isn't good enough. As there is no clear documentation on the best way to do this for CloudFormation managed instances, I'm describing my methods for increasing the size here."
@@ -18,6 +19,10 @@ When creating an EC2 instance it is usually set to use the default 8GB EBS root 
 That means we need to increase the size of the root volume. First off, you need to realise that this cannot be done without any downtime. If your servers are loadbalanced, make sure to only update them one at a time to prevent downtime.
 
 There are explanations of how to [increase the size of volumes](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-expand-volume.html), but these are not compatible with CloudFormation and your root device might be replaced the next time you do an update. Obviously, that is not a desired outcome.
+
+<div class='ignoreme-update'>
+<strong>Update August 23, 2016:</strong> While everything in here is correct, I've found that for certain AMIs the disk won't always be resized automatically. I've written a <a href="/2016/08/increasing-the-size-of-a-redhat-based-ebs-volume/">separate article</a> on how I dealt with those cases.
+</div>
 
 # The CloudFormation solution
 
