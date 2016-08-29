@@ -4,6 +4,7 @@ slug:         "building-redhat-amis-with-packer-and-ansible"
 blog:         ig.nore.me  
 author:       Arjen Schwarz  
 Date:         2016-08-17T08:32:50+10:00
+lastmod:      2016-08-29T16:20:08+10:00
 categories:   ["AWS"]
 Description:  "Because Redhat-based OSes are slightly different from Debian-based ones, I ran into some issues provisioning an AMI with Ansible and Packer. This article is to ensure I can find the solution quickly in the future."
 ---
@@ -69,5 +70,15 @@ Are you sure you want to continue connecting (yes/no)? yes
 
 After having done all of the above, everything worked as intended.
 
+<div class='ignoreme-update'>
+<strong>Update August 29, 2016:</strong> Another, obvious, solution for this is to set the correct sftp path in your Packer configuration. The below shows how this looks.
+</div>
+
+```json
+"sftp_command": "/usr/libexec/openssh/sftp-server -e",
+"ansible_env_vars": ["ANSIBLE_HOST_KEY_CHECKING=false"]
+```
+
+With this setup you still want the same configuration for host key checking to prevent the authenticity complaint, but you'll be using the regular SFTP Ansible setup.
 
 [sshsolution]: https://github.com/ansible/ansible/issues/13401
