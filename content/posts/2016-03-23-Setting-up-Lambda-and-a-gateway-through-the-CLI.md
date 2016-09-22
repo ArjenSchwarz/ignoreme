@@ -4,6 +4,7 @@ slug:         "setting-up-lambda-and-a-gateway-through-the-cli"
 blog:         ig.nore.me  
 author:       Arjen Schwarz  
 Date:         2016-03-23T15:34:59+11:00
+lastmod:      2016-09-23T09:54:55+10:00
 categories:   ["AWS"]
 projects:     ["Igor"]
 Description:  "When I set up Igor in Lambda for the first time, I mostly followed the directions as provided in a Lambda template. This template has a description of all the steps that need to be taken, but to be honest it's a bit unwieldy. So I created a script to do this for me."
@@ -139,7 +140,7 @@ aws apigateway put-method-response \
 --status-code 200 \
 --response-models "{}"
 --region ${REGION}
-	
+
 aws apigateway put-integration-response \
 --rest-api-id ${APIID} \
 --resource-id ${RESOURCEID} \
@@ -162,6 +163,7 @@ At this point we have a Lambda function and an API Gateway, but despite having c
 We want to set up two permissions. The first so you can run a test command from either the command line or the test function in the Console, and one for the actual production environment used for external calls.
 
 ```bash
+APIARN=$(echo ${LAMBDAARN} | sed -e 's/lambda/execute-api/' -e "s/function:${NAME}/${APIID}/")
 aws lambda add-permission \
 --function-name ${NAME} \
 --statement-id apigateway-igor-test-2 \
@@ -195,5 +197,3 @@ https://${APIID}.execute-api.${REGION}.amazonaws.com/prod/igor"
 [^4]:	Remember, you can always just download this zip file from the Igor repository as it's updated with every commit to master.
 
 [^5]:	ARNception?
-
-
