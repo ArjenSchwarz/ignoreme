@@ -3,6 +3,7 @@ title:        Increasing the size of a Redhat-based EBS volume
 blog:         ig.nore.me  
 author:       Arjen Schwarz  
 Date:         2016-08-23T17:47:31+10:00
+lastmod:      2016-10-31T19:47:09+11:00
 categories:   ["AWS"]
 slug:         "increasing-the-size-of-a-redhat-based-ebs-volume"
 Description:  "While following my own steps for resizing an EBS volume, I discovered that Redhat-based systems require more."
@@ -31,6 +32,10 @@ The filesystem is already 1234567 blocks long.  Nothing to do!
 [rootebs]: /2015/03/increasing-the-size-of-a-root-ebs-volume/
 
 # The solution
+
+<div class='ignoreme-update'>
+<strong>Update October 31, 2016:</strong> There are a couple of alternative, and probably better, solutions in the comments. Make sure to read those as well as they might suit your situation better.
+</div>
 
 So, with nothing happening automatically, eventually[^stack] I turned my attention to a solution using fdisk as proposed in this [Stackoverflow answer][fdiskso]. Obviously, this solution involves manually doing things, so instead I turned it into a script.
 
