@@ -1,5 +1,5 @@
 ---
-title:        Technology in China: An Observation
+title:        "Technology in China: An Observation"
 slug:         technology-in-china-an-observation
 blog:         ig.nore.me  
 author:       Arjen Schwarz  
