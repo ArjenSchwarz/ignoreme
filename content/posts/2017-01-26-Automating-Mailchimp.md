@@ -4,7 +4,7 @@ slug:       automating-mailchimp
 blog:         ig.nore.me  
 author:       Arjen Schwarz  
 Date:          2017-01-26T17:41:44+11:00
-categories:   "Workflows"
+categories:   ["Workflows"]
 Description:  "As you may be aware, I sent updates of this site out by email. Since the very start I've used Convertkit for this, but this was getting too expensive. However, it was the only email service I found that will immediately send an email instead of on a schedule. So, I had to automate this."
 ---
 
