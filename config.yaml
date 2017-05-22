@@ -18,6 +18,18 @@ taxonomies:
 MetaDataFormat: yaml
 disqusShortname: ignoreme
 Paginate: 10
+outputFormats:
+  jsonfeed:
+    mediaType: "application/json"
+    baseName: "feed"
+    isPlainText: true
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSONFEED"
+  page:
+    - "HTML"
 menu:
   main:
       - Name: "Projects"

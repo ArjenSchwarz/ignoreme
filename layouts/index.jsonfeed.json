@@ -1,0 +1,22 @@
+{
+  "version": "https://jsonfeed.org/version/1",
+  "title": "{{ .Site.Title }}",
+   "home_page_url": "{{ .Permalink }}",
+   "feed_url": "{{ .Permalink }}feed.json",
+   "favicon": "{{ .Permalink }}favicon-192.png",
+   "author": {
+     "url": "https://www.twitter.com/ArjenSchwarz",
+     "name": "Arjen Schwarz",
+     "avatar": "{{ .Permalink }}img/profilepicsmall.jpg"
+   },
+   "items": [ {{ range $index, $item := first 15 .Data.Pages }}{{if $index}}, {{end}}
+      {
+       "id": "{{ .Permalink }}",
+       "title": "{{ .Title }}",
+       "url": "{{ if isset .Params "redirect" }}{{ .Params.redirect }}{{ else }}{{ .Permalink }}{{ end }}",
+       "content_html": "{{ replace .Content "\n" ""}}{{ if isset .Params "redirect" }}<p><a href="{{ .Permalink }}">Read on site</a></p>{{ end }}",
+       "summary": "{{ .Summary }}",
+       "date_published": "{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 MST" }}"
+     }{{ end }}
+   ]
+}
