@@ -2,7 +2,6 @@ box: debian
 build:
   steps:
     - arjen/hugo-build:
-        version: "0.16"
         disable_pygments: true
         flags: --preserveTaxonomyNames=true
 deploy:
