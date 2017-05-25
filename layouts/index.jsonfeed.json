@@ -9,7 +9,7 @@
      "name": "Arjen Schwarz",
      "avatar": "{{ .Permalink }}img/profilepicsmall.jpg"
    },
-   "items": [ {{ range $index, $item := first 20 .Data.Pages }}{{if $index}}, {{end}}
+   "items": [ {{ range $index, $item := first 15 .Data.Pages }}{{if $index}}, {{end}}
       {
        "id": "{{ .Permalink }}",
        "title": "{{ .Title }}",
@@ -17,7 +17,7 @@
        "content_html": "{{ replace .Content "\n" "" | replaceRE "\"" "\\\""}}{{ if isset .Params "redirect" }}<p><a href="{{ .Permalink }}">Read on site</a></p>{{ end }}",
        "summary": "{{ replace .Summary "\n" "" }}",
        {{ if isset .Params "ogimage" }}"image": "{{ .Params.ogimage }}",{{ end }}
-       "date_published": "{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 MST" }}"
+       "date_published": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}"
      }{{ end }}
    ]
 }
