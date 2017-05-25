@@ -12,4 +12,4 @@ deploy:
         key_secret: $AWS_SECRET_ACCESS_KEY
         bucket_url: $AWS_BUCKET_URL
         source_dir: public/
-        opts: --cf-invalidate
+        opts: --cf-invalidate --default-mime-type=application/json
