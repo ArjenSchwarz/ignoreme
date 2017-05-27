@@ -1,0 +1,3 @@
+{
+  {{ range $index, $item := .Data.Pages }}{{if $index}}, {{end}}"{{ .Title }}": "{{ .RelPermalink }}"{{ end }}
+}

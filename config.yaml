@@ -10,7 +10,9 @@ permalinks:
 params:
   Subtitle: "Connecting the dots"
   AuthorName: "Arjen Schwarz"
+  AuthorAvatar: "https://ig.nore.me/img/profilepicsmall.jpg"
   GitHubUser: "ArjenSchwarz"
+  TwitterPage: "https://www.twitter.com/ArjenSchwarz"
 taxonomies:
   category: "categories"
   series: "series"
@@ -23,13 +25,18 @@ outputFormats:
     mediaType: "application/json"
     baseName: "feed"
     isPlainText: true
+  links:
+    mediaType: "application/json"
+    baseName: "links"
+    isPlainText: true
 outputs:
   home:
-    - "HTML"
-    - "RSS"
-    - "JSONFEED"
+    - "html"
+    - "rss"
+    - "jsonfeed"
+    - "links"
   page:
-    - "HTML"
+    - "html"
 menu:
   main:
       - Name: "Projects"
