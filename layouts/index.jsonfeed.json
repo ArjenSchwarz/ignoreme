@@ -5,9 +5,9 @@
    "feed_url": "{{ .Permalink }}feed.json",
    "favicon": "{{ .Permalink }}favicon-192.png",
    "author": {
-     "url": "https://www.twitter.com/ArjenSchwarz",
-     "name": "Arjen Schwarz",
-     "avatar": "{{ .Permalink }}img/profilepicsmall.jpg"
+     "url": "{{ .Site.Params.TwitterPage }}",
+     "name": "{{ .Site.Params.AuthorName }}",
+     "avatar": "{{ .Site.Params.AuthorAvatar }}"
    },
    "items": [ {{ range $index, $item := first 15 .Data.Pages }}{{if $index}}, {{end}}
       {
@@ -15,7 +15,7 @@
        "title": "{{ .Title }}",
        "url": "{{ if isset .Params "redirect" }}{{ .Params.redirect }}{{ else }}{{ .Permalink }}{{ end }}",
        "content_html": "{{ replace .Content "\n" "" | replaceRE "\"" "\\\""}}{{ if isset .Params "redirect" }}<p><a href="{{ .Permalink }}">Read on site</a></p>{{ end }}",
-       "summary": "{{ replace .Summary "\n" "" }}",
+       "summary": "{{ replace .Summary "\n" "" | replaceRE "\"" "\\\"" }}",
        {{ range $taxonomy := .Params.categories }}"banner_image": "https://ig.nore.me/img/categories/category-{{ $taxonomy | urlize }}-full.jpg",{{ end }}
        {{ if isset .Params "ogimage" }}"image": "{{ .Params.ogimage }}",{{ end }}
        "date_published": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}"
