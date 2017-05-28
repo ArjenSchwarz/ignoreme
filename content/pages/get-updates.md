@@ -11,7 +11,7 @@ In case you want to know when I post new articles it's unlikely that you will wa
 
 ## RSS
 
-If you use an RSS reader, [there is a feed available](/index.xml).
+If you use an RSS reader, there are feeds available. Either [traditional RSS feed](/index.xml) or [JSON Feed](/feed.json) which you should only use if you know your reader supports it.
 
 ## Email
 
