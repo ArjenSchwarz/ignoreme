@@ -4,6 +4,7 @@ slug:         json-feed-and-hugo-output-formats
 blog:         ig.nore.me  
 author:       Arjen Schwarz  
 Date:        2017-05-28T16:05:42+10:00
+lastmod:     2017-05-30T22:00:49+10:00
 categories:   ["Development"]
 Description:  "Last week JSONFeed, an RSS/Atom alternative using JSON, was introduced and to me that seemed like a good excuse to play around with Hugo's new Output Formats."
 ---
@@ -71,8 +72,8 @@ For a JSON Feed attached to the homepage that means a `index.jsonfeed.json` in t
        "id": "{{ .Permalink }}",
        "title": "{{ .Title }}",
        "url": "{{ if isset .Params "redirect" }}{{ .Params.redirect }}{{ else }}{{ .Permalink }}{{ end }}",
-       "content_html": "{{ replace .Content "\n" "" | replaceRE "\"" "\\\""}}{{ if isset .Params "redirect" }}<p><a href="{{ .Permalink }}">Read on site</a></p>{{ end }}",
-       "summary": "{{ replace .Summary "\n" "" | replaceRE "\"" "\\\"" }}",
+       "content_html": "{{ replace .Content "\n" "\\n" | replaceRE "\"" "\\\""}}{{ if isset .Params "redirect" }}<p><a href="{{ .Permalink }}">Read on site</a></p>{{ end }}",
+       "summary": "{{ replace .Summary "\n" "\\n" | replaceRE "\"" "\\\"" }}",
        {{ range $taxonomy := .Params.categories }}"banner_image": "https://ig.nore.me/img/categories/category-{{ $taxonomy | urlize }}-full.jpg",{{ end }}
        {{ if isset .Params "ogimage" }}"image": "{{ .Params.ogimage }}",{{ end }}
        "date_published": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
@@ -82,7 +83,7 @@ For a JSON Feed attached to the homepage that means a `index.jsonfeed.json` in t
 }
 ```
 
-Obviously, because it's JSON there are some requirements such as no linebreaks in the contents and the need to escape all double quotes. But other than that it's all about following the [JSON Feed spec](https://jsonfeed.org/version/1). There are a couple of things in here that are specific to this site, so make sure you adopt this to your own needs.
+Obviously, because it's JSON there are some requirements such as the need to escape all newlines and double quotes. But other than that it's all about following the [JSON Feed spec](https://jsonfeed.org/version/1). There are a couple of things in here that are specific to this site, so make sure you adapt the template to your own needs.
 
 In the end though, while I spent a little bit of time figuring out Output Formats[^3] the Output Formats work well and provide an easy way to extend your site's capabilities. It's given me some ideas to try out and of course, if you really want to you can now follow this site on its new [JSON Feed](/feed.json).
 
