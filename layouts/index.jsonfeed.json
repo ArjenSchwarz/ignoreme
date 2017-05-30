@@ -14,8 +14,8 @@
        "id": "{{ .Permalink }}",
        "title": "{{ .Title }}",
        "url": "{{ if isset .Params "redirect" }}{{ .Params.redirect }}{{ else }}{{ .Permalink }}{{ end }}",
-       "content_html": "{{ replace .Content "\n" "" | replaceRE "\"" "\\\""}}{{ if isset .Params "redirect" }}<p><a href="{{ .Permalink }}">Read on site</a></p>{{ end }}",
-       "summary": "{{ replace .Summary "\n" "" | replaceRE "\"" "\\\"" }}",
+       "content_html": "{{ replace .Content "\n" "\\n" | replaceRE "\"" "\\\""}}{{ if isset .Params "redirect" }}<p><a href="{{ .Permalink }}">Read on site</a></p>{{ end }}",
+       "summary": "{{ replace .Summary "\n" "\\n" | replaceRE "\"" "\\\"" }}",
        {{ range $taxonomy := .Params.categories }}"banner_image": "https://ig.nore.me/img/categories/category-{{ $taxonomy | urlize }}-full.jpg",{{ end }}
        {{ if isset .Params "ogimage" }}"image": "{{ .Params.ogimage }}",{{ end }}
        "date_published": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
