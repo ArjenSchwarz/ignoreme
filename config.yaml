@@ -35,7 +35,6 @@ outputs:
     - "rss"
     - "jsonfeed"
     - "links"
-    - "feed2"
   page:
     - "html"
 menu:
