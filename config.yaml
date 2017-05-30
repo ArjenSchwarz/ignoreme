@@ -25,6 +25,10 @@ outputFormats:
     mediaType: "application/json"
     baseName: "feed"
     isPlainText: true
+  feed2:
+    mediaType: "application/json"
+    baseName: "feed2"
+    isPlainText: true
   links:
     mediaType: "application/json"
     baseName: "links"
@@ -35,6 +39,7 @@ outputs:
     - "rss"
     - "jsonfeed"
     - "links"
+    - "feed2"
   page:
     - "html"
 menu:
