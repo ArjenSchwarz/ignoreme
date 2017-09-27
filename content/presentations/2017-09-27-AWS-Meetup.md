@@ -14,8 +14,6 @@ Description:  "This talk focuses on hardening your AWS environment using only th
 
 Security is many things but easy is not one of them. This talk was given at the AWS User group meetup in Melbourne on the 27th of September, 2017. It focuses on showing you how to harden your environment using only tools that AWS provides and contains practical solutions ranging from basic to advanced. You can either watch the recording or read below for a textual version.
 
-*This article is cross-posted on the [Bulletproof blog](https://www.bulletproof.net.au/resources/bulletproof-blog/).*
-
 # Security
 
 Before we move on to the more practical side of things, let's have a quick definition on what security is, why it's important, and how AWS can help you with this.
