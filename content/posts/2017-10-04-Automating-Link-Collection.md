@@ -4,7 +4,7 @@ slug:       automating-link-collection
 blog:         ig.nore.me  
 author:       Arjen Schwarz  
 Date:         2017-10-04T22:41:48+11:00
-categories:   "Workflows"
+categories:   ["Workflows"]
 Description:  "When I write something on this site I often refer to a previous article. So today I'll be detailing how I've made my life easier to do so on both iOS and macOS."
 ---
 
