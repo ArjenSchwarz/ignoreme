@@ -76,13 +76,13 @@ We need to do two things to make this work. First we add extra functionality to 
 
 We start by declaring a target named `grunt` that depends on all the other commands. This `grunt` target is then added to the main `build` target. The only purpose of this target is to make it more organised.
 
-```markup
+```xml
 <target name="grunt" depends="npm_install,bower_install,grunt_build,add_dist,commit_dist" />
 ```
 
 Next we define the commands that install the dependencies and the actual `grunt build` command. Here this consists of installing both npm and bower dependencies before we run grunt. We don't want the build to succeed if there is a failure in this process, which is why the failonerror flag is on the last step.
 
-```markup
+```xml
 <target name="npm_install" description="Install NPM dependencies">
     <exec executable="npm">
         <arg value="install"/>
@@ -104,7 +104,7 @@ Next we define the commands that install the dependencies and the actual `grunt 
 
 And lastly we will add these generated files, using the `-f` flag because this directory should be in your `.gitignore`, and finally commit these changes.
 
-```markup
+```xml
 <target name="add_dist" description="Add generated files">
     <exec executable="git">
         <arg value="add"/>

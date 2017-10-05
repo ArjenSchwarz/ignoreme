@@ -46,17 +46,19 @@ Another decision concerning these plugins is that they are designed to handle mu
 
 Because of this, I made the decision to make a lot of things configurable through the settings file. A good example of this is the (Random) Tumblr plugin. This plugin lets you collect an image and title from a Tumblr blog. Instead of having a separate plugin for every single Tumblr blog, it takes advantage of the fact that Tumblr blogs are very similar so you can configure them in the settings file. You'll still need to understand a little of what is needed, but the below code is from the example config file, and allows you to get images from the DevOps and Security Reactions Tumblrs through `/igor tumblr devops` and `/igor tumblr infosec` respectively. Running `/igor tumblr` on the other hand will randomly pick one of these configured blogs to pull from.
 
-    randomtumblr:
-     devops:
-           name: DevOps Reactions
-           url: "http://devopsreactions.tumblr.com"
-           image_src: ".item img"
-           title_src: ".post_title"
-     infosec:
-           name: Security Reactions
-           url: "http://securityreactions.tumblr.com"
-           image_src: "#posts .body-text img"
-           title_src: "#posts .post-content .title"
+```yaml
+randomtumblr:
+  devops:
+    name: DevOps Reactions
+    url: "http://devopsreactions.tumblr.com"
+    image_src: ".item img"
+    title_src: ".post_title"
+  infosec:
+    name: Security Reactions
+    url: "http://securityreactions.tumblr.com"
+    image_src: "#posts .body-text img"
+    title_src: "#posts .post-content .title"
+```
 
 The plugin can parse this and so knows exactly where to get the images it needs to display. This way it's really easy to add any Tumblr you want, without the need to download the source and write your own plugin.
 
@@ -64,7 +66,7 @@ As this article is meant to introduce Igor, I'm not diving into the internals ye
 
 # Using Igor
 
-If you wish to use Igor right now, that's certainly possible. I have it running for a couple of Slack teams now, and am writing new plugins all the time. Of course, I realise that setting up and configuring a Lambda function can be a bit of a challenge. Which is why I created a script that automates all of that[^6]. 
+If you wish to use Igor right now, that's certainly possible. I have it running for a couple of Slack teams now, and am writing new plugins all the time. Of course, I realise that setting up and configuring a Lambda function can be a bit of a challenge. Which is why I created a script that automates all of that[^6].
 
 Additionally, every time some code is pushed up to the master branch it will automatically create a zip file with everything you need. After the initial setup that means an update consists of downloading this file, adjusting the configuration file, and uploading it to Lambda.
 

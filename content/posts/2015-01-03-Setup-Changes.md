@@ -16,7 +16,7 @@ Over the Christmas break I made some time to implement changes to my AWS setup t
 First of all, I moved my other site [www.arjen.eu](https://www.arjen.eu) to Hugo as well. I use that site for writing about my travels, and I'd gotten so fed up with the old Wordpress way of handling all of it that I wanted to work with it the same way as I do this site.
 
 As I've already gone into details about how that works in a [previous article](/2014/09/and-we-ve-gone-static/) I'll skip the details. However, as doing things exactly the same is boring I did decide to make a small change and so I'm hosting it on GitHub Pages instead of S3.   
-The Hugo documentation site has an extensive explanation of how to do all of this, but not only did it seem overly complicated to me it involved manually publishing the generated code. 
+The Hugo documentation site has an extensive explanation of how to do all of this, but not only did it seem overly complicated to me it involved manually publishing the generated code.
 
 Obviously I'm not in favour of manually doing boring things that can easily be automated as that's the whole point of having computers. Luckily using [Wercker](http://wercker.com) this was even easier than doing it for an S3 bucket as all the work was already done through publicly available steps.
 
@@ -32,8 +32,9 @@ The first and last step require no further explanation as only the Wercker confi
 
 For the `wercker.yml` file I then copied the one from this site and changed the deploy steps to use the step I found as shown below.
 
-```ini
+```yaml
 box: wercker/default
+# comment
 build:
   steps:
     - script:

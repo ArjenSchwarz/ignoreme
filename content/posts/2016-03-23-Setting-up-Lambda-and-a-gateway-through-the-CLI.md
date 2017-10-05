@@ -30,7 +30,7 @@ The complete script first does some checks if a role by this name already exists
 
 First a role needs to be created, and for this you need a Trust Document. The Trust Document is a JSON file that shows the principal service the role will be attached to, in this case Lambda.
 
-```javascript
+```json
 {
  "Version": "2012-10-17",
  "Statement": {

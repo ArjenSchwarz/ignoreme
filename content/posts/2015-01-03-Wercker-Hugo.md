@@ -60,7 +60,7 @@ The following two examples are from the configuration for this site as well as m
 
 This shows an example of building the site with my step, and then deploying it to Amazon S3.
 
-```ini
+```yaml
 box: wercker/default
 build:
   steps:
@@ -80,7 +80,7 @@ deploy:
 
 This example builds the site once again using my step, but the deployment is to GitHub Pages instead.
 
-```ini
+```yaml
 box: wercker/default
 build:
   steps:
@@ -98,7 +98,7 @@ deploy:
 
 The same example as above, but this time using a theme and optional flags
 
-```ini
+```yaml
 box: wercker/default
 build:
   steps:

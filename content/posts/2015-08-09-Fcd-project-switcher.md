@@ -31,10 +31,12 @@ While it took a lot of trial and error, the end result is actually fairly simple
 
 Saying it's simple is easy, but let's have a look at how it works.
 The method `fcd()` is the basis of it all, but before that can be used we need to define `$FCD_BASEDIR` in our `.zshrc` config file.
+
 ```bash
 FCD_BASEDIR=($HOME/projects/*/sites $HOME/projects/*/servers $GOPATH/src/github.com/arjenschwarz)
 ```
 This configuration gives me 3 sets of possible sources for my projects to be located. And as you can see, wildcards are accepted.
+
 ```bash
 fcd() {
     DIRS=("${(@f)$(find ${FCD_BASEDIR} -mindepth 1 -maxdepth 1 -type d -path "*$1*" ! -iname ".*")}")
@@ -47,13 +49,17 @@ fcd() {
     fi
 }
 ```
+
 `fcd()` will now use [find](http://manpages.org/find) to look at the children of the `$FCD_BASEDIR` paths. Each (non-hidden) directory in there will be matched against the first argument. It will always switch to the first result, but if multiple results are found it will also show a list of all matches.
 
 Next is the autocompletion.
+
 ```bash
 compdef _fcd fcd
 ```
+
 Using the zsh method `compdef` we first define that when we run the command `fcd` this will trigger the autocompletion defined in `_fcd()`.
+
 ```bash
 _fcd() {
    compadd _fcd_get_list
@@ -66,6 +72,7 @@ _fcd_get_list() {
     print -C 1 $DIRS | awk '{gsub(/\/.*\//,"",$1); print}'
 }
 ```
+
 And finally, there is `_fcd_get_list()` itself, which simply prints a list of the same result we would get when running the command itself. The only difference being that it will only print the final directory name instead of the whole path.
 
 ## What does it look like?

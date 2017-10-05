@@ -24,7 +24,7 @@ Obviously you need to select the region closest to your location, but the intere
 
 S3 allows you to use vanity names, that is you can configure your DNS in such a way that it will point to a bucket. The advantage of this is that you can use URLs like `private.ig.nore.me` instead of the default AWS name, in this case `private.ig.nore.me.s3-website-us-east-1.amazonaws.com`. I'm sure you can see the advantage of that. One requirement for that however is that your bucket name needs to be exactly the same as the URL you wish to use. After that it's just a matter of changing your DNS as explained in [this AWS article][aws-custom-domain]. While the article demonstrates it using Route53, you can do the same with your own DNS provider.
 
-So, now we have our bucket. First, we should enable the site hosting. This is an option in the properties of your bucket. You can see these by clicking on the looking glass icon next to the bucket. 
+So, now we have our bucket. First, we should enable the site hosting. This is an option in the properties of your bucket. You can see these by clicking on the looking glass icon next to the bucket.
 
 ![Enable hosting][enablehosting]
 
@@ -65,7 +65,7 @@ From this point on, anything in the bucket is only available to people coming fr
 
 Setting up Wercker to deploy a Hugo site is described in the [Hugo documention][automated-deployment] so I'm not going to repeat everything about that here. Instead I'll only point out the differences. First, we need a deploy step for S3. Wercker kindly offers one, so we'll use that one.
 
-```ini
+```yaml
 deploy:
   steps:
     # Execute the s3sync deploy step, a step provided by wercker

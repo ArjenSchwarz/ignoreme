@@ -27,7 +27,7 @@ Without repeating the documentation linked above, let me give a brief explanatio
 
 First, you define the Output Format in your configuration file. I use a YAML configuration file, but the other supported formats are very similar[^2].
 
-```ini
+```yaml
 outputFormats:
   jsonfeed:
     mediaType: "application/json"
@@ -39,7 +39,7 @@ As you can see, all rather straightforward. We mention that it's based on JSON, 
 
 The next step is to set it up so that it will be generated for the homepage.
 
-```ini
+```yaml
 outputs:
   home:
     - "html"
@@ -55,7 +55,7 @@ Now every time you generate your site it will attempt to create a JSON Feed file
 
 For a JSON Feed attached to the homepage that means a `index.jsonfeed.json` in the root of your layouts (or theme) folder. The contents of which is not surprising.
 
-```json
+```html
 {
   "version": "https://jsonfeed.org/version/1",
   "title": "{{ .Site.Title }}",

@@ -27,7 +27,7 @@ As we'll be talking about CloudFormation a lot, let's start with defining a coup
 
 A template is the JSON file that describes your setup. It can be big or small, and has to adhere to the AWSTemplateFormat you define. You define this for the initial setup, and then you can make changes to it for further updates.
 
-```javascript
+```json
 {
    "AWSTemplateFormatVersion" : "2010-09-09",
    "Description" : "An example template",
@@ -41,9 +41,9 @@ A stack is the implementation of your template. When you upload your stack to AW
 
 ## Resource
 
-Resources are the various services you define in your template. This can be anything from an EC2 instance to a SQS queue, and for each resource you define a number of properties. You can find a complete list of resources and their properties in the [AWS Resource Types reference][3]. 
+Resources are the various services you define in your template. This can be anything from an EC2 instance to a SQS queue, and for each resource you define a number of properties. You can find a complete list of resources and their properties in the [AWS Resource Types reference][3].
 
-```javascript
+```json
    "Resources" : {
       "IPAddress" : {
          "Type" : "AWS::EC2::EIP",
@@ -60,7 +60,7 @@ Resources are the various services you define in your template. This can be anyt
 
 A parameter is a value that can be provided when you upload your template. You can set default values so you don't always have to provide them, but these are the only values you can override when you create or update your stack. The most common usage of a parameter is probably defining the instance type of an EC2 instance.
 
-```javascript
+```json
    "Parameters" : {
       "InstanceType" : {
          "Type" : "String",
@@ -228,7 +228,7 @@ A better solution for this would be to make it similar to the region setup and d
   })
 ```
 
-Now we'll start creating resources and, as we need to put everything in there, the [VPC][12] and [Subnet][13] will come first. Using CloudFormation's [Fn::FindInMap][14] functionality we get the values from the mapping above for the configuration. 
+Now we'll start creating resources and, as we need to put everything in there, the [VPC][12] and [Subnet][13] will come first. Using CloudFormation's [Fn::FindInMap][14] functionality we get the values from the mapping above for the configuration.
 
 You will also notice the first references to other resources here using `Ref`. This is the only way to refer to other resources in the same template, so it's nice that AWS made it easy.
 Following the creation of the VPC and Subnet we need to ensure these have proper access to the Internet, which is what all the routing and gateway resources are for.

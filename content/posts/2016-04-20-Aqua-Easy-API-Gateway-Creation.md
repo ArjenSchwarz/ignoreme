@@ -75,7 +75,7 @@ api: l95wn9kf7
 
 This will then create a gateway with a POST endpoint[^postonly] that simply translates all form fields into a JSON object formatted like the below example and passes that to the Lambda function.
 
-```javascript
+```json
 { "body": "param1=value1&param2=value2" }
 ```
 

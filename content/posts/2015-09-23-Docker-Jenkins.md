@@ -34,7 +34,7 @@ These containers can then be reused by each project with the knowledge that they
 
 When using multiple Docker containers in a single build, you have to manage this through the build file. I'll use ant build steps in my example, but there is nothing stopping you from using a Maven script or something else to achieve the same result (or even use a different CI).
 
-```markup
+```xml
 <target name="lint" description="Perform syntax check of sourcecode files">
     <exec executable="docker" failonerror="true">
         <arg value="run"/>
@@ -59,7 +59,7 @@ Instead of running `php -l` directly we instead run it as part of the Docker com
 
 The used [flags for Docker](https://docs.docker.com/reference/run/) are `--rm`, which cleans up the container when we're done with it, and `-v` which mounts the filesystem in the Docker container. In this case, by mounting the current path at the same location in the container. We then run our command on the official PHP 5.4 image using the `-c` flag from bash to ensure the pipe in the command doesn't cause conflicts with the docker command. While in this case we use the official PHP 5.4 image, it will make more sense to use your own image customised to your own needs.
 
-```markup
+```xml
 <target name="phpmd-ci" description="Mess detection">
     <exec executable="docker">
         <arg value="run"/>
@@ -81,7 +81,7 @@ The used [flags for Docker](https://docs.docker.com/reference/run/) are `--rm`, 
 
 This second example uses the latest PHP 5.6 container to run a mess detection command, and also shows why we mount the directory in the same path as on our local machine instead of something like `/app`. This is because when using something like `phpmd` it generates a reportfile with the complete filepaths in there. This can then later be used together with a code browser, but for that Jenkins will need to be able to locate the files on the local filesystem.
 
-```markup
+```xml
 <target name="grunt_build" description="Grunt build">
     <exec executable="docker" failonerror="true">
         <arg value="run"/>
@@ -100,7 +100,7 @@ This second example uses the latest PHP 5.6 container to run a mess detection co
 
 For the asset generation we can then use a similar thing. The [container](https://hub.docker.com/r/evolution7/nodejs-bower-grunt/) used here has NodeJS, [Bower](http://bower.io), and [Grunt](http://gruntjs.com). When using NodeJS and Bower however, take into account that Docker will by default run all commands as root so you should add the flags required for that `bower install --allow-root` and `npm install --unsafe-perm` or run as a different user.
 
-```markup
+```xml
 <exec executable="id" failonerror="true" outputproperty="uid">
     <arg value="-u"/>
 </exec>
@@ -131,7 +131,7 @@ Speaking of running everything as root, this means that all files generated whil
 
 Sometimes CLI commands by themselves are not good enough, and you need that little bit extra. Whether that is because you want to run integration tests with another application or even just something for which you need a database. While technically you can use a container that contains all of that, this will once again go against the *single purpose* of these containers. Instead you can use [Docker compose](https://docs.docker.com/compose/install/) for this.
 
-```markup
+```xml
 <target name="vendors" description="">
     <exec executable="docker-compose" failonerror="true">
         <arg value="--file"/>
@@ -144,7 +144,7 @@ Sometimes CLI commands by themselves are not good enough, and you need that litt
 
 The contents of the build file is similar, except this time all the details are contained in a separate Docker Compose config file.
 
-```ini
+```yaml
 cli:
     image: ignoreme/php5.6-cli
     command: php /app/composer.phar install

@@ -36,7 +36,7 @@ As the deploy step we can use `leipert/git-push`, which allows us to push to any
 * *branch*: The branch you wish to push to. This **needs** to be *master*.
 * *basedir*: The directory that contains your generated site, in the case of Hugo this will be *public*.
 
-```ini
+```yaml
 deploy:
   steps:
     - install-packages:
@@ -56,7 +56,7 @@ For a project site you can use the same step as for a personal site, but I've fo
 * *domain*: An optional domain in case you wish you to have your site accessible through a [custom][custom] URL.
 * *basedir*: The directory that contains your generated site, in the case of Hugo this will be *public*.
 
-```ini
+```yaml
 deploy:
   steps:
     - install-packages:

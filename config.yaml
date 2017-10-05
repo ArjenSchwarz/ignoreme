@@ -19,6 +19,8 @@ taxonomies:
   project: "projects"
 MetaDataFormat: yaml
 disqusShortname: ignoreme
+pygmentsCodeFences: true
+pygmentsStyle: native
 Paginate: 10
 outputFormats:
   jsonfeed:

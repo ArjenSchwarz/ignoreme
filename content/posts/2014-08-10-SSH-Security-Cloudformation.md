@@ -32,13 +32,14 @@ Useful of course, but not the main reason for this article. The result of my cha
 
 This could be done in an easier way. I just had to change the CloudFormation template so that I could provide the IP as a parameter.
 
-```javascript
+```json
   "Parameters" : {
       "SshIp" : {
          "Type" : "String",
          "Default" : "10.0.0.0/24",
          "Description" : "IP address that should have direct access through SSH"
       }
+  }
 ```
 
 By default it is set to only receive SSH connections from within its subnet, but I can override that by providing the IP address I want to have access. This of course is standard CloudFormation stuff, but it's also just the first step.
