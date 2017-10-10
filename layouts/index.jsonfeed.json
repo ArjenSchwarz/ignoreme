@@ -1,6 +1,6 @@
 {
   "version": "https://jsonfeed.org/version/1",
-  "title": "{{ .Site.Title }}",
+  "title": "{{ replace .Site.Title "\"" "\\\"" }}",
    "home_page_url": "{{ .Permalink }}",
    "feed_url": "{{ .Permalink }}feed.json",
    "favicon": "{{ .Permalink }}favicon-192.png",
@@ -14,7 +14,7 @@
        "id": "{{ .Permalink }}",
        "title": "{{ .Title }}",
        "url": "{{ if isset .Params "redirect" }}{{ .Params.redirect }}{{ else }}{{ .Permalink }}{{ end }}",
-       "content_html": "{{ replace .Content "\n" "\\n" | replaceRE "\"" "\\\""}}{{ if isset .Params "redirect" }}<p><a href="{{ .Permalink }}">Read on site</a></p>{{ end }}",
+       "content_html": "{{ replace .Content "\n" "\\n" | replaceRE "\"" "\\\""}}{{ if isset .Params "redirect" }}<p><a href=\"{{ .Permalink }}\">Read on site</a></p>{{ end }}",
        "summary": "{{ replace .Summary "\n" "\\n" | replaceRE "\"" "\\\"" }}",
        {{ range $taxonomy := .Params.categories }}"banner_image": "https://ig.nore.me/img/categories/category-{{ $taxonomy | urlize }}-full.jpg",{{ end }}
        {{ if isset .Params "ogimage" }}"image": "{{ .Params.ogimage }}",{{ end }}
