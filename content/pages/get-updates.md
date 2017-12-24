@@ -13,6 +13,10 @@ In case you want to know when I post new articles it's unlikely that you will wa
 
 If you use an RSS reader, there are feeds available. Either [traditional RSS feed](/index.xml) or [JSON Feed](/feed.json) which you should only use if you know your reader supports it.
 
+## Twitter
+
+A second option is to follow the site's Twitter account [@ignoreme_site](https://twitter.com/ignoreme_site) to see the links appear there.
+
 ## Email
 
 If you prefer to be notified by email instead, filling in the below form will do so. Your email address will not be used for sending spam, and you can unsubscribe at any time.
