@@ -5,9 +5,9 @@
    "feed_url": "{{ .Permalink }}feed.json",
    "favicon": "{{ .Permalink }}favicon-192.png",
    "author": {
-     "url": "{{ .Site.Params.TwitterPage }}",
-     "name": "{{ .Site.Params.AuthorName }}",
-     "avatar": "{{ .Site.Params.AuthorAvatar }}"
+     "url": "{{ .Site.Author.twitterpage }}",
+     "name": "{{ .Site.Author.name }}",
+     "avatar": "{{ .Site.Author.avatar }}"
    },
    "items": [ {{ range $index, $item := first 15 .Data.Pages }}{{if $index}}, {{end}}
       {

@@ -63,16 +63,16 @@ For a JSON Feed attached to the homepage that means a `index.jsonfeed.json` in t
    "feed_url": "{{ .Permalink }}feed.json",
    "favicon": "{{ .Permalink }}favicon-192.png",
    "author": {
-     "url": "{{ .Site.Params.TwitterPage }}",
-     "name": "{{ .Site.Params.AuthorName }}",
-     "avatar": "{{ .Site.Params.AuthorAvatar }}"
+     "url": "{{ .Site.Author.twitterpage }}",
+     "name": "{{ .Site.Author.name }}",
+     "avatar": "{{ .Site.Author.avatar }}"
    },
    "items": [ {{ range $index, $item := first 15 .Data.Pages }}{{if $index}}, {{end}}
       {
        "id": "{{ .Permalink }}",
        "title": "{{ .Title }}",
        "url": "{{ if isset .Params "redirect" }}{{ .Params.redirect }}{{ else }}{{ .Permalink }}{{ end }}",
-       "content_html": "{{ replace .Content "\n" "\\n" | replaceRE "\"" "\\\""}}{{ if isset .Params "redirect" }}<p><a href="{{ .Permalink }}">Read on site</a></p>{{ end }}",
+       "content_html": "{{ replace .Content "\n" "\\n" | replaceRE "\"" "\\\"" | replaceRE "\t" "\\t"}}{{ if isset .Params "redirect" }}<p><a href=\"{{ .Permalink }}\">Read on site</a></p>{{ end }}",
        "summary": "{{ replace .Summary "\n" "\\n" | replaceRE "\"" "\\\"" }}",
        {{ range $taxonomy := .Params.categories }}"banner_image": "https://ig.nore.me/img/categories/category-{{ $taxonomy | urlize }}-full.jpg",{{ end }}
        {{ if isset .Params "ogimage" }}"image": "{{ .Params.ogimage }}",{{ end }}
@@ -83,7 +83,7 @@ For a JSON Feed attached to the homepage that means a `index.jsonfeed.json` in t
 }
 ```
 
-Obviously, because it's JSON there are some requirements such as the need to escape all newlines and double quotes. But other than that it's all about following the [JSON Feed spec](https://jsonfeed.org/version/1). There are a couple of things in here that are specific to this site, so make sure you adapt the template to your own needs.
+Obviously, because it's JSON there are some requirements such as the need to escape all newlines, double quotes, and tabs. But other than that it's all about following the [JSON Feed spec](https://jsonfeed.org/version/1). There are a couple of things in here that are specific to this site, so make sure you adapt the template to your own needs.
 
 In the end though, while I spent a little bit of time figuring out Output Formats[^3] the Output Formats work well and provide an easy way to extend your site's capabilities. It's given me some ideas to try out and of course, if you really want to you can now follow this site on its new [JSON Feed](/feed.json).
 

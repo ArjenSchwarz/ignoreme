@@ -1,6 +1,13 @@
 ---
 baseurl: "https://ig.nore.me/"
 title: "ig.nore.me"
+LanguageCode: en
+Author:
+  Name: Arjen Schwarz
+  Email: arjen@ig.nore.me
+  TwitterPage: "https://www.twitter.com/ArjenSchwarz"
+  Avatar: "https://ig.nore.me/img/profilepicsmall.jpg"
+  GitHub: "ArjenSchwarz"
 permalinks:
   posts: /:year/:month/:slug/
   linkposts: /:year/:month/:slug/
@@ -9,10 +16,6 @@ permalinks:
   weeklynotes: /weekly-notes/:slug/
 params:
   Subtitle: "Connecting the dots"
-  AuthorName: "Arjen Schwarz"
-  AuthorAvatar: "https://ig.nore.me/img/profilepicsmall.jpg"
-  GitHubUser: "ArjenSchwarz"
-  TwitterPage: "https://www.twitter.com/ArjenSchwarz"
 taxonomies:
   category: "categories"
   series: "series"
