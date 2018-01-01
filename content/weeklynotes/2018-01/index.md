@@ -25,11 +25,11 @@ That said, let's look at the traffic. Using Google Analytics[^2], I can see abou
 
 ![](2018-01-01-user-stats.jpg)
 
-I also didn't have a repeat of a big spike due to having anything featured, probably because I didn't write any high profile articles. This also reflects in the most popular articles this year. Unsurprisingly most popular are still The First Babysteps with CloudFormation and Increasing the Size of an EBS Root Volume. 
+I also didn't have a repeat of a big spike due to having anything featured, probably because I didn't write any high profile articles. This also reflects in the most popular articles this year. Unsurprisingly most popular are still [The First Babysteps with CloudFormation](/2014/08/the-first-babysteps-with-cloudformation/) and [Increasing the Size of an EBS Root Volume](/2015/03/increasing-the-size-of-a-root-ebs-volume/). 
 
 ![](2018-01-01-page-stats.jpg)
 
-Two of 2016's articles are also in the top 5, Bitbucket Pipelines: A First Look and Setting Up Lambda and a Gateway Through the CLI. It's good to see some newer writing there, where newer is actually not very new anymore.
+Two of 2016's articles are also in the top 5, [Bitbucket Pipelines, a First Look](/2016/05/bitbucket-pipelines-a-first-look/) and [Setting Up Lambda and a Gateway Through the CLI](/2016/03/setting-up-lambda-and-a-gateway-through-the-cli/). It's good to see some newer writing there, where newer is actually not very new anymore.
 
 # Looking Forward to 2018
 
