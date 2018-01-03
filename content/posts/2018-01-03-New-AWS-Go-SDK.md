@@ -57,7 +57,7 @@ func RDSSession() *rds.RDS {
 The main difference is actually not that the `aws.Config` is there. It was always possible to provide a configuration, but now you no longer need to provide a session object in front of it.
 
 ```go
-rds.New(session.New(), aws.NewConfig().WithRegion('ap-southeast-2))
+rds.New(session.New(), aws.NewConfig().WithRegion("ap-southeast-2"))
 ```
 
 As before, you can update the details in a Config struct, so changing a region (or other details) is still straightforward.
@@ -70,9 +70,9 @@ func RDSSessions() map[string]*rds.RDS {
 		panic(err)
 	}
 	cfg.Region = endpoints.UsEast1RegionID
-	sessions['us-east-1'] = rds.New(cfg)
+	sessions["us-east-1"] = rds.New(cfg)
 	cfg.Region = endpoints.ApSoutheast2RegionID
- 	sessions['ap-southeast-2'] = rds.New(cfg)
+ 	sessions["ap-southeast-2"] = rds.New(cfg)
 	return sessions
 }
 ```
