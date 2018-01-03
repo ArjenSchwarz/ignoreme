@@ -5,7 +5,7 @@ blog:         ig.nore.me
 author:       Arjen Schwarz  
 Date:         2018-01-03T19:17:48+11:00
 categories:
-  - aws
+  - AWS
 Description:  "At the end of December, AWS released a developer preview of version 2 of their Go SDK. This promises several improvements and so I decided to give it a spin to see what's different.
 "
 ---
