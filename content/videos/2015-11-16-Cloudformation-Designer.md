@@ -7,6 +7,7 @@ date started: 06-09-2015
 date posted:  17-11-2015
 categories:   ["AWS"]
 slug:         "looking-at-cloudformation-designer"
+Aliases:      ["/2015/11/looking-at-cloudformation-designer/"]
 Description:  "Recently AWS introduced their CloudFormation Designer tool. Part of CloudFormation, this Designer allows you to visually design and edit your templates. In this article I try to show you how you can use the tool and fit it into your workflow."
 ---
 
@@ -22,7 +23,7 @@ The below screencast shows you how to work with the Designer, and below that you
 
 !["Cloudformation Designer"](/img/posts/2015-11-16-cloudformation-designer.png "Cloudformation Designer")
 
-As can be seen in the above image, they have done a good job with making it easier to edit the properties of the components you drag into your design. Connections can easily be made between the different components with helpful drag points (the blue dots) and you can edit the template at either the component level or even the complete template at once. 
+As can be seen in the above image, they have done a good job with making it easier to edit the properties of the components you drag into your design. Connections can easily be made between the different components with helpful drag points (the blue dots) and you can edit the template at either the component level or even the complete template at once.
 
 When using the editor at the component level it will even have different tabs that are relevant to that specific component, with different components having different tabs. Components will have names automatically generated for them. These names will always start with a short form of the component name (LB for a loadbalancer, ASG for autoscaling group, etc.) followed by several alphanumerical characters[^instanceids]. It's not a bad way of doing it, but you'll want to change these names so they make more sense to you.
 

@@ -13,6 +13,7 @@ permalinks:
   linkposts: /:year/:month/:slug/
   pages: /:slug/
   presentations: /presentations/:year/:month/:slug
+  videos: /videos/:year/:month/:slug
   weeklynotes: /weekly-notes/:slug/
 params:
   Subtitle: "Connecting the dots"
@@ -48,7 +49,11 @@ menu:
         Identifier: "projects"
         Url: "/projects/"
         Weight: 2
+      - Name: "Videos"
+        Identifier: "videos"
+        Url: "/videos/"
+        Weight: 3
       - Name: "Presentations"
         Identifier: "presentations"
         Url: "/presentations/"
-        Weight: 3
+        Weight: 4
