@@ -1,6 +1,7 @@
 ---
 baseurl: "https://ig.nore.me/"
 title: "ig.nore.me"
+preserveTaxonomyNames: true
 LanguageCode: en
 Author:
   Name: Arjen Schwarz
@@ -57,3 +58,14 @@ menu:
         Identifier: "presentations"
         Url: "/presentations/"
         Weight: 4
+related:
+  threshold: 80
+  toLower: true
+  includeNewer: true
+  indices:
+    - name: projects
+      weight: 200
+    - name: keywords
+      weight: 150
+    - name: categories
+      weight: 50

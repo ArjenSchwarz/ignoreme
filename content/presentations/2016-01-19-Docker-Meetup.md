@@ -6,6 +6,7 @@ Date:         2016-01-19T21:08:18+11:00
 presentation_date:  "January 19, 2016"
 location:     "the Docker meetup in Melbourne"
 categories:   ["Development"]
+keywords: ["docker", "cicd", "jenkins"]
 slug:         "how-to-use-docker-for-a-more-flexible-jenkins"
 Description:  "For the Docker meetup in Melbourne I gave a presentation on how to use Docker with Jenkins to make it more flexible. The presentation is based on an article I've written about the same subject."
 ---

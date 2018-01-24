@@ -5,7 +5,8 @@ blog:         ig.nore.me
 author:       Arjen Schwarz  
 Date:         2016-03-05T14:03:29+11:00
 lastmod:      2016-03-05T23:48:50+11:00
-categories:   ["Development"]
+categories:   ["Development", "AWS"]
+keywords: ["hugo", "aws"]
 Description:  "Today someone asked me if it's possible to host a Hugo site on AWS that is only accessible from their company IP. Of course it is, let me explain how."
 ---
 

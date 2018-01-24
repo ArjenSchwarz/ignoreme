@@ -1,0 +1,11 @@
+{{ $related := .Site.RegularPages.Related . | first 5 }}
+{{ with $related }}
+<div class='ignoreme-update' style="margin-top: 1em;">
+<h3>Related content you might like:</h3>
+<ul>
+{{ range . }}
+<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+{{ end }}
+</ul>
+</div>
+{{ end }}

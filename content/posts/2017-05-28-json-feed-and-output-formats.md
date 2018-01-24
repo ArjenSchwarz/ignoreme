@@ -6,6 +6,10 @@ author:       Arjen Schwarz
 Date:        2017-05-28T16:05:42+10:00
 lastmod:     2017-05-30T22:00:49+10:00
 categories:   ["Development"]
+keywords:
+  - hugo
+  - ignoreme
+  - code
 Description:  "Last week JSONFeed, an RSS/Atom alternative using JSON, was introduced and to me that seemed like a good excuse to play around with Hugo's new Output Formats."
 ---
 

@@ -4,6 +4,13 @@ blog:         ig.nore.me
 author:       Arjen Schwarz  
 Date:         2018-01-06T16:02:50+11:00
 categories:   ["AWS"]
+keywords:
+  - docker
+  - serverless
+  - ecs
+  - fargate
+  - aws
+projects: ["ig.nore.me For 5 Minutes"]
 slug:         "ig-nore-me-for-5-minutes-aws-fargate"
 Description:  "A 5 minute introduction about AWS Fargate. What is it, how does it work, and what are some of the good and less good things about it."
 ---

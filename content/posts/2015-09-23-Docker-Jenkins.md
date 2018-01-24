@@ -6,6 +6,7 @@ Date:         2015-09-23T11:12:48+10:00
 date started: 06-09-2015
 date posted:  23-09-2015
 categories:   ["CI-CD"]
+keywords: ["jenkins", "docker", "cicd"]
 slug:         "using-docker-for-a-more-flexible-jenkins"
 Description:  "Different parts of your project might require different environments. Additionally, when building web projects for clients you don't always have control over the server your project will run on. Both of these issues can be solved, and this article will show how you can use Docker to have a better and more efficient Jenkins setup."
 ---

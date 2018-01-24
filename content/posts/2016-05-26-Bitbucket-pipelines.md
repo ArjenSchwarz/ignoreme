@@ -6,6 +6,7 @@ author:       Arjen Schwarz
 Date:         2016-05-26T21:10:45+10:00
 lastmod:    2016-05-27T15:30:53+10:00
 categories:   ["CI-CD"]
+keywords: ["pipelines", "cicd"]
 Description:  "Pipelines seems to be almost as popular as machine learning right now and earlier this week Atlassian announced that Bitbucket now has them built in as well. Or rather, it's in beta. Naturally, I was interested so I decided to take it for a spin. This article shows how I set it up for one of my existing projects, and I'll go into the good parts and the limitations."
 ---
 

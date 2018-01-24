@@ -7,6 +7,7 @@ Date:         2016-03-23T15:34:59+11:00
 lastmod:      2016-09-23T09:54:55+10:00
 categories:   ["AWS"]
 projects:     ["Igor"]
+keywords: ["serverless", "awscli", "code", "aws"]
 Description:  "When I set up Igor in Lambda for the first time, I mostly followed the directions as provided in a Lambda template. This template has a description of all the steps that need to be taken, but to be honest it's a bit unwieldy. So I created a script to do this for me."
 ---
 

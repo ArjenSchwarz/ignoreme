@@ -4,7 +4,8 @@ slug:       automating-mailchimp
 blog:         ig.nore.me  
 author:       Arjen Schwarz  
 Date:          2017-01-26T17:41:44+11:00
-categories:   ["Workflows"]
+categories:   ["Workflows", "AWS"]
+keywords: ["serverless", "code", "aws"]
 Description:  "As you may be aware, I sent updates of this site out by email. Since the very start I've used Convertkit for this, but this was getting too expensive. However, it was the only email service I found that will immediately send an email instead of on a schedule. So, I had to automate this."
 ---
 
@@ -63,7 +64,7 @@ The API doesn't support what I want to do in a single call, so I've split it up 
 	    		"inline_css": true
 	    	}
 	    };
-	
+
 	    var options = {
 	      hostname: process.env.HOSTNAME,
 	      port: 443,
@@ -79,7 +80,7 @@ The API doesn't support what I want to do in a single call, so I've split it up 
 
 Here, you see the prep work for calling the API endpoint, with the various options defined. The interesting part here is something I haven't shown in use before and was introduced late last year: environment variables. In a [weekly update](/weekly-notes/week-49-2016/) I mentioned their introduction, and at the time I thought it would be mostly useful for multiple environments. Turns out, it's also very useful if you want to share your code publicly.
 
-So, how do they work? Well, you access them as you usually would with environment variables in your code[^6]: `process.env.HOSTNAME`. In here, `HOSTNAME` is the name of your variable and using the Console you define the value of it below your code as shown in the image below. 
+So, how do they work? Well, you access them as you usually would with environment variables in your code[^6]: `process.env.HOSTNAME`. In here, `HOSTNAME` is the name of your variable and using the Console you define the value of it below your code as shown in the image below.
 
 ![](/img/posts/2017-01-26-Environmentvars.png)
 
@@ -106,7 +107,7 @@ Or of course, you can define it using the CLI's `--environment` flag when you ei
 
 The next step in the code is to actually call the [create campaign endpoint](http://developer.mailchimp.com/documentation/mailchimp/reference/campaigns/#create-post_campaigns) defined earlier and parse out the id of the campaign that was created. Pretty standard stuff really.
 
-And in fact, the rest of the code is very much the same. You see my call here for the `UpdateCampaign` function, which calls the [endpoint](http://developer.mailchimp.com/documentation/mailchimp/reference/campaigns/content/#edit-put_campaigns_campaign_id_content) where I define my earlier mentioned template. It seems like a strange oversight that setting a template requires an additional call, when you can define everything else in the create call, but that's how it is. 
+And in fact, the rest of the code is very much the same. You see my call here for the `UpdateCampaign` function, which calls the [endpoint](http://developer.mailchimp.com/documentation/mailchimp/reference/campaigns/content/#edit-put_campaigns_campaign_id_content) where I define my earlier mentioned template. It seems like a strange oversight that setting a template requires an additional call, when you can define everything else in the create call, but that's how it is.
 
 At this point it will come as no surprise that this function in turn will then call a `SendCampaign` function which will [send the campaign](http://developer.mailchimp.com/documentation/mailchimp/reference/campaigns/#action-post_campaigns_campaign_id_actions_send). Due to their repetitious nature, I won't show these functions here. If you do want to have a look at them, have a look at the [file on GitHub](https://github.com/ArjenSchwarz/lambda_mailchimp_sender/blob/master/index.js).
 
@@ -141,4 +142,3 @@ With the above setup I can now ensure the emails for this site get delivered the
 [^7]:	Also, I will probably update this at some point.
 
 [^8]:	The security token is there as well, but iOS IFTTT doesn't show it until you click the edit box.
-

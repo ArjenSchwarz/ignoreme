@@ -6,6 +6,7 @@ author:         Arjen Schwarz
 Date:            2016-04-02T17:08:39+11:00
 categories:   ["Golang"]
 projects:       ["Igor"]
+keywords: ["code", "serverless", "chatbot"]
 Description:  "Over the past couple of weeks I've written several articles about the things that support Igor, from deployments to installation, but I haven't written much about how it actually works yet. This article aims to rectify that."
 ---
 
@@ -126,7 +127,7 @@ Looking at the above code, you may notice that it doesn't specifically check if 
 
 After all that, it's pretty obvious that most of the really interesting work will be in the plugins. So, let's follow the steps as they are taken in the code. That means we'll first have a look at the `GetPlugins()` function.
 
-GetPlugins is, once again, fairly simple in the way it works. We define a map containing the plugins. These plugins are already instantiated but, other than potentially reading some configuration, haven't done anything yet. When the configuration is read it's possible for the instantiated plugin to return an error. As I haven't decided yet how to deal with these, they're just ignored for now. Yes, I know that's not a good thing to do. 
+GetPlugins is, once again, fairly simple in the way it works. We define a map containing the plugins. These plugins are already instantiated but, other than potentially reading some configuration, haven't done anything yet. When the configuration is read it's possible for the instantiated plugin to return an error. As I haven't decided yet how to deal with these, they're just ignored for now. Yes, I know that's not a good thing to do.
 
 In case you wonder about the provided, but unused, `Config` struct, that is because the below snippet doesn't show the handling of whitelisting and blacklisting of plugin defined in the configuration.
 

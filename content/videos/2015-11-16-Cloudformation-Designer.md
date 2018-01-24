@@ -6,6 +6,9 @@ Date:         2015-11-17T22:10:15+11:00
 date started: 06-09-2015
 date posted:  17-11-2015
 categories:   ["AWS"]
+keywords:
+  - cloudformation
+  - aws
 slug:         "looking-at-cloudformation-designer"
 Aliases:      ["/2015/11/looking-at-cloudformation-designer/"]
 Description:  "Recently AWS introduced their CloudFormation Designer tool. Part of CloudFormation, this Designer allows you to visually design and edit your templates. In this article I try to show you how you can use the tool and fit it into your workflow."

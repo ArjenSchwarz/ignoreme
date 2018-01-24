@@ -5,7 +5,10 @@ author:       Arjen Schwarz
 Date:         2017-09-27T18:04:04+10:00
 presentation_date:  "September 27, 2017"
 location:     "the AWS User Group in Melbourne"
-categories:   ["Security"]
+categories:   ["Security", "AWS"]
+keywords:
+  - security
+  - aws
 slug:         "hardening-your-aws-environment"
 Description:  "This talk focuses on hardening your AWS environment using only the tools AWS provides."
 ---

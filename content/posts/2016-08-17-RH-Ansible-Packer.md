@@ -6,6 +6,10 @@ author:       Arjen Schwarz
 Date:         2016-08-17T08:32:50+10:00
 lastmod:      2016-08-29T16:20:08+10:00
 categories:   ["AWS"]
+keywords:
+  - packer
+  - ansible
+  - aws
 Description:  "Because Redhat-based OSes are slightly different from Debian-based ones, I ran into some issues provisioning an AMI with Ansible and Packer. This article is to ensure I can find the solution quickly in the future."
 ---
 

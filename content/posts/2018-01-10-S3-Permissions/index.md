@@ -6,6 +6,7 @@ author:       Arjen Schwarz
 Date:        2018-01-11T17:51:46+08:00
 categories:   
   - "AWS"
+keywords: ["s3", "aws"]
 Description:  "In the past I've had questions about how permissions work in S3, so I decided to investigate and write it up for myself so that I've got it all clearly described somewhere and can refer to this article."
 ---
 
@@ -19,7 +20,7 @@ Access to S3 buckets is managed at 3 different levels:
 * A bucket policy
 * IAM permissions of the user, role, or group[^1]
 
-All of these need to be in alignment in order to get access to an object. That means that for example a user needs to be granted access to the bucket and its objects while neither the ACL or bucket policy are blocking that user in any way. 
+All of these need to be in alignment in order to get access to an object. That means that for example a user needs to be granted access to the bucket and its objects while neither the ACL or bucket policy are blocking that user in any way.
 
 This gives you control at each of these levels. For example, you can make individual objects public (for reading) using ACL. In the Console you do this by selecting the object and in the actions menu choose "Make public". Similarly you can add the ACL permissions when you copy the object using the AWS CLI by adding the `--acl public` flag to your `aws s3 cp` command. That said, AWS [recommends against using ACLs](https://aws.amazon.com/blogs/security/iam-policies-and-bucket-policies-and-acls-oh-my-controlling-access-to-s3-resources/) to manage access.
 
@@ -79,7 +80,7 @@ The below flowchart shows how this is decided: Access starts as denied by defaul
 
 ![](/2018/01/how-do-s3-permissions-work/731705C7-B858-4422-BD7D-52E0B9BAAFBB.jpeg)
 
-To illustrate, let's say that you created a bucket and uploaded a file to it. As said, by default only you will have access to it[^4]. 
+To illustrate, let's say that you created a bucket and uploaded a file to it. As said, by default only you will have access to it[^4].
 
 ![](/2018/01/how-do-s3-permissions-work/6E77EBB7-53BD-48F8-9E84-E15800404DB4.jpeg)
 
@@ -110,7 +111,7 @@ However, due to corporate policies you are required to then add a bucket policy 
 
 ![](/2018/01/how-do-s3-permissions-work/FAD3728A-8AF9-4B6B-A940-1B3C8D86091E.jpeg)
 
-But, what would happen if the rules are changed? If instead of barring outside networks, you whitelist your corporate network? In that case, not only will you have access from outside, but anyone coming from your corporate network will have access as well. Not necessarily the setup you're looking for. 
+But, what would happen if the rules are changed? If instead of barring outside networks, you whitelist your corporate network? In that case, not only will you have access from outside, but anyone coming from your corporate network will have access as well. Not necessarily the setup you're looking for.
 
 ![](/2018/01/how-do-s3-permissions-work/76712857-B45B-4780-99C4-9527E1441AFD.jpeg)
 
@@ -139,7 +140,7 @@ But, what would happen if the rules are changed? If instead of barring outside n
 
 ## Access trough a VPC Endpoint
 
-[VPC Endpoint Gateways](https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html) allow you to create a direct connection from your VPC to your S3 buckets[^6], which doesn't leave the AWS network. So, instead of going over the Internet as is usual for S3 calls this is a completely internal call. This is especially useful for private subnets, but it also ensures you can keep access to your buckets more tightly controlled as you can use internal calls and therefore don't need to make anything publicly accessible. 
+[VPC Endpoint Gateways](https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html) allow you to create a direct connection from your VPC to your S3 buckets[^6], which doesn't leave the AWS network. So, instead of going over the Internet as is usual for S3 calls this is a completely internal call. This is especially useful for private subnets, but it also ensures you can keep access to your buckets more tightly controlled as you can use internal calls and therefore don't need to make anything publicly accessible.
 
 One important distinction here is to ensure you call your s3 buckets using the `s3://` prefix instead of the regular `https://` as the latter will always try to use the public endpoint, regardless of a VPC Endpoint being present.
 

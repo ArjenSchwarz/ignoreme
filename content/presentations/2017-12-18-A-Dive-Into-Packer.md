@@ -5,8 +5,14 @@ author:       Arjen Schwarz
 Date:         2017-12-18T17:45:09+11:00
 presentation_date:  "December 18, 2017"
 location:     "the Golang Meetup in Melbourne"
-categories:   ["golang"]
+categories:   ["Golang"]
 slug:         "a-dive-into-packer"
+keywords:
+  - packer
+  - code
+  - azure
+  - golang
+  - cicd
 Description:  "Recently I had the opportunity to add a major feature to the Azure builder in Packer. This article is a written version of a presentation I gave about this at the Golang Melbourne meetup and is aimed at looking at the technical parts of that feature and how a builder actually works within Packer."
 ---
 

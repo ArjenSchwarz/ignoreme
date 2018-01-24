@@ -7,6 +7,7 @@ date started: 01-08-2015
 date posted:  09-08-2015
 lastmod: 2016-03-16T18:57:30+11:00
 categories:   ["Development"]
+keywords: ["cli", "code", "zsh"]
 slug:         "fcd-a-fuzzy-project-switcher"
 Description:  "fcd is a zsh plugin I built for easily switching between different projects on the command line."
 ---

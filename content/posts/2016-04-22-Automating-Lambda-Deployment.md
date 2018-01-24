@@ -6,6 +6,7 @@ author:       Arjen Schwarz
 Date:         2016-04-22T09:24:51+10:00
 categories:   ["CI-CD"]
 projects:     ["Lambda Deploy Step for Wercker"]
+keywords: ["wercker", "serverless", "aws"]
 Description:  "While Aqua neatly makes the initial setup for my Lambda functions easier, that still left me with the deployments. In order to deal with that, I therefore made a simple deployment step for Wercker. I'll first go over how to use it, before showing how it works."
 ---
 

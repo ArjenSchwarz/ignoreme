@@ -8,6 +8,7 @@ Date posted:  25-08-2014
 Slug:         the-first-babysteps-with-cloudformation
 Aliases:      ["/aws/2014/08/the-first-babysteps-with-cloudformation/"]
 Categories:   ["AWS"]
+keywords: ["cloudformation", "aws"]
 Description:  "When it comes to creating an infrastructure in AWS, CloudFormation is a great tool. You can use it to manage your entire infrastructure, from the initial setup to any updates and removing it all again. This article will guide you through these first steps."
 ---
 

@@ -4,8 +4,9 @@ blog:         ig.nore.me
 author:       Arjen Schwarz  
 Date:         2015-01-18T22:35:34+11:00   
 date started: 18-01-2015  
-categories:   ["AWS"]
+categories:   ["AWS", "Security"]
 slug:         "personal-access-to-your-servers"
+keywords: ["cloudformation", "code", "aws", "security"]
 Description:  "This article describes setting up a single security group with cloudformation that you can use to ensure you can easily gain access to your servers wherever you are. And as a bonus it describes how you can update the parameters of your stack from the command line without needing access to its template."
 ---
 
@@ -66,7 +67,7 @@ With a central security group set up you just need to update it from where you a
 
 But where's the fun in that? While you might not always have a choice, if you're on your own laptop there are more interesting methods that don't involve needing to look up your current IP address.
 
-In the SSH Security article I mentioned a script that I use for this purpose and I've updated that to deal with this new situation. While doing so I discovered that the CLI now has an interesting feature, the `--use-previous-template` flag. 
+In the SSH Security article I mentioned a script that I use for this purpose and I've updated that to deal with this new situation. While doing so I discovered that the CLI now has an interesting feature, the `--use-previous-template` flag.
 
 This does pretty much what it says, and allows you to update a cloudformation stack without the need to describe its template. As we will only need to update the existing template with a new IP address that is exactly what we want here.
 

@@ -6,6 +6,7 @@ Date:         2015-03-09T11:02:39+11:00
 date started: 08-03-2015  
 categories:   ["Golang"]
 series:       ["Learning Golang"]
+keywords: ["go", "golang", "code"]
 slug:         "starting-with-golang"
 Description:  "The first weekly update for my month of Golang. I'll start this out with various resources I used to get up to speed with the language, before I'll move on to idea behind the structure for the Bugsnag SDK and how this is progressing."
 ---
@@ -16,7 +17,7 @@ The first weekly update for my month of Golang. I'll start this out with various
 
 Every journey has a first step, and that is the case for learning a new language as well. In the case of Go, that starts with the really good interactive tutorial they have on their site. They call it a [tour](http://tour.golang.org/welcome/1), and it takes you through all the major parts of the language.
 
-I did this tour about half a year ago, but as I didn't do anything with it forgot most of the details. So when I got back to working in Go I skimmed through this again and used it as a resource when I needed to know how something worked. 
+I did this tour about half a year ago, but as I didn't do anything with it forgot most of the details. So when I got back to working in Go I skimmed through this again and used it as a resource when I needed to know how something worked.
 
 A very pleasant happenstance as well was that the [Golang Melbourne](http://www.meetup.com/golang-mel/) meetup group held a meetup for complete beginners last week. While at that point I might not be considered a complete beginner anymore, I still learned some useful things.
 

@@ -5,6 +5,7 @@ author:       Arjen Schwarz
 Date:         2016-08-23T17:47:31+10:00
 lastmod:      2016-10-31T19:47:09+11:00
 categories:   ["AWS"]
+keywords: ["ebs", "aws"]
 slug:         "increasing-the-size-of-a-redhat-based-ebs-volume"
 Description:  "While following my own steps for resizing an EBS volume, I discovered that Redhat-based systems require more."
 ---

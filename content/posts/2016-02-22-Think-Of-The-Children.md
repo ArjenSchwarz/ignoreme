@@ -5,6 +5,7 @@ blog:         ig.nore.me
 author:       Arjen Schwarz  
 Date:         2016-02-22T18:56:09+11:00
 categories:   ["Security"]
+keywords: ["security"]
 Description:  "Apple was commanded by a court to provide a way for breaking into an iPhone. This doesn't make me happy, so this post serves as a way to clear my mind and calm down about it."
 ---
 
@@ -12,11 +13,11 @@ Apple was commanded by a court to provide a way for breaking into an iPhone. Thi
 
 So, what's going on? As somebody who doesn't live in the US, let me give my overview of what happened. I'm leaving out what I consider to be irrelevant details, and will probably flavor it with some of my opinions.
 
-In a court case[^irrelevant], the FBI has invoked an ancient law in the USA to compel Apple to provide a way for them to unlock an iPhone. This is required because since iOS 8 full disk encryption prevents anyone from accessing that data in any other way. Well, almost any other way. Because as it turns out, if [someone hadn't messed up][passchange] [^messup] they could have triggered an iCloud backup which would ensure that Apple could hand over the data without putting anyone else at risk[^handover]. 
+In a court case[^irrelevant], the FBI has invoked an ancient law in the USA to compel Apple to provide a way for them to unlock an iPhone. This is required because since iOS 8 full disk encryption prevents anyone from accessing that data in any other way. Well, almost any other way. Because as it turns out, if [someone hadn't messed up][passchange] [^messup] they could have triggered an iCloud backup which would ensure that Apple could hand over the data without putting anyone else at risk[^handover].
 
 Let's also be clear, Apple has complied with other requests in this and other cases. The big difference is that this time they will need to write software designed to weaken the security of their operating system instead of providing data they have access to.
 
-After receiving this demand, Apple responded in an [open letter][appleletter] where they refuse to do so as it puts every iPhone user at risk. Of course, as the election circus in the USA is in full swing this ensures that every politician who doesn't understand what they're talking about weighs in on the matter to demand that we ["think of the children"][think]. The Department of Justice has unsurprisingly come down on the side of the FBI and applies more pressure on Apple for this as well. 
+After receiving this demand, Apple responded in an [open letter][appleletter] where they refuse to do so as it puts every iPhone user at risk. Of course, as the election circus in the USA is in full swing this ensures that every politician who doesn't understand what they're talking about weighs in on the matter to demand that we ["think of the children"][think]. The Department of Justice has unsurprisingly come down on the side of the FBI and applies more pressure on Apple for this as well.
 
 In the meantime, reactions from the tech industry have been disappointing. While Twitter and several others came out strong on the side of Apple, both Google and Microsoft have delivered such weak non-responses that I am almost willing to believe they've already built in back doors into their systems[^backdoors]. I'm assuming that's not the case, and Android in particular is a very complicated situation as discussed in this [re/code article][android]. Number wise it's far more likely that a case like this would involve Android, but it's possible that with the number of 0-day bugs in Android (and almost everyone running unpatched versions) the FBI doesn't need Google to explicitly provide access[^0day].
 
@@ -30,7 +31,7 @@ Because when it comes to an operating system, there is no such thing as a one-de
 
 I hope you'll forgive me for the rant this has turned into, but privacy is something I care about a lot. There are many things these days that have an impact on your privacy, Google's and Facebook's products in particular mean that these companies have an enormous amount of data about their users, but right now this fight between Apple and the FBI makes that pale in comparison.
 
-After all, remember that this will have the greatest impact on regular people. If everything is opened up to governments all over the world (and anyone else who can steal that code) criminals, terrorists, and their like will still use other tools to encrypt their systems that are independent of the OS. So let's say that all of those are outlawed as no doubt certain people wish for as well, what do you think is going to happen? That they won't install it because that would mean breaking the law? Yeah right... 
+After all, remember that this will have the greatest impact on regular people. If everything is opened up to governments all over the world (and anyone else who can steal that code) criminals, terrorists, and their like will still use other tools to encrypt their systems that are independent of the OS. So let's say that all of those are outlawed as no doubt certain people wish for as well, what do you think is going to happen? That they won't install it because that would mean breaking the law? Yeah right...
 
 In the end, I hope that sanity will prevail here and that the FBI will realize what it means and back off. Where *hope* is unfortunately something very different from *expect*.
 

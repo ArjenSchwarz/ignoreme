@@ -6,19 +6,20 @@ Date:         2015-11-15T18:16:40+11:00
 date started: 15-11-2015
 date posted:  15-11-2015
 categories:   ["Development"]
+keywords: ["code", "workflows", "automation", "ios"]
 slug:         "reporter-plugin-for-slogger"
 Description:  "I wanted something that could ensure my usage of the Reporter app would be logged in my journaling app of choice, so I built it."
 ---
 
 Several years ago, while backpacking in New Zealand, I once again picked up the habit of journaling. This time around[^journaling] I was seduced by how good [Day One][2][^dayoneappstore] looks. While the benefits of journaling are mentioned in many places, I'm not going to go into that.
 
-Over the years I found that logging more and more events is very useful and helps me get a better idea of what took place on a certain day. Whether it's my tweets, GitHub activity, completed tasks, or even my weight[^weight], all of these add to the insight I get from what I remembered to write down. 
+Over the years I found that logging more and more events is very useful and helps me get a better idea of what took place on a certain day. Whether it's my tweets, GitHub activity, completed tasks, or even my weight[^weight], all of these add to the insight I get from what I remembered to write down.
 
 Luckily there is a tool to automate the logging of all this data called [Slogger][7], which I use with a daily cronjob. Slogger uses plugins to create entries (either Day One or plain Markdown) based on plugins you enable. And while in the past I've provided a couple of small patches to this project, this time I provided an actual plugin so I wanted to share this.
 
 # Reporter App
 
-Earlier this year, a friend pointed out the [Reporter App][5][^reporterapp] to me. The idea behind this app is fairly simple, but very powerful. Throughout the day it pops up a notification and asks you what you're doing as well as other questions you might have set up. At the same time it records things like your location, the weather, and a whole lot of other things. As you probably understand based on my earlier words, this appeals to me. 
+Earlier this year, a friend pointed out the [Reporter App][5][^reporterapp] to me. The idea behind this app is fairly simple, but very powerful. Throughout the day it pops up a notification and asks you what you're doing as well as other questions you might have set up. At the same time it records things like your location, the weather, and a whole lot of other things. As you probably understand based on my earlier words, this appeals to me.
 
 !["A reporter log entry"](/img/posts/2015-11-15-reporter-result.jpg)
 

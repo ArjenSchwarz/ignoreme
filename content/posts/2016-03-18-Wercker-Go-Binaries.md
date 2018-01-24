@@ -3,8 +3,9 @@ title:        "Publishing Go binaries with Wercker"
 blog:         ig.nore.me  
 author:       Arjen Schwarz  
 Date:         2016-03-18T13:25:53+11:00  
-categories:   ["CI-CD"]
+categories:   ["CI-CD", "Golang"]
 projects:     ["Igor"]
+keywords: ["wercker", "code", "cicd"]
 slug:         "publishing-go-binaries-with-wercker"
 Description:  "For Igor I wanted to make sure that there is always a compiled, and up to date, binary ready for download. The obvious way for me to do this was using Wercker, but this turned out to be a bit more work than I expected, so I'm documenting it here."
 ---

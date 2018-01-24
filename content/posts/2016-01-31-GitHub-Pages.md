@@ -5,6 +5,7 @@ blog:         ig.nore.me
 author:       Arjen Schwarz  
 Date:         2016-01-31T16:10:17+11:00
 categories:   ["Development"]
+keywords: ["hugo", "wercker", "code"]
 Description:  "GitHub Pages works differently based on how you set it up. As several people have asked me for help when they ran into issues with deploying the site they generated using my Hugo Wercker step, this article will serve as a place to point them to."
 ---
 

@@ -3,8 +3,9 @@ title:        Baking AMIs from Docker using Ansible
 blog:         ig.nore.me  
 author:       Arjen Schwarz  
 Date:         2016-08-30T22:34:59+10:00
-categories:   ["CI-CD"]
+categories:   ["CI-CD", "AWS"]
 slug:         "baking-amis-from-docker-using-Ansible"
+keywords: ["docker", "ansible", "cicd", "aws"]
 Description:  "When using Docker containers to trigger Ansible configuration, you can run into an issue regarding Docker's virtual filesystem and SSH sockets. This shows how I worked around that problem."
 ---
 

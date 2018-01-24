@@ -7,6 +7,7 @@ date started: 19-03-2015
 date posted:  20-03-2015
 lastmod:      2016-08-23T17:47:39+10:00
 categories:   ["AWS"]
+keywords: ["ebs", "aws", "code"]
 slug:         "increasing-the-size-of-a-root-ebs-volume"
 Description:  "Sometimes the default size for your root volume in an EC2 instance isn't good enough. As there is no clear documentation on the best way to do this for CloudFormation managed instances, I'm describing my methods for increasing the size here."
 ---

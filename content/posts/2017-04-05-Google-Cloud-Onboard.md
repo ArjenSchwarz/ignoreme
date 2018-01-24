@@ -5,6 +5,8 @@ blog:         ig.nore.me
 author:       Arjen Schwarz  
 Date:         2017-04-15T20:50:56+02:00
 categories:   ["GCP"]
+keywords:
+  - gcp
 Description:  "A couple of weeks ago, I mentioned that I would like to learn more about Google Cloud Platform. Two days later I learned that there would be a Google Cloud OnBoard session in Melbourne. This happened recently, so I put on an AWS shirt and went to check it out."
 ---
 
@@ -30,7 +32,7 @@ We did learn more about how everything is organized in GCP. There is a hierarchy
 
 ## Billing
 
-One of the few things I was already aware of with GCP is their billing structure. From a customer point of view this is better than AWS for a couple of reasons. First is that, unlike with AWS, resources aren't billed by the hour[^4]. Instead you pay by the minute with a minimum of 10 minutes. 
+One of the few things I was already aware of with GCP is their billing structure. From a customer point of view this is better than AWS for a couple of reasons. First is that, unlike with AWS, resources aren't billed by the hour[^4]. Instead you pay by the minute with a minimum of 10 minutes.
 
 For anything that doesn't run pretty much continuously this is a more price friendly model, and for everything that does run continuously they have their sustained discount. This means that if you use a VM more than 25% of the time in a month, you automatically get a discount.
 
@@ -84,7 +86,7 @@ Similar to DynamoDB, this is a [basic NoSQL solution](https://cloud.google.com/d
 
 # Google Container Engine
 
-As the creators of Kubernetes, it shouldn't come as a surprise that [GCP's Docker offering](https://cloud.google.com/container-engine/) is well done. The Google Container Engine is a light shell around [Kubernetes](https://kubernetes.io/)[^7], and in fact you interact with it using the regular `kubectl` commands. There are a lot of configuration options and it offers both a registry and a container builder service. As this basically is Kubernetes, there isn't much more to say about it. There are some GCP specific commands (`gcloud docker --push` for writing to the GCP repository for example), but mostly usage is similar to Kubernetes. 
+As the creators of Kubernetes, it shouldn't come as a surprise that [GCP's Docker offering](https://cloud.google.com/container-engine/) is well done. The Google Container Engine is a light shell around [Kubernetes](https://kubernetes.io/)[^7], and in fact you interact with it using the regular `kubectl` commands. There are a lot of configuration options and it offers both a registry and a container builder service. As this basically is Kubernetes, there isn't much more to say about it. There are some GCP specific commands (`gcloud docker --push` for writing to the GCP repository for example), but mostly usage is similar to Kubernetes.
 
 # Google Compute Engine
 
@@ -110,11 +112,11 @@ This is a [messaging queue](https://cloud.google.com/pubsub). Similar to SQS, an
 
 ## Cloud Dataflow
 
-A [data-processing service](https://cloud.google.com/dataflow/), that can handle both streams and batched pipelines. 
+A [data-processing service](https://cloud.google.com/dataflow/), that can handle both streams and batched pipelines.
 
 ## Cloud Dataproc
 
-This is basically [Hadoop and Spark as a service](https://cloud.google.com/dataproc/). 
+This is basically [Hadoop and Spark as a service](https://cloud.google.com/dataproc/).
 
 ## DataLab
 
@@ -134,11 +136,11 @@ There are several pre-trained models available as well that can be used through 
 
 # Conclusion
 
-After going to the Google Cloud OnBoard day I feel like I got a good idea of what the platform has to offer. Coincidentally there was the yearly AWS Summit in Sydney the next week which gave me a good way to compare the two as well. Based on that, I found that while GCP has its good sides, it is very far behind AWS in most respects. 
+After going to the Google Cloud OnBoard day I feel like I got a good idea of what the platform has to offer. Coincidentally there was the yearly AWS Summit in Sydney the next week which gave me a good way to compare the two as well. Based on that, I found that while GCP has its good sides, it is very far behind AWS in most respects.
 
 There are a couple of nice things that GCP has that AWS doesn't, and if the price of running your servers is more important than the cost of your team[^11] it could be worth it. This of course doesn't count special deals like what companies such as Spotify get for moving their infrastructure from AWS to GCP.
 
-All in all, I therefore have to say that unless you only use Docker and want to run on a managed Kubernetes setup, or are most interested in Big Data or Machine Learning, there probably isn't a real reason to choose GCP over AWS. Having it as part of a multi-cloud solution might work, but you'll have to limit what you use in AWS. As my job is to build solutions in AWS (and other cloud platforms if required), I constantly use things that either aren't available in GCP or are far more limited. 
+All in all, I therefore have to say that unless you only use Docker and want to run on a managed Kubernetes setup, or are most interested in Big Data or Machine Learning, there probably isn't a real reason to choose GCP over AWS. Having it as part of a multi-cloud solution might work, but you'll have to limit what you use in AWS. As my job is to build solutions in AWS (and other cloud platforms if required), I constantly use things that either aren't available in GCP or are far more limited.
 
 Personally I don't think it's worth going for the lowest common denominator if that results in either far higher costs or a worse experience for your users. Then again, if you don't want to[^12] make use of more than the basics such as virtual machines, GCP might be a good option. That is not a strategy I would usually recommend though because of how much work that involves at scale.
 

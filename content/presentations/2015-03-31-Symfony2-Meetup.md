@@ -6,6 +6,9 @@ Date:         2015-04-06T13:00:00Z
 presentation_date:  "March 31, 2015"
 location:     "the Symfony2 meetup in Melbourne"
 categories:   ["PHP"]
+keywords:
+  - php
+  - symfony
 slug:         "splitting-a-symfony-project-into-separate-tiers"
 Description:  "For the Symfony2 meetup in Melbourne I gave a presentation on splitting a project into separate layers, why you might want to do this, how it works, what some of the downsides are, and why Symfony2 is a good fit for this."
 ---
@@ -41,7 +44,7 @@ Lastly, you have no need to limit yourself to a single framework or even program
 
 ## How to split up using Symfony2?
 
-As I'm focusing here on [Symfony2][2] it is important to see how you can separate your tiers here. 
+As I'm focusing here on [Symfony2][2] it is important to see how you can separate your tiers here.
 
 ### Separate apps in a project
 
@@ -57,7 +60,7 @@ However, it has already been decided that this will [no longer be supported by d
 
 ### Routing
 
-Symfony2 offers very flexible [routing configuration][4] so it is possible to make your code use different controllers for different endpoints. You can give these separate prefixes, or even completely different hostnames. 
+Symfony2 offers very flexible [routing configuration][4] so it is possible to make your code use different controllers for different endpoints. You can give these separate prefixes, or even completely different hostnames.
 This will allow you to use the same application, but still be able (in theory) to deploy it to different servers with different vhost configurations.
 
 ```ini
@@ -81,9 +84,9 @@ I'm using [Tribal Football][1] as a use case here as this is a project we built 
 
 For the redevelopment we decided to built it as an n-tier application, and chose a combination of the last two methods above. We combined the CMS and API into a single project, separated by routing rules, and made the web interface a separate project.
 
-## Web interface and caching 
+## Web interface and caching
 
-Originally we wanted to build the web interface in [Silex][5] as we believed that to be lightweight yet powerful enough. Halfway through however, we decided that it would make things a lot easier if we used Symfony after all. One reason for this is the native support of Symfony for [ESIs][8][^caching-presentation]. 
+Originally we wanted to build the web interface in [Silex][5] as we believed that to be lightweight yet powerful enough. Halfway through however, we decided that it would make things a lot easier if we used Symfony after all. One reason for this is the native support of Symfony for [ESIs][8][^caching-presentation].
 When using a proxy cache such as Varnish, this allows you to easily cache certain parts of your page for a different time period than the rest of the page. As an example, this means you can have an article page cached for 30 days while updating the read count and top stories every hour.
 
 Using ESIs in Symfony is very easy as you can use the `render_esi` Twig helper which will point to a Controller as usual. In the background however, Symfony will transparantly decide if it should render the result as an ESI or a standard include, based on the headers it receives in the request.
@@ -163,7 +166,7 @@ class ClubController extends Controller implements ApiControllerInterface
 
 ### API tier ParamConverter
 
-The ParamConverter is a functionality of the [SensioFrameworkExtraBundle][12] that allows you to transform/convert request parameters into objects. For this you implement an interface and you provide the resulting class as a service to the action you wish to use it with. 
+The ParamConverter is a functionality of the [SensioFrameworkExtraBundle][12] that allows you to transform/convert request parameters into objects. For this you implement an interface and you provide the resulting class as a service to the action you wish to use it with.
 
 The `apply` function in this class will then carry out the conversion; in this example it finds the club[^club-not-found] and then sets the result as an attribute in the request object with the provided name. You can see that the request parameter provided to the `getAction` method above has the same name as the `name` value provided to the converter.
 
@@ -202,7 +205,7 @@ All this means that with the help of Symfony's structure we can keep all this co
 
 ## The downsides
 
-I've refered to the complexity of the n-tier architecture before, and that is where we discovered most of the downsides. 
+I've refered to the complexity of the n-tier architecture before, and that is where we discovered most of the downsides.
 
 This starts with something as basic as the development environment. Even if you are working on the web interface for the frontend, you will still need to have the complete stack running locally to ensure you've got access to everything. Later on in the process you might change this to point to the production (or staging/preview) API instead, but that comes with additional latency as they are unlikely to be in the same place.
 

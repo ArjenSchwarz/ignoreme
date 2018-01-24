@@ -7,6 +7,7 @@ lastmod:      2016-04-20T17:31:07+10:00
 presentation_date:  "March 30, 2016"
 location:     "the AWS Meetup in Melbourne"
 categories:   ["AWS"]
+keywords: ["serverless", "aws"]
 slug:         "automating-gateway-creation"
 projects:      ["Igor"]
 Description:  "I gave a short lightning talk about automating the creation of AWS API Gateways at the AWS Meetup. This is based on the work I did for that on Igor."

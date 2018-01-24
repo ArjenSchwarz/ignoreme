@@ -6,6 +6,7 @@ author:       Arjen Schwarz
 Date:         2016-04-01T14:05:25+11:00
 categories:   ["CI-CD"]
 projects:     ["Igor"]
+keywords: ["wercker", "cicd"]
 Description:  "At the Docker birthday event last week I decided that instead of working on the Birthday Challenge I would make Igor work on Docker as well. That meant I need to deploy two versions from a single build however, and in this article I'll explain how that works."
 ---
 

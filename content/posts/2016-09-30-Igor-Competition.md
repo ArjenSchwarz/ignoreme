@@ -5,6 +5,8 @@ blog:         ig.nore.me
 author:       Arjen Schwarz  
 Date:         2016-09-30T03:13:10+10:00
 categories:   ["AWS"]
+projects: ["Igor"]
+keywords: ["competition", "serverless"]
 Description:  "Almost 2 months ago, AWS announced a serverless chatbot competition. As I happen to have one of those lying around I decided to enter this competition."
 ---
 

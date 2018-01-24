@@ -11,7 +11,7 @@
     <div itemscope itemtype="http://schema.org/Article" id="content" class="col-full">
         <section id="main">
             <article class="post type-post status-publish format-standard hentry">
-                {{ range $taxonomy := .Params.categories }}
+                {{ range $taxonomy := .Params.categories | first 1 }}
                 <header style="background-image: url('/img/categories/category-{{ $taxonomy | urlize }}-full.jpg' ); ?>); background-size: cover; background-position: center center;" >
                 {{ end }}
                     <section class="header-content">
@@ -42,7 +42,10 @@
 
                 {{ .Content }}
 
-                {{ template "partials/cta_subscribe.html" }}
+
+                {{ partial "cta_subscribe.html" . }}
+
+                {{ partial "related.html" . }}
                 </section>
 
                 </article><!-- .post -->

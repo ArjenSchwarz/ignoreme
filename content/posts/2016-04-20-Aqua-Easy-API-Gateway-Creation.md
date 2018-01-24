@@ -6,6 +6,7 @@ author:       Arjen Schwarz
 Date:         2016-04-20T09:54:05+10:00
 categories:   ["AWS"]
 projects:     ["Aqua"]
+keywords: ["serverless", "code", "awscli", "aws"]
 Description:  "Last month I wrote about the installation script I built for Igor, but as I started writing more Lambda functions recently I realized that I needed that same functionality in a more easily accessible way. So I created Aqua to do this for me."
 ---
 

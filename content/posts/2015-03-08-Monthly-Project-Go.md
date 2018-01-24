@@ -6,6 +6,7 @@ Date:         2015-03-08T19:13:06+11:00
 date started: 08-03-2015  
 categories:   ["Golang"]
 series:       ["Learning Golang"]
+keywords: ["go", "golang"]
 slug:         "monthly-project-golang"
 Description:  "In an attempt to stop my mind from constantly jumping to the next interesting thing I encounter, I decided to start doing monthly research projects. I'm starting this with something that has been on my list for quite a while now, learning the language Go (or Golang as it's often called)."
 ---
@@ -22,7 +23,7 @@ This first post about is my introduction to what I wish to achieve, and later to
 
 Go is a programming language developed by Google. The names Go and Golang are both used to describe it with Golang being the more useful when you wish to search for it on the internet. After all, searching for the word `Go` is unlikely to always give you the result you're looking for. Instead of repeating the information on the official site <http://golang.org> or [Wikipedia][2] I will give my opinion about it.
 
-It's a modern language that seems to be best suited for command line and API usage. While it is certainly possible to put a user interface on top of it, and the [latest version][3] even offers some basic support for running on Android, that's not where its strengths are. 
+It's a modern language that seems to be best suited for command line and API usage. While it is certainly possible to put a user interface on top of it, and the [latest version][3] even offers some basic support for running on Android, that's not where its strengths are.
 
 As a server based language Go is well suited because it makes it really easy to work with APIs as it can parse markup like JSON or XML into objects (structs in Go parlance) with a single command. But in my opinion the main advantage of Go is how easy it is to do concurrency. For this Go uses something called [goroutines][4] which allows you to easily make many calls at the same time. Later this month I will show examples where I'm using this, but for the SDK itself this will not be used.
 
@@ -36,7 +37,7 @@ The only real way to learn a programming language is to build things. While you 
 
 However, I have an issue with the way they display their error information. To be precise, I don't like that you can only have an overview of the errors that occur at a project level. What I would really like is to have a dashboard that shows all of my projects that have outstanding errors, and how often these occur.
 
-My initial goal therefore this month is to solve that, but do more than just that. Apart from their error notification API, Bugsnag also offers a [separate API][6] for their dashboard. The first step of my work is therefore to implement an SDK written in Go for this API, implementing all of its documented features. 
+My initial goal therefore this month is to solve that, but do more than just that. Apart from their error notification API, Bugsnag also offers a [separate API][6] for their dashboard. The first step of my work is therefore to implement an SDK written in Go for this API, implementing all of its documented features.
 
 Only after I have completed this SDK will I then write a command line tool that uses the SDK to do various things, one of which will be storing the details for all projects and errors in a database so a dashboard can simply grab them and display them. This dashboard itself is outside of the scope of this project.
 

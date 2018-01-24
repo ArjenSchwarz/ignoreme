@@ -5,6 +5,7 @@ author:       Arjen Schwarz
 Date:         2016-03-16T21:09:33+11:00  
 categories:   ["Development"]
 projects:     ["Igor"]
+keywords: ["chatbot", "golang"]
 slug:         "introducing-igor"
 ogimage:      "https://ig.nore.me/img/posts/2016-03-16-igor-example.jpg"
 Description:  "Over the past weeks I've been working on a new tool. Now, Igor has reached a state where I'm happy with showing it off and so it's time to introduce it to the world."

@@ -6,6 +6,7 @@ author:       Arjen Schwarz
 Date:         2016-05-04T16:47:15+10:00
 categories:   ["CI-CD"]
 projects:     ["S3Get Step for Wercker"]
+keywords: ["wercker", "cicd", "aws"]
 Description:  "In my ongoing quest for automating all deployment related matters, I discovered I needed a way to pull in single files from S3 for my Wercker builds. As I couldn't find a step for that, I built one."
 ---
 
@@ -13,7 +14,7 @@ In my ongoing quest for automating all deployment related matters, I discovered 
 
 # Background
 
-Last night's Go meetup was partially a hack night, so I was planning to do some work on [Igor][igor]. Usually I spend most of the time at hack nights talking to people, but I do occasionally get something done as well. So, after I wrote a small change for Igor I then needed to deploy this. 
+Last night's Go meetup was partially a hack night, so I was planning to do some work on [Igor][igor]. Usually I spend most of the time at hack nights talking to people, but I do occasionally get something done as well. So, after I wrote a small change for Igor I then needed to deploy this.
 
 As it happens, I run Igor in a couple of Slack teams and I was bothered by the fact that I had to do these deployments manually. After all, that's what I built the [Lambda deployment step][lambdadeploy] to solve. The issue of course is that Igor uses a configuration file, and as that file contains various keys I didn't think that putting it up on GitHub was a great idea.
 

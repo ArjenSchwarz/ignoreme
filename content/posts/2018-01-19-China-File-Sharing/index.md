@@ -6,16 +6,17 @@ author:       Arjen Schwarz
 Date:           2018-01-19T16:59:22+08:00
 categories:
   - Workflows
+keywords: ["code"]
 Description:  "Once again visiting China, I ran into an issue. How do I share photos taken on my iPhone with Android users in a country where most file sharing options don't work?"
 ---
 
-Once again visiting China, I ran into an issue. How do I share photos taken on my iPhone with Android users in a country where most file sharing options don't work? 
+Once again visiting China, I ran into an issue. How do I share photos taken on my iPhone with Android users in a country where most file sharing options don't work?
 
 Let me start with saying that I don't have a perfect answer for this due to some iOS limitations. That said, I started writing this article shortly after I ran into this and it has helped me in figuring out something I'm mostly happy with.
 
-# The problem 
+# The problem
 
-The issue isn't so much that I have an iPhone[^1], as it is that the services I use to share files don't work in China. There is no access to anything from Google, which rules out both my email and Google Drive, and Dropbox doesn't work either. 
+The issue isn't so much that I have an iPhone[^1], as it is that the services I use to share files don't work in China. There is no access to anything from Google, which rules out both my email and Google Drive, and Dropbox doesn't work either.
 
 And for some reason that I can't fathom, iCloud Drive or Photos doesn't have the ability to share a photo properly. By which I mean that you can give someone a link to a file. Obviously, social media and messaging apps were out as well. Except for WeChat, which I don't have[^2].
 
@@ -38,13 +39,13 @@ Or rather, the entire workflow I want is:
 
 The AWS Console app doesn't let you upload files, and besides I don't really want to log into my AWS account using anything more than the bare minimum of permissions for what's needed. So, basically I just want to use an API call. And preferably something that is completely automated. I also considered posting the file through a Lambda function, but I'm not confident that scales well if the zip file becomes very big.
 
-So, the first steps of this are easy to do. I can build a [Workflow](https://itunes.apple.com/au/app/workflow/id915249334?mt=8&uo=4&at=1000l9pK&ct=ignoreme) that lets me select photos, zips them up[^4], and then stores them somewhere. If this was for Dropbox I could have it simply store the file in a dedicated Dropbox folder and get a share link. Unfortunately, there is no such integration for S3 directly into the iOS Files app. 
+So, the first steps of this are easy to do. I can build a [Workflow](https://itunes.apple.com/au/app/workflow/id915249334?mt=8&uo=4&at=1000l9pK&ct=ignoreme) that lets me select photos, zips them up[^4], and then stores them somewhere. If this was for Dropbox I could have it simply store the file in a dedicated Dropbox folder and get a share link. Unfortunately, there is no such integration for S3 directly into the iOS Files app.
 
 ![](/2018/01/file-sharing-in-china/9486F4A5-5FF3-4A4A-911C-4621C1D02B4B.jpeg)
 
 Technically speaking I can have Workflow post the file through Transmit, but as that was announced as being [end of life](https://panic.com/blog/the-future-of-transmit-ios/) that's not really an option I want to use. MacStories had an article this week [detailing some alternatives](https://www.macstories.net/ios/ipad-diaries-transmit-replacements-and-ftp-clients/), but they all seem to have downsides. Most importantly, there is no way to automate the process. For all of these, I would have to open the app, use the Files browser to select the file I want, import that into the app and then upload it to S3. While I can do so, it is far too much manual work for what I want.
 
-In the end, it came down to using [Pythonista](https://itunes.apple.com/au/app/pythonista-3/id1085978097?mt=8&uo=4&at=1000l9pK&ct=ignoreme), which allows you to write and run Python scripts on your iOS device. With that I can use the Boto3 framework to push things to S3, but the big issue is how to get the images into the app. Unfortunately, due to sandboxing restrictions I can't have Workflow save the files somewhere that Pythonista can directly open them. 
+In the end, it came down to using [Pythonista](https://itunes.apple.com/au/app/pythonista-3/id1085978097?mt=8&uo=4&at=1000l9pK&ct=ignoreme), which allows you to write and run Python scripts on your iOS device. With that I can use the Boto3 framework to push things to S3, but the big issue is how to get the images into the app. Unfortunately, due to sandboxing restrictions I can't have Workflow save the files somewhere that Pythonista can directly open them.
 
 As I have no idea how to work around that, I therefore will just open the Files app and do the last step directly from there.
 

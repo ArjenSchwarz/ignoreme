@@ -6,6 +6,11 @@ author:       Arjen Schwarz
 Date:         2018-01-03T19:17:48+11:00
 categories:
   - AWS
+  - Golang
+keywords:
+  - aws
+  - golang
+  - code
 Description:  "At the end of December, AWS released a developer preview of version 2 of their Go SDK. This promises several improvements and so I decided to give it a spin to see what's different.
 "
 ---
@@ -79,7 +84,7 @@ func RDSSessions() map[string]*rds.RDS {
 
 # Enums
 
-That last example actually brings me to another change that's worth noting. Many things that used to be plain strings have now been changed to enums[^2]. These are enums of a particular type, usually a string. 
+That last example actually brings me to another change that's worth noting. Many things that used to be plain strings have now been changed to enums[^2]. These are enums of a particular type, usually a string.
 
 ```go
 type ResourceStatus string
@@ -147,7 +152,7 @@ Because the project I tested this on is fairly small, I didn't encounter too man
 
 First, the value of `ec2.Reservations` has changed from a slice of `Reservation` types, to a slice of `RunInstancesOutput`. Nothing else about this has changed, and quite frankly I think it's a weird change. There probably is a reason for it, but I don't know what it is[^4]. And of course, while this is the only such change I encountered that doesn't mean it's the only one in the code base.
 
-The other thing I noticed is the size of my binary. It's possible this is because it's still in preview mode, but where using v1 delivered a 18MB binary on macOS (using Go 1.9) this becomes 36MB with v2. 
+The other thing I noticed is the size of my binary. It's possible this is because it's still in preview mode, but where using v1 delivered a 18MB binary on macOS (using Go 1.9) this becomes 36MB with v2.
 
 Inside my project, I created a [pull request](https://github.com/ArjenSchwarz/awstools/pull/1) for the changes I had to make to change over to v2, so feel free to have a look at that to see what changes needed to be made to get it working. Most likely I didn't use the best solution for everything yet, but I can change that when I get more familiar with the SDK.
 

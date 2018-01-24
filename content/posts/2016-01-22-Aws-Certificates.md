@@ -6,6 +6,7 @@ Date:         2016-01-22T16:53:19+11:00
 date started: 22-01-2016
 date posted:  22-01-2016
 categories:   ["AWS"]
+keywords: ["ssl", "code", "aws"]
 slug:         "aws-introduces-free-ssl-certificates"
 Description:  "Today AWS introduced the ability to request free SSL certificates for use with their services and I immediately jumped on that to try it out for this site. Let's have a look at how that went."
 ---
@@ -28,7 +29,7 @@ First of, unlike with Let's Encrypt, you can request wildcard certificates and h
 
 The interface for requesting the certificates is as you would expect from AWS. Simple, and without anything you don't really need. I used the Console this time, although you can also use the CLI or API calls for automation.
 
-The validation however, is still a bit messy. According to the documentation, what should happen is that it looks at your WHOIS records and sends an email to the contacts in there, *as well* as to the postmaster@, admin@, and several other high level email addresses. As I have the domain registered at the excellent [Hover][hover], it comes by default with WHOIS privacy enabled. So, I didn't get any emails to anything in there, but I also didn't receive any emails on the other addresses I should have gotten them. 
+The validation however, is still a bit messy. According to the documentation, what should happen is that it looks at your WHOIS records and sends an email to the contacts in there, *as well* as to the postmaster@, admin@, and several other high level email addresses. As I have the domain registered at the excellent [Hover][hover], it comes by default with WHOIS privacy enabled. So, I didn't get any emails to anything in there, but I also didn't receive any emails on the other addresses I should have gotten them.
 
 Maybe this is a problem on their side, and maybe it's because I use a subdomain (although they showed the correct addresses when they were going to send the email). Either way, in the end I had to temporarily turn off the WHOIS privacy and then when I went through the request process again (using resend confirmation messages didn't update the email addresses) I immediately got *3* copies of the same email.
 
@@ -44,7 +45,7 @@ The issued certificate is valid for 13 months, and according to the documentatio
 
 Other than the small annoyances I ran into as described above, there are a couple of other limitations currently with ACM. Presently it's only available in the US Standard (us-east-1) region and only works with ELB and Cloudfront. This mostly seems to be their usual method of rolling things out carefully over time, so I expect this will be released fairly quickly to other regions and more fully integrated with services like Elastic Beanstalk (as Beanstalk creates an ELB for you, you can already add the certificate there manually).
 
-This also implies that AWS manages the certificate for you, which might be a dealbreaker if you want full control over your certificates. However, while through the Console it doesn't offer an option for it, you **can** download a copy of the certificate and its chain using the [CLI](http://docs.aws.amazon.com/cli/latest/reference/acm/get-certificate.html). 
+This also implies that AWS manages the certificate for you, which might be a dealbreaker if you want full control over your certificates. However, while through the Console it doesn't offer an option for it, you **can** download a copy of the certificate and its chain using the [CLI](http://docs.aws.amazon.com/cli/latest/reference/acm/get-certificate.html).
 
 The documentation implies that the certificate only works with Cloudfront and ELBs however, so it might not work for anything else. On the other hand, you might be able to upload the certificates manually to other regions that don't support the Certificate Manager yet. Renewals won't be automated then, but that's a problem for next year.
 
