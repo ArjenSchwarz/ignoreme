@@ -16,8 +16,6 @@ Projects: ["Igor"]
 Description:  "With the release of the Go runtime for AWS Lambda, I took the opportunity to convert some of my code to run natively instead of through wrappers."
 ---
 
-# Go-ing Lambda
-
 With the release of the Go runtime for AWS Lambda, I took the opportunity to convert some of my code to run natively instead of through wrappers.
 
 Before I started on the code, I believed that this would become a long article detailing various pain points and all the work I had to do for it. Unfortunately, this turned out to be not quite true as the conversion went very smooth and quick.
