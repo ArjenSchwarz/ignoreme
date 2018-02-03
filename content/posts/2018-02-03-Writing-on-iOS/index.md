@@ -15,9 +15,6 @@ keywords:
 Description:  "As I've mentioned in the past, I do a lot of my writing on my phone and iPad. Things have changed there recently, and I wanted to write out some parts of this improved workflow."
 ---
 
-
-# Writing on iOS
-
 As I've mentioned in the past, I do a lot of my writing on my phone and iPad. Things have changed there recently, and I wanted to write out some parts of this improved workflow.
 
 # The Writing Part
