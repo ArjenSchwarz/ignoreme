@@ -6,13 +6,13 @@ author:       Arjen Schwarz
 Date:        2018-01-11T17:51:46+08:00
 categories:   
   - "AWS"
-keywords: ["s3", "aws"]
+keywords: ["s3", "aws", "security"]
 Description:  "In the past I've had questions about how permissions work in S3, so I decided to investigate and write it up for myself so that I've got it all clearly described somewhere and can refer to this article."
 ---
 
 In the past I've had questions about how permissions work in S3, so I decided to investigate and write it up for myself so that I've got it all clearly described somewhere and can refer to this article.
 
-# The levels of permissions
+# The levels of permissions 
 
 Access to S3 buckets is managed at 3 different levels:
 
