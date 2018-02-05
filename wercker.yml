@@ -3,7 +3,7 @@ build:
   steps:
     - arjen/hugo-build:
         disable_pygments: true
-        flags: --preserveTaxonomyNames=true
+
 deploy:
   steps:
     # Execute the s3sync deploy step, a step provided by wercker
