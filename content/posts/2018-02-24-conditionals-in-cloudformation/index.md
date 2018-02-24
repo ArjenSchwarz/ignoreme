@@ -20,8 +20,8 @@ As this concerns a base functionality of CloudFormation I won't be using my [pre
 
 Your first question might be, why would you want to do this? The answer to that really is just reusability. If you have a single template that you can use across different environments, whether that is production vs development or different projects, it makes it a lot easier to maintain and update those different environments.
 
-But environments are rarely exactly the same. For example, in your development environment you might not care about HTTPS, but in your production environment it's required. With conditionals you can still use a single template to manage these two environmentsYou can use conditionals in CloudFormation to make a template more reusable across projects or environments. Today I'll be showing how that works..
-
+But environments are rarely exactly the same. For example, in your development environment you might not care about HTTPS, but in your production environment it's required. With conditionals you can still use a single template to manage these two environments.
+ 
 # The setup
 
 We'll build a basic environment consisting of an autoscaling group behind an ELB[^2]. VPC, subnets, and security groups will be provided as parameters, and we're not going to set up a database. Everything in the template is limited to the minimal requirement to make it work, so not optimised in any way.
