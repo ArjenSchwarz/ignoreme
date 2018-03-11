@@ -4,6 +4,7 @@ slug:       publishing-to-the-serverless-application-repository
 blog:         ig.nore.me  
 author:       Arjen Schwarz  
 Date:         2018-03-11T13:44:42+11:00
+lastmod:  2018-03-11T20:10:16+11:00
 categories:
   - AWS
 keywords:
@@ -13,6 +14,11 @@ Description:  "When it became publicly available, I said I'd give the Serverless
 ---
 
 When it became publicly available, I said I'd give the [Serverless Application Repository](https://aws.amazon.com/serverless/serverlessrepo/) a try. Yesterday I released my first public application on there, so that makes it an excellent time to write about it.
+
+<div class='ignoreme-update'>
+<strong>Update March 11, 2018:</strong> In a tweet, Salman Paracha, service owner of the SAR responded that the <code>AllowedValues</code> bug I mention in this article is actively being worked on, and also said that improvements to the upgrade process are coming. I have to admit, being able to enable up automatic upgrades will be great when you run this out across organisational accounts.
+{{< tweet 972738484875100160 >}}
+</div>
 
 # Packer Cleaner
 
@@ -66,7 +72,7 @@ Lastly, while it's quite easy to make an application public using a toggle slide
 
 # How about upgrades?
 
-As I released updates while building this, I got to try out the "upgrade" process as well. Which isn't much of a process. There are no notifications that a new version is available, and upgrading consists of going into the repository to do a fresh install through the Create Function -\> Serverless Application Repository workflow[^4]. It doesn't show you've already got the function installed until you run the install at which point it will show you the same information about the resources as when you do an actual install.
+As I released updates while building this, I got to try out the "upgrade" process as well. Which isn't much of a process. There are no notifications that a new version is available, and upgrading consists of going into the repository to do a fresh install through the Create Function -\> Serverless Application Repository workflow[^4]. This works perfectly fine, but it doesn't show that you've already got the function installed until you run the install at which point it will show you the same information about the resources as when you do an actual install.
 
  ![](/2018/03/publishing-to-the-serverless-application-repository/Lambda_Management_Console-1.png)
 
