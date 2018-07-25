@@ -1,9 +1,10 @@
 ---
-title:    Serverless Bastions on Demand    
+title:    Serverless Bastions on Demand
 slug:       serverless-bastions-on-demand
-blog:         ig.nore.me  
-author:       Arjen Schwarz  
+blog:         ig.nore.me
+author:       Arjen Schwarz
 Date:         2018-07-24T21:20:50+10:00
+lastmod:      2018-07-25T10:59:56+10:00
 categories:
   - AWS
 keywords:
@@ -15,7 +16,7 @@ keywords:
 Description:  "Fargate bastions allow you to spin up a bastion host only when you need it and tear it down afterwards. All using AWS serverless technologies, which means that you don't pay anything for them unless you actively use it. "
 ---
 
-Fargate bastions allow you to spin up a bastion host[^1] only when you need it and tear it down afterwards. All using AWS serverless technologies, which means that you don't pay anything for them unless you actively use it. 
+Fargate bastions allow you to spin up a bastion host[^1] only when you need it and tear it down afterwards. All using AWS serverless technologies, which means that you don't pay anything for them unless you actively use it.
 
 Everything I'm discussing here is available [on GitHub](https://github.com/ArjenSchwarz/fargate-bastion), so please feel free to try it yourself there or even follow the steps in [the workshop](https://github.com/ArjenSchwarz/workshop-fargate-bastion) I created for it. Follow up articles will dive deeper into the code, but today's focus is on the high-level picture of how it works.
 
@@ -27,7 +28,7 @@ One way this is traditionally done is by using bastion hosts or jump boxes that 
 
 # The Access Pattern
 
-The Fargate bastion access pattern means that you can create a bastion by accessing the endpoint of an API Gateway with your username specified. For example from your CLI you can run  
+The Fargate bastion access pattern means that you can create a bastion by accessing the endpoint of an API Gateway with your username specified. For example from your CLI you can run
 
 ```bash
 curl -X POST "https://abcdefg.execute-api.us-east-1.amazonaws.com/Prod?user=arjen"
@@ -37,7 +38,7 @@ This endpoint is linked to a Lambda function that first creates a security group
 
 The Lambda function eventually returns the public IP of the Fargate container so that you can access it immediately. Depending on the speed with which the Fargate container is deployed, you will have access to the environment in about 5 to 20 seconds[^3].
 
-![](fargate-bastion-create.png)
+![](/2018/07/serverless-bastions-on-demand/fargate-bastion-create.png)
 
 A similar functionality exists for removing the bastion when you're done with it. Once again you hit an endpoint
 
@@ -47,9 +48,9 @@ curl -X DELETE "https://abcdefg.execute-api.us-east-1.amazonaws.com/Prod?user=ar
 
 that is linked to a Lambda function. As the deletion process takes longer than the creation, and generally exceeds the 30 second timeout that an API Gateway has, this Lambda function needs to invoke a different Lambda function. This function is then responsible for deleting the items in the correct order.
 
-![](fargate-bastion-destroy.png)
+![](/2018/07/serverless-bastions-on-demand/fargate-bastion-destroy.png)
 
-Lastly, there is a Lambda function that on a schedule checks if no bastions have been kept running for too long and automatically deletes them if that is the case.
+Lastly, there is a Lambda function that on a schedule checks if a bastion has been kept running for too long and automatically deletes them if that is the case.
 
 # Further ideas
 
