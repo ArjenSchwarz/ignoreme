@@ -28,11 +28,11 @@
                     </section>
 
                     <nav id="post-entries" class="fix">
-                        {{ if .Prev }}
-                        <div class="nav-prev fl"><a href="{{ .Prev.RelPermalink }}" rel="prev">{{ .Prev.Title}}</a></div>
+                        {{ if .NextPage }}
+                        <div class="nav-prev fl"><a href="{{ .NextPage.RelPermalink }}" rel="prev">{{ .NextPage.Title}}</a></div>
                         {{ end }}
-                        {{ if .Next }}
-                        <div class="nav-next fr"><a href="{{ .Next.RelPermalink }}" rel="prev">{{ .Next.Title}}</a></div>
+                        {{ if .PrevPage }}
+                        <div class="nav-next fr"><a href="{{ .PrevPage.RelPermalink }}" rel="prev">{{ .PrevPage.Title}}</a></div>
                         {{ end }}
                     </nav><!-- #post-entries -->
 
