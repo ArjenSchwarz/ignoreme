@@ -24,6 +24,9 @@
                                     {{ end }}
                                 </span>
                             </aside>
+                            {{ if ne .Params.author "Arjen Schwarz"}}
+                                <span style="font-weight: bold">By <a href="{{ (index .Site.Data.authors .Params.author).link }}">{{ .Params.author }}</a></span>
+                            {{ end }}
                     </section>
 
                     <nav id="post-entries" class="fix">
@@ -41,13 +44,18 @@
 
                 {{ .Content }}
 
+                {{ if ne .Params.author "Arjen Schwarz"}}
+                    <div class='ignoreme-update' style="margin-top: 1em; margin-bottom: 1em;">
+                    {{ (index .Site.Data.authors .Params.author).bio | safeHTML }}
+                    </div>
+                {{ end }}
+
                 {{ template "partials/cta_subscribe.html" }}
 
                 {{ partial "related.html" . }}
                 </section>
 
                 </article><!-- .post -->
-
 
                 </section><!-- #main -->
 

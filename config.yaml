@@ -22,6 +22,7 @@ taxonomies:
   category: "categories"
   series: "series"
   project: "projects"
+  authors: "authors"
 MetaDataFormat: yaml
 disqusShortname: ignoreme
 pygmentsCodeFences: true

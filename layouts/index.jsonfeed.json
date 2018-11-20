@@ -14,7 +14,7 @@
        "id": "{{ .Permalink }}",
        "title": "{{ .Title }}",
        "url": "{{ if isset .Params "redirect" }}{{ .Params.redirect }}{{ else }}{{ .Permalink }}{{ end }}",
-       "content_html": "{{ replace .Content "\n" "\\n" | replaceRE "\"" "\\\"" | replaceRE "\t" "\\t"}}{{ if isset .Params "redirect" }}<p><a href=\"{{ .Permalink }}\">Read on site</a></p>{{ end }}",
+       "content_html": "{{ replace .Content "\n" "\\n" | replaceRE "\"" "\\\"" | replaceRE "\t" "\\t"}}{{ if eq .Params.Author "Chris Coombs"}} About the author: {{ (index .Site.Data.authors "Chris Coombs").bio }} {{end}}{{ if isset .Params "redirect" }}<p><a href=\"{{ .Permalink }}\">Read on site</a></p>{{ end }}",
        "summary": "{{ replace .Summary "\n" "\\n" | replaceRE "\"" "\\\"" }}",
        {{ range $taxonomy := .Params.categories }}"banner_image": "https://ig.nore.me/img/categories/category-{{ $taxonomy | urlize }}-full.jpg",{{ end }}
        {{ if isset .Params "ogimage" }}"image": "{{ .Params.ogimage }}",{{ end }}

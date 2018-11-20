@@ -17,9 +17,9 @@
       <title>{{ .Title }}</title>
       <link>{{ if isset .Params "redirect" }}{{ .Params.redirect }}{{ else }}{{ .Permalink }}{{ end }}</link>
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 MST" }}</pubDate>
-      {{with .Site.Author.name}}<author>{{.}}</author>{{end}}
+      <author>{{ .Params.Author }}</author>
       <guid>{{ .Permalink }}</guid>
-      <description>{{ .Content | html }}{{ if isset .Params "redirect" }}<p><a href="{{ .Permalink }}">Read on site</a></p>{{ end }}</description>
+      <description>{{ .Content | html }}{{ if eq .Params.Author "Chris Coombs"}} About the author: {{ (index .Site.Data.authors "Chris Coombs").bio }} {{end}}{{ if isset .Params "redirect" }}<p><a href="{{ .Permalink }}">Read on site</a></p>{{ end }}</description>
     </item>
     {{ end }}
   </channel>
