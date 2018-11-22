@@ -268,7 +268,7 @@ aws cloudformation deploy --template-file DescriptionFixer/example.yml --stack-n
 
 ![](/2018/11/building-and-testing-cloudformation-macros/dev-vpc.jpg)
 
-And with that we've got our unique description. As usual, all the code used in this article can be found on GitHub.
+And with that we've got our unique description. As usual, all the code used in this article can be found [on GitHub](https://github.com/ArjenSchwarz/cloudformation-macros).
 
 # As Complex as You Want It
 
