@@ -300,7 +300,7 @@ This doesn't mean that I think you should change your existing projects, but I w
 
 [^8]:	Using Name tags and resource specific name fields.
 
-[^9]:	Based on the great work by Kablamo in [this VPC builder](https://github.com/KablamoOSS/cfn-macros/tree/master/VPCBuilder).
+[^9]:	Based on the great work by Kablamo in [this VPC builder](https://github.com/ElendelOSS/VPCBuilder) (updated on 2018-11-25 with link to newer version).
 
 [^10]:	I really need to do a new version of that post.
 
