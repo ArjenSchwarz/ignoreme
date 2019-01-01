@@ -5,6 +5,5 @@ workflow "Build Hugo Site" {
 
 action "Build" {
   uses = "ArjenSchwarz/action-hugo-build@master"
-  args = "--theme=mytheme"
   secrets = ["GITHUB_TOKEN"]
 }
