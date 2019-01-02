@@ -1,6 +1,6 @@
 workflow "Build and Deploy Hugo Site" {
   on = "push"
-  resolves = ["Sync"]
+  resolves = ["Sync To S3"]
 }
 
 action "Build" {
@@ -8,7 +8,7 @@ action "Build" {
   secrets = ["GITHUB_TOKEN"]
 }
 
-action "Sync" {
+action "Sync To S3" {
   needs = ["Build"]
   uses = "ArjenSchwarz/actions/aws/s3sync@master"
   args = "--cf-invalidate --default-mime-type=application/json"
