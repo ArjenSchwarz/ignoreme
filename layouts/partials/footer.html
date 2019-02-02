@@ -12,9 +12,9 @@
 
     </footer><!-- /#footer  -->
     {{ $script := resources.Get "js/jquery.js" | minify | fingerprint }}
-    <script type='text/javascript' src="{{ $script.RelPermalink }}"></script>
+    <script type='text/javascript' src="{{ $script.Permalink }}"></script>
     {{ $script := resources.Get "js/fitvids.min.js" | minify | fingerprint }}
-    <script type='text/javascript' src="{{ $script.RelPermalink }}"></script>
+    <script type='text/javascript' src="{{ $script.Permalink }}"></script>
     {{ $script := resources.Get "js/general.js" | minify | fingerprint }}
-    <script type='text/javascript' src="{{ $script.RelPermalink }}"></script>
+    <script type='text/javascript' src="{{ $script.Permalink }}"></script>
     <script type="text/javascript">jQuery.bigfoot()</script>
