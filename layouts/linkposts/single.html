@@ -41,9 +41,9 @@
 
                 {{ .Content }}
 
-                <p><a href="{{ .Params.redirect }}">Read original article</a></p>
+                <p><a href="{{ .Params.redirect }}">Read article</a></p>
 
-                {{ partial "related.html" . }}
+                {{ template "partials/cta_subscribe.html" }}
                 </section>
 
                 </article><!-- .post -->

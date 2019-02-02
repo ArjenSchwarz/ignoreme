@@ -1,12 +1,11 @@
 {{ $related := .Site.RegularPages.Related . | first 5 }}
 {{ with $related }}
 <div class='ignoreme-update' style="margin-top: 1em;">
-<h3>Read more like this:</h3>
+<h3>Related content you might like:</h3>
 <ul>
 {{ range . }}
 <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
 {{ end }}
 </ul>
-<p>Or always get the latest by <a href="/keep-up-to-date">subscribing through RSS, Twitter, or email</a>!</p>
 </div>
 {{ end }}

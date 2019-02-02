@@ -12,7 +12,7 @@
             <ul id="main-nav" class="nav">
             {{ $currentNode := . }}
             {{ range .Site.Menus.main }}
-                <li class="page_item{{if $currentNode.IsMenuCurrent "main" . }} current-menu-item{{end}}{{if eq .Name "Keep up to Date"}} rss{{end}}"><a href="{{ .URL }}">{{ .Name }}</a></li>
+                <li class="page_item{{if $currentNode.IsMenuCurrent "main" . }} current-menu-item{{end}}"><a href="{{ .URL }}">{{ .Name }}</a></li>
             {{ end }}
             </ul><!-- /#nav -->
             <ul class="nav github">

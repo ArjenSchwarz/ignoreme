@@ -11,10 +11,9 @@
         </div>
 
     </footer><!-- /#footer  -->
-    {{ $script := resources.Get "js/jquery.js" | minify | fingerprint }}
-    <script type='text/javascript' src="{{ $script.Permalink }}"></script>
-    {{ $script := resources.Get "js/fitvids.min.js" | minify | fingerprint }}
-    <script type='text/javascript' src="{{ $script.Permalink }}"></script>
-    {{ $script := resources.Get "js/general.js" | minify | fingerprint }}
-    <script type='text/javascript' src="{{ $script.Permalink }}"></script>
+    <script type='text/javascript' src='/js/jquery.js?ver=1.11.0'></script>
+    <script type='text/javascript' src='/js/jquery-migrate.min.js?ver=1.2.1'></script>
+    <script type='text/javascript' src='/js/fitvids.min.js?ver=1.0'></script>
+    <script type='text/javascript' src='/js/modernizr.min.js?ver=2.6.2'></script>
+    <script type='text/javascript' src='/js/general.min.js?ver=1.6'></script>
     <script type="text/javascript">jQuery.bigfoot()</script>

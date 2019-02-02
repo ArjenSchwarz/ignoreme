@@ -8,8 +8,8 @@
     {{ end -}}
     <!-- <link rel="alternate" type="application/rss+xml" title="ig.nore.me &raquo; Feed" href="/index.xml" /> -->
     <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic|Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
-    {{ $style := resources.Get "css/style.css" | minify | fingerprint }}<link rel="stylesheet" href="{{ $style.Permalink }}" type='text/css' media='all' />
-    {{ $style := resources.Get "css/font-awesome.min.css" | minify | fingerprint }}<link rel="stylesheet" href="{{ $style.Permalink }}" type='text/css' media='all' />
-    {{ $style := resources.Get "css/bigfoot-default.css" | minify | fingerprint }}<link rel="stylesheet" href="{{ $style.Permalink }}" type='text/css' media='all' />
+    <link rel='stylesheet' href='/css/style.min.css?ver=1.7' type='text/css' media='all' />
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/bigfoot.min.css">
     <link rel="icon" type="image/png" href="/favicon.png" />
 </head>
