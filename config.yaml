@@ -37,12 +37,17 @@ outputFormats:
     mediaType: "application/json"
     baseName: "links"
     isPlainText: true
+  search:
+    mediaType: "application/json"
+    baseName: "search"
+    isPlainText: true
 outputs:
   home:
     - "html"
     - "rss"
     - "jsonfeed"
     - "links"
+    - "search"
   page:
     - "html"
 menu:

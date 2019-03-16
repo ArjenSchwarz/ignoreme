@@ -1,0 +1,56 @@
+{{ partial "header.html" . }}
+
+<body class="archive category alt-style-default layout-right-content">
+{{ partial "gtm.html" . }}
+
+
+<div id="wrapper">
+    <div id="inner-wrapper">
+
+    {{ partial "sidebar.html" . }}
+
+    <div id="content" class="col-full">
+        <section id="main" class="col-full">
+            <img class="topic-image" src="/img/categories/category-search-130x130.jpg" height="98" width="130">
+            <header class="archive-header">
+                <h1>Search</h1>
+            </header>
+            <div class="fix"></div>
+
+            <div class="my-auto" >
+                <form action="{{ "search" | absURL }}">
+                    <input id="search-query" name="s" type="text" placeholder="Fill in your search term here"/>
+                </form>
+                <div id="search-results"></div>
+            </div>
+        </section>
+    </div>
+    <script id="search-result-template" type="text/x-js-template">
+    <article class="post">
+        <header>
+            <h1> <a href="${link}" rel="bookmark" title="${title}">${title}</a> </h1>
+            <aside class="post-meta">
+                <span class="post-date">${date}, </span>
+                <span class="post-category">in ${categories}</span>
+            </aside>
+        </header>
+        <section class="entry">
+            <p>${snippet}</p>
+        </section>
+        <footer class="post-more">
+            <a class="button" href="${link}" title="Continue Reading">Continue Reading</a>
+        </footer>
+    </article>
+    </script>
+
+    {{ partial "footer.html" . }}
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.4/fuse.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js"></script>
+    {{ $script := resources.Get "js/search.js" | minify | fingerprint }}
+    <script type='text/javascript' src="{{ $script.RelPermalink }}"></script>
+    </div><!-- /#inner-wrapper -->
+</div><!-- /#wrapper -->
+
+</body>
+</html>
