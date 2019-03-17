@@ -8,10 +8,6 @@ jQuery(document).ready(function(){
 	// Table alt row styling
 	jQuery( '.entry table tr:odd' ).addClass( 'alt-table-row' );
 
-	// FitVids - Responsive Videos
-	jQuery( '.post, .widget, .panel, .page, #featured-slider .slide-media' ).fitVids();
-
-	// Add class to parent menu items with JS until WP does this natively
 	jQuery( 'ul.sub-menu, ul.children' ).parents( 'li' ).addClass( 'parent' );
 
 	// Single post next/prev navigation
@@ -54,12 +50,6 @@ jQuery(document).ready(function(){
 
 		// Add the 'show-nav' class
 		jQuery( 'body' ).toggleClass( 'show-nav' );
-
-		// Check if .top-navigation already exists
-		if ( jQuery( '#navigation' ).find( '.top-navigation' ).size() ) return;
-
-		// If it doesn't, clone it (so it will still appear when resizing the browser window in desktop orientation) and add it.
-		jQuery( '#top .top-navigation' ).clone().appendTo( '#navigation .menus' );
 	});
 
 	// Remove the 'show-nav' class from the body when the nav-close anchor is clicked

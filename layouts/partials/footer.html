@@ -13,7 +13,7 @@
     </footer><!-- /#footer  -->
     {{ $script := resources.Get "js/jquery.js" | minify | fingerprint }}
     <script type='text/javascript' src="{{ $script.RelPermalink }}"></script>
-    {{ $script := resources.Get "js/fitvids.min.js" | minify | fingerprint }}
+    {{ $script := resources.Get "js/modernizr.min.js" | minify | fingerprint }}
     <script type='text/javascript' src="{{ $script.RelPermalink }}"></script>
     {{ $script := resources.Get "js/general.js" | minify | fingerprint }}
     <script type='text/javascript' src="{{ $script.RelPermalink }}"></script>

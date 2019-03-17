@@ -3,6 +3,9 @@ title: "Search"
 slug: search
 sitemap:
   priority : 0.1
+menu:
+    main:
+        weight: 1
 layout: "search"
 ---
 
