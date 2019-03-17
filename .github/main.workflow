@@ -28,7 +28,7 @@ action "ProdFilter" {
 action "Master To Prod S3" {
   needs = ["ProdFilter"]
   uses = "ArjenSchwarz/actions/aws/s3sync@master"
-  args = "--cf-invalidate --default-mime-type=application/json"
+  args = "--cf-invalidate --default-mime-type=application/json --no-mime-magic --guess-mime-type"
   secrets = ["AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY"]
   env = {
     S3_BUCKET_URL = "s3://ignoreme-site"
