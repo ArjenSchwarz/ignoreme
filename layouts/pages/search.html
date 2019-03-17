@@ -18,7 +18,7 @@
             <div class="fix"></div>
 
             <div class="my-auto" >
-                <form action="{{ "search" | absURL }}">
+                <form action="{{ "search" | relURL }}" method="GET">
                     <input id="search-query" name="s" type="text" placeholder="Fill in your search term here"/>
                 </form>
                 <div id="search-results"></div>
