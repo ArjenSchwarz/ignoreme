@@ -3,13 +3,11 @@ title: "Search"
 slug: search
 sitemap:
   priority : 0.1
-menu:
-    main:
-        weight: 1
 layout: "search"
 ---
 
 Based on https://gist.github.com/eddiewebb/735feb48f50f0ddd65ae5606a1cb41ae
+
 This file exists solely to respond to /search URL with the related `search` layout template.
 
 No content shown here is rendered, all content is based in the template layouts/page/search.html
