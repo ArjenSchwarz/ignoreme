@@ -19,9 +19,10 @@
             <div id="home-tabs">
 
                 <div id="articles">
-                    {{ range first 10 .Data.Pages }}
+                    {{ range .Paginator.Pages }}
                         {{ .Render "summary" }}
                     {{ end }}
+                    {{ template "_internal/pagination.html" . }}
                 </div><!-- /#articles -->
 
                 <div id="topics">

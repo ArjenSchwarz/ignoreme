@@ -7,7 +7,7 @@ Author:
   Name: Arjen Schwarz
   Email: arjen@ig.nore.me
   TwitterPage: "https://www.twitter.com/ArjenSchwarz"
-  Avatar: "https://ig.nore.me/img/profilepicsmall.jpg"
+  Avatar: "https://ig.nore.me/img/profilepic_arjen_2018_square.jpg"
   GitHub: "ArjenSchwarz"
 permalinks:
   posts: /:year/:month/:slug/
@@ -37,12 +37,17 @@ outputFormats:
     mediaType: "application/json"
     baseName: "links"
     isPlainText: true
+  search:
+    mediaType: "application/json"
+    baseName: "search"
+    isPlainText: true
 outputs:
   home:
     - "html"
     - "rss"
     - "jsonfeed"
     - "links"
+    - "search"
   page:
     - "html"
 menu:
