@@ -3,6 +3,7 @@ Categories:
 - Security
 Redirect: https://www.bulletproof.net.au/behind-mo-lebrity/
 Slug: behind-mo-lebrity-at-bulletproof
+Author: Arjen Schwarz
 Title: Behind Mo-Lebrity @ Bulletproof
 date: 2017-11-28T14:35:04+11:00
 summary: "Together with some of my colleagues we built a small side project to support the Movember charity. On the Bulletproof blog I've written a high-level overview of what this entailed. It was an interesting experience, where I got to play with a number of things for the first time and rekindled my 'love' for Javascript."

@@ -5,7 +5,7 @@ title: About
 slug: about
 menu:
     main:
-        weight: 4
+        weight: 5
 ---
 
 Obviously, this site is focused on the things I find interesting and useful. As this is mostly a one-man show, that means I decide what shows up here. Which leads to two natural questions:

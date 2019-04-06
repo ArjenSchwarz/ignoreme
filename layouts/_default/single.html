@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 
-<body class="single single-post single-format-standard alt-style-default layout-default">
+<body itemscope class="single single-post single-format-standard alt-style-default layout-default">
 {{ partial "gtm.html" . }}
 
 <div id="wrapper">
@@ -15,9 +15,10 @@
                 <header style="background-image: url('/img/categories/category-{{ $taxonomy | urlize }}-full.jpg' ); background-size: cover; background-position: center center;" >
                 {{ end }}
                     <section class="header-content">
-                        <h1 itemprop="name">{{ .Title }}</h1>
+                        <h1 itemprop="headline">{{ .Title }}</h1>
                             <aside class="post-meta">
                                 <span itemprop="datePublished" content="{{ .Date.Format "2006-01-02" }}" class="post-date">{{ .Date.Format "January 2, 2006" }}</span>
+                                <meta itemprop="dateModified" content="{{ .Lastmod.Format "2006-01-02" }}">
                                 <span class="post-category">in
                                     {{ range $taxonomy := .Params.categories }}
                                         <a itemprop="articleSection" content="{{ $taxonomy }}" href="/categories/{{ $taxonomy | urlize }}" title="View all posts in {{ $taxonomy }}" rel="category tag">{{ $taxonomy }}</a>
@@ -64,6 +65,19 @@
     <span itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="{{.Params.author}}">
     </span>
+    <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="ig.nore.me">
+    <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+        <meta itemprop="url" content="https://ig.nore.me/logo.png">
+    </span>
+    </span>
+    {{ if .Params.ogimage }}
+    <meta itemprop="image" content="{{ .Params.ogimage }}" />
+    {{ else }}
+        {{ range .Params.categories }}
+            <meta itemprop="image" content="https://ig.nore.me/img/categories/category-{{ . | urlize }}-full.jpg" />
+        {{ end }}
+    {{ end }}
     </div><!-- #content -->
 
 {{ partial "footer.html" . }}

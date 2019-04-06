@@ -5,6 +5,7 @@ Redirect: https://www.bulletproof.net.au/bulletproof-container-camp-2018/
 keywords:
   - containers
 Slug: bulletproof-at-container-camp-2018
+Author: Arjen Schwarz
 Title: Bulletproof at Container Camp 2018
 date: 2018-06-12T17:30:35+10:00
 summary: "This year was my second visit to Container Camp, and it was once again a great experience. In addition Bulletproof, the company I work for, was a sponsor so I wrote up the key things we took away as a team."

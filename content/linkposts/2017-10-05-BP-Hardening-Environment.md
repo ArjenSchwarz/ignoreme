@@ -4,6 +4,7 @@ Categories:
 Redirect: https://www.bulletproof.net.au/hardening-aws-environment/
 Slug: hardening-your-aws-environment-at-bulletproof
 Title: Hardening Your AWS Environment @ Bulletproof
+Author: Arjen Schwarz
 date: 2017-10-05T12:05:06+11:00
 summary: "In case you found the writeup of my last presentation a bit long, I posted a shorter version on the Bulletproof blog. It doesn't have everything from the original writeup, but still contains some useful advice."
 ---
