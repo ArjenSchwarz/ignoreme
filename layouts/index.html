@@ -1,12 +1,4 @@
-{{ partial "header.html" . }}
-<body class="home blog alt-style-default layout-right-content">
-{{ partial "gtm.html" . }}
-
-<div id="wrapper">
-    <div id="inner-wrapper">
-
-    {{ partial "sidebar.html" . }}
-
+{{ define "main"}}
     <div id="content">
 
         <section id="main">
@@ -44,10 +36,4 @@
 
     </div><!-- /#content -->
 
-    {{ partial "footer.html" . }}
-
-    </div><!-- /#inner-wrapper -->
-</div><!-- /#wrapper -->
-
-</body>
-</html>
+{{ end }}

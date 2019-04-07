@@ -1,14 +1,6 @@
-{{ partial "header.html" . }}
-
-<body itemscope class="single single-post single-format-standard alt-style-default layout-default">
-{{ partial "gtm.html" . }}
-
-<div id="wrapper">
-    <div id="inner-wrapper">
-
-    {{ partial "sidebar.html" . }}
-
-    <div itemscope itemtype="http://schema.org/Article" id="content" class="col-full">
+{{ define "bodytags"}}class="single single-post single-format-standard alt-style-default layout-default" {{ end }}
+{{ define "main" }}
+    <div itemscope itemtype="https://schema.org/Article" id="content" class="col-full">
         <section id="main">
             <article class="post type-post status-publish format-standard hentry">
                 {{ range $taxonomy := .Params.categories | first 1 }}
@@ -16,6 +8,7 @@
                 {{ end }}
                     <section class="header-content">
                         <h1 itemprop="headline">{{ .Title }}</h1>
+                        {{ if .Params.location }}<h2>Given for {{ .Params.location }} on {{ .Params.presentation_date }}</h2>{{ end }}
                             <aside class="post-meta">
                                 <span itemprop="datePublished" content="{{ .Date.Format "2006-01-02" }}" class="post-date">{{ .Date.Format "January 2, 2006" }}</span>
                                 <meta itemprop="dateModified" content="{{ .Lastmod.Format "2006-01-02" }}">
@@ -25,17 +18,16 @@
                                     {{ end }}
                                 </span>
                             </aside>
-                            {{ if ne .Params.author "Arjen Schwarz"}}
-                                <span style="font-weight: bold">By <a href="{{ (index .Site.Data.authors .Params.author).link }}">{{ .Params.author }}</a></span>
-                            {{ end }}
+                            <span>By <a rel="author" href="{{ (index .Site.Data.authors .Params.author).link }}">{{ .Params.author }}</a></span>
+                            <span>({{ .ReadingTime }} minutes read)</span>
                     </section>
 
                     <nav id="post-entries" class="fix">
                         {{ if .NextPage }}
-                        <div class="nav-prev fl"><a href="{{ .NextPage.RelPermalink }}" rel="prev">{{ .NextPage.Title}}</a></div>
+                        <div class="nav-next fr"><a href="{{ .NextPage.RelPermalink }}" rel="next">{{ .NextPage.Title}}</a></div>
                         {{ end }}
                         {{ if .PrevPage }}
-                        <div class="nav-next fr"><a href="{{ .PrevPage.RelPermalink }}" rel="prev">{{ .PrevPage.Title}}</a></div>
+                        <div class="nav-prev fl"><a href="{{ .PrevPage.RelPermalink }}" rel="prev">{{ .PrevPage.Title}}</a></div>
                         {{ end }}
                     </nav><!-- #post-entries -->
 
@@ -60,29 +52,7 @@
                 </section><!-- #main -->
 
     {{ template "_internal/disqus.html" . }}
-    <meta itemprop="url" content="{{.Permalink}}">
-    <meta itemprop="wordCount" content="{{.WordCount}}">
-    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="{{.Params.author}}">
-    </span>
-    <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="ig.nore.me">
-    <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-        <meta itemprop="url" content="https://ig.nore.me/logo.png">
-    </span>
-    </span>
-    {{ if .Params.ogimage }}
-    <meta itemprop="image" content="{{ .Params.ogimage }}" />
-    {{ else }}
-        {{ range .Params.categories }}
-            <meta itemprop="image" content="https://ig.nore.me/img/categories/category-{{ . | urlize }}-full.jpg" />
-        {{ end }}
-    {{ end }}
+    {{ partial "article_meta" }}
     </div><!-- #content -->
 
-{{ partial "footer.html" . }}
-
-    </div><!-- /#inner-wrapper -->
-</div><!-- /#wrapper -->
-</body>
-</html>
+{{ end }}

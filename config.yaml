@@ -27,7 +27,7 @@ MetaDataFormat: yaml
 disqusShortname: ignoreme
 pygmentsCodeFences: true
 pygmentsStyle: native
-Paginate: 10
+Paginate: 15
 outputFormats:
   jsonfeed:
     mediaType: "application/json"

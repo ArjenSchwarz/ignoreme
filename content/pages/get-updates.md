@@ -5,6 +5,7 @@ slug: keep-up-to-date
 menu:
     main:
         weight: 5
+layout: "updates"
 ---
 
 In case you want to know when I post new articles it's unlikely that you will want to check the site manually every day. To make it easier for you, there are several ways in which you can receive updates about new content being posted to this site.
@@ -19,7 +20,7 @@ A second option is to follow the site's Twitter account [@ignoreme_site](https:/
 
 ## Email
 
-If you prefer to be notified by email instead, filling in the below form will do so. Your email address will not be used for sending spam, and you can unsubscribe at any time.
+If you prefer to be notified by email instead, filling in the below form will do so. Your email address will only be used to send you site content, and you can unsubscribe at any time.
 
 <div id="mc_embed_signup">
 <h2>Keep up to date!</h2>

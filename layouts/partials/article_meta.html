@@ -1,0 +1,18 @@
+<meta itemprop="url" content="{{.Permalink}}">
+<meta itemprop="wordCount" content="{{.WordCount}}">
+<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+<meta itemprop="name" content="{{.Params.author}}">
+</span>
+<span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+<meta itemprop="name" content="ig.nore.me">
+<span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+    <meta itemprop="url" content="https://ig.nore.me/logo.png">
+</span>
+</span>
+{{ if .Params.ogimage }}
+<meta itemprop="image" content="{{ .Params.ogimage }}" />
+{{ else }}
+    {{ range .Params.categories }}
+        <meta itemprop="image" content="https://ig.nore.me/img/categories/category-{{ . | urlize }}-full.jpg" />
+    {{ end }}
+{{ end }}

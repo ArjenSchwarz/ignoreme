@@ -1,13 +1,5 @@
-{{ partial "header.html" . }}
-
-<body class="single single-post single-format-standard alt-style-default layout-default">
-{{ partial "gtm.html" . }}
-
-<div id="wrapper">
-    <div id="inner-wrapper">
-
-    {{ partial "sidebar.html" . }}
-
+{{ define "bodytags" }}class="single single-post single-format-standard alt-style-default layout-default"{{ end }}
+{{ define "main" }}
     <div id="content" class="col-full">
         <section id="main">
             <article class="post type-post status-publish format-standard hentry">
@@ -53,11 +45,4 @@
 
     {{ template "_internal/disqus.html" . }}
     </div><!-- #content -->
-
-{{ partial "footer.html" . }}
-
-    </div><!-- /#inner-wrapper -->
-</div><!-- /#wrapper -->
-
-</body>
-</html>
+{{ end }}

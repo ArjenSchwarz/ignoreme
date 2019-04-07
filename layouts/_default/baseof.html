@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <html lang="en-US">
+    <head>
+        <title>{{ block "title" . }}{{ .Title }}{{ if ne .Title .Site.Title }} | {{ .Site.Title }}{{ end }}{{ end }}</title>
+        {{ partial "meta.html" . }}
+        {{ range .AlternativeOutputFormats -}}
+        <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
+        {{ end -}}
+        <!-- <link rel="alternate" type="application/rss+xml" title="ig.nore.me &raquo; Feed" href="/index.xml" /> -->
+        <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic|Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
+        {{ $style := resources.Get "css/style.css" | minify | fingerprint }}<link rel="stylesheet" href="{{ $style.RelPermalink }}" type='text/css' media='all' />
+        {{ $style := resources.Get "css/font-awesome.min.css" | minify | fingerprint }}<link rel="stylesheet" href="{{ $style.RelPermalink }}" type='text/css' media='all' />
+        {{ $style := resources.Get "css/bigfoot-default.css" | minify | fingerprint }}<link rel="stylesheet" href="{{ $style.RelPermalink }}" type='text/css' media='all' />
+        <link rel="icon" type="image/png" href="/favicon.png" />
+        {{ block "extrahead" . }}{{ end }}
+    </head>
+  <body {{ block "bodytags" . }}class="home blog alt-style-default layout-right-content"{{ end }}>
+    {{ partial "gtm.html" . }}
+    <div id="wrapper">
+        <div id="inner-wrapper">
+            <header id="header">
+                <span class="nav-toggle"><a href="#navigation"><span>Navigation</span></a></span>
+                <hgroup>
+                    <h1 class="site-title"><a href="/"><img src="/logo-full.png"/></a></h1>
+                    <h2 class="site-description">Connecting the dots</h2>
+                </hgroup>
+                <nav id="navigation" class="col-full" role="navigation">
+                    <section class="menus">
+                    <ul id="main-nav" class="nav">
+                    {{ $currentNode := . }}
+                    {{ range .Site.Menus.main }}
+                        <li class="page_item{{if $currentNode.IsMenuCurrent "main" . }} current-menu-item{{end}}{{if eq .Name "Keep up to Date"}} rss{{end}}"><a href="{{ .URL }}">{{ .Name }}</a></li>
+                    {{ end }}
+                    </ul><!-- /#nav -->
+                    <ul class="nav github">
+                        <li class="sub-github"><a href="https://www.github.com/{{ .Site.Author.github }}">GitHub</a></li>
+                    </ul>
+                    </section><!--/.menus-->
+                    <a href="#top" class="nav-close"><span>Return to Content</span></a>
+                </nav><!-- /#navigation -->
+            </header><!-- /#header -->
+
+    <!-- Code that all your templates share, like a header -->
+    {{ block "main" . }}
+      <!-- The part of the page that begins to differ between templates -->
+    {{ end }}
+        </div><!-- /#inner-wrapper -->
+    </div><!-- /#wrapper -->
+    {{ block "footer" . }}
+    <footer id="footer" style="clear:both;">
+
+            <div class="footer-inner">
+
+                <div class="col-left">
+                    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />All original writing on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+                </div>
+
+                <div id="credit" class="col-right"></div>
+
+            </div>
+
+        </footer><!-- /#footer  -->
+        {{ $script := resources.Get "js/jquery.js" | minify | fingerprint }}
+        <script type='text/javascript' src="{{ $script.RelPermalink }}"></script>
+        {{ $script := resources.Get "js/modernizr.min.js" | minify | fingerprint }}
+        <script type='text/javascript' src="{{ $script.RelPermalink }}"></script>
+        {{ $script := resources.Get "js/general.js" | minify | fingerprint }}
+        <script type='text/javascript' src="{{ $script.RelPermalink }}"></script>
+        <script type="text/javascript">jQuery.bigfoot()</script>
+    {{ end }}
+    {{ block "belowfooter" . }}{{end}}
+  </body>
+</html>

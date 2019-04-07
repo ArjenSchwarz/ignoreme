@@ -1,66 +1,4 @@
-{{ partial "header.html" . }}
-<!-- Begin MailChimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-	#mc_embed_signup {
-    background:#F9F9F9;
-    clear:left;
-    width:100%;
-    float: left;
-    width: 60%;
-    padding: 5%;
-    margin-left: 20%;
-    text-align: center;
-    border: 1px solid #D1D1D1;
-    margin-bottom: 10px;
-  }
-  #mc-embedded-subscribe-form #mce-EMAIL {
-    font-size: 18px;
-    padding: 10px 8px;
-    width: 68%;
-    border: 1px solid #d6d6d6;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    background-color: #fff;
-    margin-bottom: 5px;
-    height: auto;
-    float: left;
-    margin: 0px;
-    margin-right: 2%;
-    height: 42px;
-    clear: both;
-  }
-
-  #mc_embed_signup #mc-embedded-subscribe {
-    width: 100%;
-    color: #fff;
-    margin: 0px;
-    padding: 5px 20px;
-    font-weight: normal;
-    font-size: 18px;
-    background: #0d6db8;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    cursor: pointer;
-    border: none;
-    text-shadow: none;
-    width: 100%;
-    float: left;
-    height: 42px;
-  }
-</style>
-
-<!--End mc_embed_signup-->
-<body class="home blog alt-style-default layout-right-content">
-{{ partial "gtm.html" . }}
-
-<div id="wrapper">
-    <div id="inner-wrapper">
-
-    {{ partial "sidebar.html" . }}
-
+{{ define "main" }}
     <div id="content">
         <section id="main">
             <article class="page type-post status-publish format-standard hentry">
@@ -77,11 +15,4 @@
                 </section><!-- #main -->
 
     </div><!-- #content -->
-
-{{ partial "footer.html" . }}
-
-    </div><!-- /#inner-wrapper -->
-</div><!-- /#wrapper -->
-
-</body>
-</html>
+{{ end }}
