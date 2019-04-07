@@ -11,7 +11,7 @@
             <div id="home-tabs">
 
                 <div id="articles">
-                    {{ range .Paginator.Pages }}
+                    {{ range where .Paginator.Pages "Type" "in" site.Params.mainSections  }}
                         {{ .Render "summary" }}
                     {{ end }}
                     {{ template "_internal/pagination.html" . }}

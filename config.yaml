@@ -18,6 +18,7 @@ permalinks:
   weeklynotes: /weekly-notes/:slug/
 params:
   Subtitle: "Connecting the dots"
+  mainSections: [posts, presentations, videos, weeklynotes, linkposts]
 taxonomies:
   category: "categories"
   series: "series"
