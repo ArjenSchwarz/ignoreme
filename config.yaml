@@ -18,6 +18,7 @@ permalinks:
   weeklynotes: /weekly-notes/:slug/
 params:
   Subtitle: "Connecting the dots"
+  mainSections: [posts, presentations, videos, weeklynotes, linkposts]
 taxonomies:
   category: "categories"
   series: "series"
@@ -27,7 +28,7 @@ MetaDataFormat: yaml
 disqusShortname: ignoreme
 pygmentsCodeFences: true
 pygmentsStyle: native
-Paginate: 10
+Paginate: 15
 outputFormats:
   jsonfeed:
     mediaType: "application/json"

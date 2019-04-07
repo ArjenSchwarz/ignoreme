@@ -4,6 +4,7 @@ Categories:
 Redirect: http://bit.ly/1C1CV10
 Slug: automated-deployments-tutorial-for-hugo
 Title: Automated deployments tutorial for Hugo
+Author: Arjen Schwarz
 date: 2015-01-13T20:28:14+11:00
 projects:     ["Hugo Build Step for Wercker"]
 ---

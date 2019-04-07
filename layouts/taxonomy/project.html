@@ -1,14 +1,5 @@
-{{ partial "header.html" . }}
-
-<body class="archive category alt-style-default layout-right-content">
-{{ partial "gtm.html" . }}
-
-
-<div id="wrapper">
-    <div id="inner-wrapper">
-
-    {{ partial "sidebar.html" . }}
-
+{{ define "bodytags" }}class="archive category alt-style-default layout-right-content"{{ end }}
+{{ define "main" }}
     <div id="content" class="col-full">
         <section id="main" class="col-left">
             <header class="archive-header">
@@ -23,11 +14,4 @@
             {{ template "_internal/pagination.html" . }}
 
     </div><!-- /#content -->
-
-    {{ partial "footer.html" . }}
-
-    </div><!-- /#inner-wrapper -->
-</div><!-- /#wrapper -->
-
-</body>
-</html>
+{{ end }}

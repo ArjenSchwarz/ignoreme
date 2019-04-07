@@ -6,6 +6,7 @@
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="generator" content="hugo" />
+{{ if .Params.author }}<meta name="author" content="{{ .Params.author }}"/>{{ end }}
 
 {{with .Description }}<meta name="description" content="{{ . }}">{{end}}
 <meta name="keywords" content="{{ if .Keywords }}{{ range .Keywords }}{{ . }}, {{ end }}{{else if isset .Params "tags" }}{{ range .Params.tags }}{{ . }}, {{ end }}{{end}}">
