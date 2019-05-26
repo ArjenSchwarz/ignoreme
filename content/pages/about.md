@@ -26,11 +26,12 @@ The posts on the site are mostly posts by me, with the occasional linkpost to ot
 My name is Arjen Schwarz and I'm a Dutch guy living in Melbourne, Australia. I ended up here after travelling around for a bit and decided to stick around. At the moment I'm simply enjoying live here and work as Lead Platform Engineer at [DigIO](https://digio.com.au) (disclaimer: all opinions are my own, and don't necessarily reflect my employer's). If you want more information about who I am and my travels, you can do so on my travel blog at [arjen.eu](https://www.arjen.eu) even though that hasn't been updated for a very long time.
 
 As for my experience in the matters on this site; since 2005 I've been either a developer, DevOps person, project manager or manager of a development team at any one time. I am happy in all of these roles and will always try to learn from anyone I meet.
-You may notice that a lot of contents concerns AWS, as that is my main focus at work, and so I've got a grab bag of the AWS certifications and in my previous job I was one of Bulletproof's AWS APN Ambassadors, which is a worldwide AWS program grown out of the Australia/New Zealand specific Warrior Program. That title was in part tied to the company, so I have lost that status at the moment.
+You may notice that a lot of contents concerns AWS, as that is my main focus at work, and so I've got a grab bag of the AWS certifications and am an [AWS APN Ambassador](https://aws.amazon.com/partners/ambassadors/ambassador-apac/)[^update], which is a worldwide AWS program grown out of the Australia/New Zealand specific Warrior Program.
 
 {{< figure src="/img/sa-assoc.png" link="https://www.certmetrics.com/amazon/public/badge.aspx?i=1&t=c&d=2015-11-27&ci=AWS00174409" height="100px" class="fl" >}}
 {{< figure src="/img/sysops-assoc.png" link="https://www.certmetrics.com/amazon/public/badge.aspx?i=3&t=c&d=2017-07-28&ci=AWS00174409" height="100px" class="fl" >}}
 {{< figure src="/img/sa-pro.png" link="https://www.certmetrics.com/amazon/public/badge.aspx?i=4&t=c&d=2017-07-31&ci=AWS00174409" height="100px" class="fl" >}}
+{{< figure src="/img/devops-pro.png" link="https://www.certmetrics.com/amazon/public/badge.aspx?i=5&t=c&d=2019-04-26&ci=AWS00174409" height="100px" class="fl" >}}
 
 
 <h2 style="clear:both;">Wait, what's with the photos?</h2>
@@ -42,3 +43,5 @@ The slightly longer version is that I've started to get a bit tired of seeing th
 If you like it, enjoy the photos.
 
 If you don't, just read the name of the site.
+
+[^update]: Due to my joining DigIO, my photo is not currently on that site until it gets updated.
