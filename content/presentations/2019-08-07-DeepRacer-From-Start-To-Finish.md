@@ -1,5 +1,5 @@
 ---
-title:        DeepRacer: From Start to Finish
+title:        "DeepRacer: From Start to Finish"
 blog:         ig.nore.me  
 author:       Arjen Schwarz  
 Date:         2019-08-07T20:41:47+10:00
