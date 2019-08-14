@@ -1,3 +1,3 @@
 {
-  {{ range $index, $item := .Data.Pages }}{{if $index}}, {{end}}"{{ .Date.Format "2006-01-02" }}: {{ .Title }}": "{{ .RelPermalink }}"{{ end }}
+  {{ range $index, $item := .Site.RegularPages }}{{if $index}}, {{end}}"{{ .Date.Format "2006-01-02" }}: {{ .Title }}": "{{ .RelPermalink }}"{{ end }}
 }

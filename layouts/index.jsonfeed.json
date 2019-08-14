@@ -9,7 +9,7 @@
      "name": "{{ .Site.Author.name }}",
      "avatar": "{{ .Site.Author.avatar }}"
    },
-   "items": [ {{ range $index, $item := first 15 .Data.Pages }}{{if $index}}, {{end}}
+   "items": [ {{ range $index, $item := first 15 .Site.RegularPages }}{{if $index}}, {{end}}
       {
        "id": "{{ .Permalink }}",
        "title": "{{ .Title }}",
