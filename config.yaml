@@ -76,6 +76,11 @@ related:
       weight: 150
     - name: categories
       weight: 50
+privacy:
+  twitter:
+    enableDNT: true
+  youtube:
+    privacyEnhanced: true
 deployment:
   order:
     -".jpg$"
