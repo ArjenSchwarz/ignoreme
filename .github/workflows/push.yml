@@ -18,10 +18,8 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         args: deploy --target=test
-    - name: Just testing
-      run: echo "${{github.ref}}"
     - name: Deploy To Prod S3
-      if: github.ref == '/refs/head/master'
+      if: github.ref == '/refs/heads/master'
       uses: ArjenSchwarz/actions/hugo/build@master
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
