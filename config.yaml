@@ -81,6 +81,9 @@ privacy:
     enableDNT: true
   youtube:
     privacyEnhanced: true
+module:
+  imports:
+    path: "github.com/bep/hugo-github/repo"
 deployment:
   order:
     -".jpg$"

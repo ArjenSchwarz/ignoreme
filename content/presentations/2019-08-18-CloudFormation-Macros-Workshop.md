@@ -6,6 +6,7 @@ Date:         2019-08-18T22:34:54+10:00
 presentation_date:  "July 10, 2019"
 location:     "the Melbourne AWS Programming and Tools Meetup"
 categories:   ["AWS"]
+projects:     ["CloudFormation Macros"]
 keywords:
   - cloudformation
   - macros

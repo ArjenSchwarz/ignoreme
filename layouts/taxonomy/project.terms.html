@@ -14,10 +14,13 @@
                         <li class="projectdetails">
                           {{ range $key, $projectdetails := $.Site.Data.projects.details }}
                           {{ if eq $key $urlname }}
-                            <h2><a href="/projects/{{ $urlname }}">{{ $name }}</a></h2>
+                            <h2><a href="/projects/{{ $urlname }}">{{ $projectdetails.name }}</a></h2>
                             <p>{{ $projectdetails.description }}</p>
-                            <a href="{{$projectdetails.github}}">See the project on GitHub</a>
-                            <h3>{{ $num := len $taxonomy.Pages }}{{ if eq $num 1 }} 1 Article {{ else }} {{ $num }} Articles{{ end }} (click to expand)</h3>
+                            {{ if isset $projectdetails "github" }}{{ partial "repo_info.html" $projectdetails.github }}{{ end }}
+                            {{ if isset $projectdetails "youtube" }}
+                            <a href="https://www.youtube.com/playlist?list={{ $projectdetails.youtube }}" class="icon-youtube"> Go to playlist</a>
+                            {{ end }}
+                            <h3 class="clear">{{ $num := len $taxonomy.Pages }}{{ if eq $num 1 }} 1 Article {{ else }} {{ $num }} Articles{{ end }} (click to expand)</h3>
                             <div class="articles-list" style="display:none">
                             {{ range $taxonomy.Pages }}
                                 {{ .Render "projectsummary" }}
