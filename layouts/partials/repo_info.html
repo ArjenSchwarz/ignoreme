@@ -1,0 +1,9 @@
+{{ $githubRepo := partialCached "github/repo" . . }}
+<a href="{{ $githubRepo.html_url }}" class="icon-github"> {{$githubRepo.name}}</a>
+<table>
+<tr>
+<td class="icon-star" style="width:33%"> {{ $githubRepo.stargazers_count }}</td>
+<td class="icon-code-fork" style="width:34%"> {{ $githubRepo.forks_count }}</td>
+<td class="icon-exclamation-sign" style="width:33%"> {{ $githubRepo.open_issues_count }}</td>
+</tr>
+</table>
