@@ -19,19 +19,15 @@ jobs:
     - name: Build Hugo
       run: hugo
     - name: Deploy to Test S3
-      uses: ArjenSchwarz/actions/hugo/build@master
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        args: deploy --target=test
+      run: hugo deploy --target=test
     - name: Deploy To Prod S3
       if: github.ref == 'refs/heads/master'
-      uses: ArjenSchwarz/actions/hugo/build@master
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        args: deploy --target=prod --invalidateCDN
+      run: hugo deploy --target=prod --invalidateCDN
