@@ -3,7 +3,7 @@ Title: Managing Your Instance Sessions
 Slug: managing-your-instance-sessions
 date: 2019-10-23T09:50:37+11:00
 Categories:
-- AWS
+  - AWS
 Redirect: https://www.cmdsolutions.com.au/managing-your-instance-sessions/
 keywords:
   - ec2
