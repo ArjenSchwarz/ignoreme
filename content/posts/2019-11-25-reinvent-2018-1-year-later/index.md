@@ -11,6 +11,7 @@ keywords:
   - reinvent
   - aws
 Description:  "With re:Invent less than a week out, I figured it was a good time to see how last year's re:Invent held up. After all, every year we get wowed with all the new services and features that are announced, but how long does it take until we can use those? In fact, it's a year later now, but can we actually use everything that was promised?"
+ogimage:      "https://ig.nore.me/2019/11/re-invent-2018-one-year-later/current-status.png"
 ---
 
 With [re:Invent](https://reinvent.awsevents.com) less than a week out, I figured it was a good time to see how last year's re:Invent held up. After all, every year we get wowed with all the new services and features that are announced, but how long does it take until we can use those? In fact, it's a year later now, but can we actually use everything that was promised?
