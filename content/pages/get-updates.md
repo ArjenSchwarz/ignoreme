@@ -4,7 +4,8 @@ title: Keep up to Date
 slug: keep-up-to-date
 menu:
     main:
-        weight: 5
+        weight: 100
+        Identifier: rss
 layout: "updates"
 ---
 

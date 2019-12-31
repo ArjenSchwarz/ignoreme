@@ -65,6 +65,14 @@ menu:
         Identifier: "presentations"
         Url: "/presentations/"
         Weight: 4
+      - Name: "Podcast"
+        Identifier: podcast
+        Url: "https://www.ambassador-lounge.com/podcast"
+        Weight: 5
+      - Name: "GitHub"
+        Identifier: github
+        Url: "https://github.com/ArjenSchwarz/"
+        Weight: 20
 related:
   threshold: 80
   toLower: true

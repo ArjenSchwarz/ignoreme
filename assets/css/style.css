@@ -1189,7 +1189,7 @@ ul.nav li.current-menu-item>a {
     float: right;
     line-height: 2;
 }
-#navigation ul.github li a:after {
+#navigation li.github a:after {
     font-family: 'FontAwesome';
     font-size: 100%;
     margin-left: .618em;
