@@ -11,7 +11,7 @@ keywords:
 - aws
 - regions
 Description: "During Andy Jassy's keynote at re:Invent he spent an entire section talking about several new products that would extend AWS 'Beyond the Region'. While this will no doubt give some more options, the main way we'll all be running our AWS services is still going to be within a Region. So let's have a look at how these evolved over time."
-ogimage: 'https://ig.nore.me//2020/02/aws-inside-the-region/days-until-3rd-az.png'
+ogimage: 'https://ig.nore.me/2020/02/aws-inside-the-region/days-until-3rd-az.png'
 ---
 
 During Andy Jassy's keynote at re:Invent he spent an entire section talking about several new products that would extend AWS "Beyond the Region". These were [Local Zones](https://aws.amazon.com/blogs/aws/aws-now-available-from-a-local-zone-in-los-angeles/), [Wavelength](https://aws.amazon.com/wavelength/), and the [long awaited Outposts](https://aws.amazon.com/blogs/aws/aws-outposts-now-available-order-your-racks-today/). In turn, these allow you to run AWS services in a mini-zone, in a Telco's 5G data centre, and in your own datacenter/office/backyard[^1]. While this will no doubt give some more options, the main way we'll all be running our AWS services is still going to be within a Region. So let's have a look at how these evolved over time.
