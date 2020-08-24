@@ -2425,3 +2425,15 @@ img.ui-datepicker-trigger {
   margin-bottom: 1em;
   width: 50%;
 }
+
+@media only screen and (min-width: 768px) {
+    .imagesummary p {
+        width: 66%;
+        float: left;
+    }
+
+    .imagesummary img {
+        max-width: 30%;
+        float: right;
+    }
+}

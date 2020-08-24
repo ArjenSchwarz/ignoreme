@@ -12,8 +12,9 @@
           </span>
       </aside>
   </header>
-  <section class="entry">
+  <section class="entry{{ if .Params.ogimage }} imagesummary{{end}}">
       <p>{{ if .Description }}{{.Description}}{{ else }}{{ .Summary }}{{ end }}</p>
+      {{ if .Params.ogimage }}<img src="{{ .Params.ogimage }}"/>{{end}}
   </section>
   <footer class="post-more">
       <a class="button" href="{{ .RelPermalink }}" title="Continue Reading">Continue Reading</a>
