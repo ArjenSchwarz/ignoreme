@@ -73,6 +73,10 @@ menu:
         Identifier: github
         Url: "https://github.com/ArjenSchwarz/"
         Weight: 20
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
 related:
   threshold: 80
   toLower: true
