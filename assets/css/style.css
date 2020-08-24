@@ -2417,3 +2417,11 @@ img.ui-datepicker-trigger {
     text-align: left;
     padding: 1em;
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+  width: 50%;
+}

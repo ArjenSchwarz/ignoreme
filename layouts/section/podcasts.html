@@ -1,0 +1,39 @@
+{{ define "bodytags" }}class="archive category alt-style-default layout-right-content"{{ end }}
+{{ define "main" }}
+    <div id="content" class="col-full">
+        <section id="main">
+            <header class="archive-header">
+                <h1 style="margin-left: 130px;">Podcasts</h1>
+            </header>
+            <div class="fix"></div>
+
+            <div id="series">
+                <ul>
+                    {{ range .Paginator.Pages.ByPublishDate.Reverse }}
+                        <li>
+                            <article class="presentation-summary">
+                                <header>
+                                  <h1>
+                                      <a href="{{ .RelPermalink }}" rel="bookmark" title="{{ .Title }}">{{ .Title }}</a>
+                                  </h1>
+                                  <a href="{{.RelPermalink }}">
+                                  <img src="{{.Params.Logo}}" alt="Ambassador Lounge Logo" height="130" width="130"/>
+                                  </a>
+
+                              </header>
+                              <section class="entry">
+                                  <p>{{ if .Description }}{{.Description}}{{ else }}{{ .Summary }}{{ end }}</p>
+                              </section>
+                              <footer class="post-more">
+                                  <a class="button" href="{{ .RelPermalink }}" title="More information">More information</a>
+                              </footer>
+                            </article>
+                        </li>
+                  {{ end }}
+
+                </ul>
+
+            </div>
+
+    </div><!-- /#content -->
+{{ end }}

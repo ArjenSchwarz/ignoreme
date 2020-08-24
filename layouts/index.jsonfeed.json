@@ -9,7 +9,7 @@
      "name": "{{ .Site.Author.name }}",
      "avatar": "{{ .Site.Author.avatar }}"
    },
-   "items": [ {{ range $index, $item := first 15 .Site.RegularPages }}{{if $index}}, {{end}}
+   "items": [ {{ range $index, $item := first 15 (where (where .Site.RegularPages ".Section" "not in" "pages,podcasts") "Kind" "page") }}{{if $index}}, {{end}}
       {
        "id": "{{ .Permalink }}",
        "title": "{{ .Title }}",

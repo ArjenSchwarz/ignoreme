@@ -24,6 +24,7 @@ taxonomies:
   series: "series"
   project: "projects"
   authors: "authors"
+  podcast: "podcasts"
 MetaDataFormat: yaml
 disqusShortname: ignoreme
 pygmentsCodeFences: true
@@ -65,9 +66,9 @@ menu:
         Identifier: "presentations"
         Url: "/presentations/"
         Weight: 4
-      - Name: "Podcast"
-        Identifier: podcast
-        Url: "https://www.ambassador-lounge.com/podcast"
+      - Name: "Podcasts"
+        Identifier: "podcasts"
+        Url: "/podcasts/"
         Weight: 5
       - Name: "GitHub"
         Identifier: github
