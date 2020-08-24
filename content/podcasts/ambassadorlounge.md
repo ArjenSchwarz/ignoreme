@@ -2,7 +2,7 @@
 title: 'The Ambassador Lounge Podcast'
 blog: ig.nore.me
 author: Arjen Schwarz
-Date: 2020-08-24T19:52:46+10:00
+Date: 2019-11-24T19:52:46+10:00
 categories: ['AWS']
 slug: 'the-ambassador-lounge'
 Description: 'The Ambassador Lounge podcast is a place for discussions between AWS APN Ambassadors regarding AWS.'

@@ -2,7 +2,7 @@
 title: 'Melbourne AWS User Group'
 blog: ig.nore.me
 author: Arjen Schwarz
-Date: 2020-08-24T19:52:46+10:00
+Date: 2020-03-24T19:52:46+10:00
 categories: ['AWS']
 slug: 'melbourne-aws-user-group'
 Description: "The podcast for the Melbourne AWS User Group. This is where we extend on the meetups."

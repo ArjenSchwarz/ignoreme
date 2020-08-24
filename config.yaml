@@ -24,7 +24,6 @@ taxonomies:
   series: "series"
   project: "projects"
   authors: "authors"
-  podcast: "podcasts"
 MetaDataFormat: yaml
 disqusShortname: ignoreme
 pygmentsCodeFences: true
