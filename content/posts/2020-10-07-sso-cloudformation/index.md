@@ -11,6 +11,7 @@ keywords:
   - cloudformation
   - sso
 Description:  "A couple of weeks ago, the AWS SSO team finally released functionality I've been anxiously waiting for: a (limited) API and CloudFormation support! So now it's time to break that down and complain about the CloudFormation implementation."
+ogimage: 'https://ig.nore.me/2020/10/fixing-aws-ssos-cloudformation/principalid.png'
 ---
 
 A couple of weeks ago, the AWS SSO team finally released functionality I've been anxiously waiting for: a (limited) API and CloudFormation support!
