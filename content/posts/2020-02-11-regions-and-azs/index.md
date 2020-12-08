@@ -21,6 +21,7 @@ During Andy Jassy's keynote at re:Invent he spent an entire section talking abou
 
 <div class='ignoreme-update'>
 <strong>Update May 5, 2020:</strong> In the past month, Canada got a third AZ and both the South Africa and Milan regions were opened. I've updated the graphs to reflect this as well as minor tweaks to the text.
+<strong>Update December 8, 2020:</strong> We've had announcements for 3 new regions in the past several weeks: Hyderabad, Zurich, and Melbourne. I've updated the graphs to show these.
 </div>
 
 
@@ -40,15 +41,15 @@ In the above graph you can see how the number of Regions grew over the years. Th
 
 But what if none of the Regions are in an area you'd like it to be? How long will it take for them to show up? Unfortunately, I've got a bit of bad news for you there. The time between a Region getting announced and the day it actually opens is getting longer and longer.
 
-<div class='ignoreme-update'>
+<div class='ignoreme-update' style="margin-bottom:1em;">
 <strong>Update May 5, 2020:</strong> At least it was, until the opening of South Africa and Milan, both of which were faster than any other region since GovCloud East.
 </div>
 
-![The number of days between announcing a region and the day it opened.](/2020/02/aws-inside-the-region/announcement-to-opening-2020-05.png)
+![The number of days between announcing a region and the day it opened.](/2020/02/aws-inside-the-region/announcement-to-opening-2020-12.png)
 
 You may notice two entries missing from that graph. Ohio and Ningxia are the only Regions in the past four years that were opened without a pre-announcement[^7]. I added in a trend line to see what this likely means for the newly announced regions, but in all honesty it doesn't seem to match the ones in the announcement posts.
 
-Milan and South Africa were announced for the first half of 2020 while the trend line estimates put them at the end of the year, and clearly their release was in April. On the other hand, it shows Spain as coming in early 2022, while AWS claims late 2022 or early 2023. So, yeah, predicting the future on unclear data like this doesn't seem to be very useful[^8].
+Milan and South Africa were announced for the first half of 2020 while the trend line estimates put them at the end of the year, and clearly their release was in April. On the other hand, it shows Spain as coming in early 2022, while AWS claims late 2022 or early 2023. So, yeah, predicting the future on unclear data like this doesn't seem to be very useful[^8]. Nonetheless, with the announcements in late 2020 I've added some estimates based on what AWS claims (for example, Spain will be between October 31, 2022 and March 31, 2023). In these cases the trendline seems more accurate, although Spain is likely to be a big outlier and we don't have any dates for Indonesia.
 
 If you've paid attention to recent announcements, you will notice that I've left off one "future" Region. This is the Osaka Region. Osaka originally [started](https://aws.amazon.com/jp/blogs/news/osaka-local-region-launch-2018feb/)[^9] as a local region with limited capabilities to offer customers in the Tokyo Region a geographically separate place for disaster recovery systems (presumably due to seismic dangers). Now however, AWS has announced that they'll be [expanding this to a full region in 2021](https://aws.amazon.com/blogs/aws/in-the-works-aws-osaka-local-region-expansion-to-full-region/). For hopefully obvious reasons, this is a very special case so I've left it out of everything.
 
@@ -73,6 +74,10 @@ The remaining regions with only 2 AZs[^12] are Beijing and Canada. It's an inter
 </div>
 
 I'll finish this overview of Regions and Availability Zones with a final graph, showing how long it took for a Region to receive its third AZ since it was opened. On average it only took about 737 days (787 before the openings in April 2020), or a bit over 2 years, but that is mostly because there have been a number of Regions with three AZs on launch. Based on these numbers, if I had to give a reward for the least loved Region, it seems that Singapore is the "winner" having had to wait 2827 days (almost EIGHT YEARS!) for that third AZ. To put that into perspective, in the time between Singapore's launch and that third Availability Zone, 14 completely new Regions were launched.
+
+<div class='ignoreme-update'  style="margin-bottom:1em;">
+<strong>Update December 8, 2020:</strong> As it's clear now that all new Regions will come with 3 AZs, this graph will not be updated for new Regions unless that changes.
+</div>
 
 ![The time between opening of a region and receiving its 3rd AZ](/2020/02/aws-inside-the-region/days-until-3rd-az-2020-05.png)
 
