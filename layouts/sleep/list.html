@@ -1,0 +1,18 @@
+{{ define "bodytags" }}class="archive category alt-style-default layout-right-content"{{ end }}
+{{ define "main" }}
+    <div id="content" class="col-full">
+        <section id="main" class="col-full">
+            <img class="topic-image" src="/img/arjen-without-sleep.jpg" height="98" width="130">
+            <header class="archive-header">
+                <h1>Arjen Without Sleep</h1>
+            </header>
+            <div class="fix"></div>
+
+            {{ range .Paginator.Pages }}
+                {{ .Render "summary" }}
+            {{ end }}
+
+            {{ template "_internal/pagination.html" . }}
+
+    </div><!-- /#content -->
+{{ end }}

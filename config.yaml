@@ -16,14 +16,16 @@ permalinks:
   presentations: /presentations/:year/:month/:slug
   videos: /videos/:year/:month/:slug
   weeklynotes: /weekly-notes/:slug/
+  sleep: /sleep/:slug
 params:
   Subtitle: "Connecting the dots"
-  mainSections: [posts, presentations, videos, weeklynotes, linkposts]
+  mainSections: [posts, presentations, videos, weeklynotes, linkposts, sleep]
 taxonomies:
   category: "categories"
   series: "series"
   project: "projects"
   authors: "authors"
+  sleep: "sleep"
 MetaDataFormat: yaml
 disqusShortname: ignoreme
 pygmentsCodeFences: true
@@ -65,10 +67,14 @@ menu:
         Identifier: "presentations"
         Url: "/presentations/"
         Weight: 4
+      - Name: "Arjen Without Sleep"
+        Identifier: "sleep"
+        Url: "/sleep/"
+        Weight: 5
       - Name: "Podcasts"
         Identifier: "podcasts"
         Url: "/podcasts/"
-        Weight: 5
+        Weight: 6
       - Name: "GitHub"
         Identifier: github
         Url: "https://github.com/ArjenSchwarz/"

@@ -9,14 +9,14 @@
 
             <div id="series">
                 <ul>
-                    {{ range .Paginator.Pages.ByPublishDate }}
+                    {{ range .Paginator.Pages.ByPublishDate.Reverse }}
                         <li>
                             <article class="presentation-summary">
                                 <header>
                                   <h1>
-                                      <a href="{{ .RelPermalink }}" rel="bookmark" title="{{ .Title }}">{{ .Title }}</a>
+                                      <a href="{{ if .Params.overridelink }}{{ .Params.overridelink }}{{ else }}{{ .RelPermalink }}{{ end }}" rel="bookmark" title="{{ .Title }}">{{ .Title }}</a>
                                   </h1>
-                                  <a href="{{.RelPermalink }}">
+                                  <a href="{{ if .Params.overridelink }}{{ .Params.overridelink }}{{ else }}{{ .RelPermalink }}{{ end }}">
                                   <img src="{{.Params.Logo}}" alt="{{.Title}} logo" height="130" width="130"/>
                                   </a>
 
@@ -25,7 +25,7 @@
                                   <p>{{ if .Description }}{{.Description}}{{ else }}{{ .Summary }}{{ end }}</p>
                               </section>
                               <footer class="post-more">
-                                  <a class="button" href="{{ .RelPermalink }}" title="More information">More information</a>
+                                  <a class="button" href="{{ if .Params.overridelink }}{{ .Params.overridelink }}{{ else }}{{ .RelPermalink }}{{ end }}" title="More information">More information</a>
                               </footer>
                             </article>
                         </li>

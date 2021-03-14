@@ -1,0 +1,22 @@
+<article class="post">
+    <header>
+       <h1>
+          <a href="{{ .RelPermalink }}" rel="bookmark" title="{{ .Title }}">Arjen Without Sleep #{{ .Slug }}: {{ .Title }}</a>
+      </h1>
+      <aside class="post-meta">
+          <span class="post-date">{{ .Date.Format "January 2, 2006" }}, </span>
+          <span class="post-category">in
+          {{ range $taxonomy := .Params.categories }}
+          <a href="/categories/{{ $taxonomy | urlize }}" title="View all posts in {{ $taxonomy }}" rel="category tag">{{ $taxonomy }}</a>
+          {{ end }}
+          </span>
+      </aside>
+  </header>
+  <section class="entry">
+      <p>{{ if .Description }}{{.Description}}{{ else }}{{ .Summary }}{{ end }}</p>
+      {{ if .Params.FrameEmbed }}<iframe width="100%" height="180" frameborder="no" scrolling="no" seamless src='{{ .Params.FrameEmbed }}'></iframe>{{end}}
+  </section>
+  <footer class="post-more">
+      <a class="button" href="{{ .RelPermalink }}" title="Continue Reading">Continue Reading</a>
+  </footer>
+</article>
