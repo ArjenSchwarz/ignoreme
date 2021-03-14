@@ -11,6 +11,7 @@ Tags:
   - vpc
 summary: "In this very first episode of Arjen Without Sleep, I give a short overview of what a VPC is and how it works."
 FrameEmbed: "https://share.transistor.fm/e/d248a6e1"
+ogimage: https://ig.nore.me/img/arjen-without-sleep.jpg
 ---
 
 In this very first episode of Arjen Without Sleep, I give a short overview of what a VPC is and how it works.
