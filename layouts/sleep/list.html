@@ -4,10 +4,10 @@
         <section id="main" class="col-full">
             <img class="topic-image" src="/img/arjen-without-sleep.jpg" height="98" width="98">
             <header class="archive-header">
-                <h1>Arjen Without Sleep</h1>
+                <h1>{{ with .Site.GetPage "/sleep" }}{{ .Title }}{{ end }}</h1>
             </header>
             <div class="fix"></div>
-            <p>What's the best way to get a baby to sleep? By making her listen to her father talk about AWS and other cloud related items of course! This is a technology podcast, recorded late at night while carrying a baby around.</p>
+            {{ with .Site.GetPage "/sleep" }}{{ .Content }}{{ end }}
             {{ range .Paginator.Pages.ByPublishDate.Reverse }}
                 {{ .Render "summary" }}
             {{ end }}

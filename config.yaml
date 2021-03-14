@@ -25,7 +25,6 @@ taxonomies:
   series: "series"
   project: "projects"
   authors: "authors"
-  sleep: "sleep"
 MetaDataFormat: yaml
 disqusShortname: ignoreme
 pygmentsCodeFences: true
