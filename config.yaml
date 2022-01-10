@@ -19,7 +19,7 @@ permalinks:
   sleep: /sleep/:slug
 params:
   Subtitle: "Connecting the dots"
-  mainSections: [posts, presentations, videos, weeklynotes, linkposts, sleep]
+  mainSections: [posts, presentations, videos, weeklynotes, linkposts, sleep, podcastlink]
 taxonomies:
   category: "categories"
   series: "series"
