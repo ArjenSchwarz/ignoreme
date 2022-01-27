@@ -1,8 +1,8 @@
 ---
 title:        Publishing to the Serverless Application Repository
 slug:       publishing-to-the-serverless-application-repository
-blog:         ig.nore.me  
-author:       Arjen Schwarz  
+blog:         ig.nore.me
+author:       Arjen Schwarz
 Date:         2018-03-11T13:44:42+11:00
 lastmod:  2018-03-11T20:10:16+11:00
 categories:
@@ -17,7 +17,7 @@ When it became publicly available, I said I'd give the [Serverless Application R
 
 <div class='ignoreme-update'>
 <strong>Update March 11, 2018:</strong> In a tweet, Salman Paracha, service owner of the SAR responded that the <code>AllowedValues</code> bug I mention in this article is actively being worked on, and also said that improvements to the upgrade process are coming. I have to admit, being able to enable up automatic upgrades will be great when you run this out across organisational accounts.
-{{< tweet 972738484875100160 >}}
+{{< tweet user="salman_paracha" id="972738484875100160" >}}
 </div>
 
 # Packer Cleaner
@@ -30,7 +30,7 @@ The application isn't the primary goal of this article, but if you want to check
 
 To deploy an application to the SAR you need two main items: your source code and a SAM template. The source code is entirely up to the developer[^1], but the SAM template needs to follow the rules set by AWS. It didn't take long to see some warnings crop up about this functionality either.
 
-{{< tweet 967399407040647168 >}}
+{{< tweet user="8_b1t_chr15" id="967399407040647168" >}}
 
 As Chris mentions, while SAR supports some CloudFormation functionality, it's only a subset of what SAM supports, and that is already less than pure CloudFormation. Let's have a look at what is missing compared to CloudFormation[^2], and why these are things that would be useful.
 

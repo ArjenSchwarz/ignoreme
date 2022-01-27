@@ -83,7 +83,7 @@ Personally, I one day hope to get good results out of this.
 
 After this you can export your model and run it on your actual car where you can make it run on your track. Unfortunately, right now my car is[^6] somewhere between Las Vegas and my house.
 
-{{% tweet 1068215326288924673 %}}
+{{% tweet user="ArjenSchwarz" id="1068215326288924673" %}}
 
 ## DeepRacer League
 

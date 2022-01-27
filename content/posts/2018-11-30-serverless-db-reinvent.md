@@ -18,7 +18,7 @@ That’s a wrap for re:Invent 2018! Whilst Arjen will no doubt be providing us w
 
 Until re:Invent this week, AWS had only one serverless database offering - Aurora Serverless (MySQL compatible). It’s true that there was some disagreement as to whether it was truly serverless,
 
-{{< tweet 1019231305962319875 >}}
+{{< tweet user="ben11kehoe" id="1019231305962319875" >}}
 
 but in the flurry of announcements leading up to re:Invent, [the Aurora Serverless Data API](https://aws.amazon.com/about-aws/whats-new/2018/11/aurora-serverless-data-api-beta/) was released in beta (allowing Lambda to call Aurora Serverless directly over HTTP); making Aurora Serverless irrefutably 100% approved serverless! “Chris, but what about DynamoDB?”; well sure. it’s fantastic. It’s one of my favourite AWS services, but sadly it wasn’t serverless… until now!
 

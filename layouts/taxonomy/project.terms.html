@@ -16,7 +16,7 @@
                           {{ if eq $key $urlname }}
                             <h2><a href="/projects/{{ $urlname }}">{{ $projectdetails.name }}</a></h2>
                             <p>{{ $projectdetails.description }}</p>
-                            {{ if isset $projectdetails "github" }}{{ partial "repo_info.html" $projectdetails.github }}{{ end }}
+                            {{ if isset $projectdetails "github" }}<a href="https://github.com/{{ $projectdetails.github }}" class="icon-github"> {{$projectdetails.github}}</a>{{ end }}
                             {{ if isset $projectdetails "youtube" }}
                             <a href="https://www.youtube.com/playlist?list={{ $projectdetails.youtube }}" class="icon-youtube"> Go to playlist</a>
                             {{ end }}

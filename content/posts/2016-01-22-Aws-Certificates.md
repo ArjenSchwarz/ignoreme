@@ -1,7 +1,7 @@
 ---
 title:        "AWS introduces free SSL certificates"
-blog:         ig.nore.me  
-author:       Arjen Schwarz  
+blog:         ig.nore.me
+author:       Arjen Schwarz
 Date:         2016-01-22T16:53:19+11:00
 date started: 22-01-2016
 date posted:  22-01-2016
@@ -15,7 +15,7 @@ Today AWS introduced the ability to [request free SSL certificates](https://aws.
 
 First, before going into Amazon's solution, let's have a look at an important update to [Let's Encrypt](https://letsencrypt.org). Their work in providing automated free SSL certificates is great, and while I didn't find a way yet to automate it to provision certificates automatically for a site running on S3 that just became a lot easier. According to the below tweet, they turned on the ability to verify through DNS yesterday. This will make it a lot easier to provision certificates for servers, and especially non-internet connected machines.
 
-{{< tweet 689919523164721152 >}}
+{{< tweet user="letsencrypt" id="689919523164721152" >}}
 
 Let's now have a look at the [AWS Certificate Manager (ACM)][ACM]. What does it bring to the table, and how does it stack up against Let's Encrypt?
 
