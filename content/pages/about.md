@@ -23,16 +23,10 @@ Unless otherwise noted, the posts on the site are written by me. Linkpost might 
 
 {{% figure src="/img/profilepic_arjen_2018_small.jpg" title="This is me" class="fr" %}}
 
-My name is Arjen Schwarz and I'm a Dutch guy living in Melbourne, Australia. After travelling around for a while I ended up here and decided to stick around. At the moment I'm simply enjoying live here and work as Lead Platform Engineer at [DigIO](https://digio.com.au) (disclaimer: all opinions are my own, and don't necessarily reflect my employer's). I am also one of the organizers of the [AWS User Group](https://melb.awsug.org.au) here in Melbourne and run a podcast called [The Ambassador Lounge](https://www.ambassador-lounge.com/podcast). If you want more information about who I am and my travels, you can do so on my travel blog at [arjen.eu](https://www.arjen.eu) even though that hasn't been updated for a very long time.
+My name is Arjen Schwarz and I'm a Dutch guy living in Melbourne, Australia. After travelling around for a while I ended up here and decided to stick around. At the moment I'm enjoying live here and work as Principal Consultant at [CMD Solutions](https://cmdsolutions.com.au) (disclaimer: all opinions are my own, and don't necessarily reflect my employer's). I am also one of the organizers of the [AWS User Group](https://melb.awsug.org.au) here in Melbourne and have tried [several podcasts](/podcasts), of which so far the User Group's one has seem to stick.. If you want more information about who I am and my travels, you can do so on my travel blog at [arjen.eu](https://www.arjen.eu) even though that hasn't been updated for a very long time.
 
 As for my experience in the matters on this site; since 2005 I've been either a developer, DevOps person, project manager or manager of a development team at any one time. I am happy in all of these roles and will always try to learn from anyone I meet.
 You may notice that a lot of contents concerns AWS, as that is my main focus at work, and so I've got a grab bag of the AWS certifications and am an [AWS APN Ambassador](https://aws.amazon.com/partners/ambassadors/ambassador-apac/), which is a worldwide AWS program grown out of the Australia/New Zealand specific Warrior Program.
-
-{{< figure src="/img/sa-assoc.png" link="https://www.certmetrics.com/amazon/public/badge.aspx?i=1&t=c&d=2015-11-27&ci=AWS00174409" height="100px" class="fl" >}}
-{{< figure src="/img/sysops-assoc.png" link="https://www.certmetrics.com/amazon/public/badge.aspx?i=3&t=c&d=2017-07-28&ci=AWS00174409" height="100px" class="fl" >}}
-{{< figure src="/img/sa-pro.png" link="https://www.certmetrics.com/amazon/public/badge.aspx?i=4&t=c&d=2017-07-31&ci=AWS00174409" height="100px" class="fl" >}}
-{{< figure src="/img/devops-pro.png" link="https://www.certmetrics.com/amazon/public/badge.aspx?i=5&t=c&d=2019-04-26&ci=AWS00174409" height="100px" class="fl fix" >}}
-
 ## Wait, what's with the photos?
 
 A fair question, as I've just explained that this is a DevOps focused site. Why would I put photos of nature here? The TL;DR is simple: because I like it.
