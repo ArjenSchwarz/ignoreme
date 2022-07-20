@@ -1,7 +1,7 @@
 ---
 Title: "Why the AWS close-account API is a big deal"
 Slug: why-the-aws-close-account-api-is-a-big-deal
-date: 2022-06-28
+date: 2022-06-28T00:00:00Z
 Categories:
   - AWS
 Redirect: https://www.cmdsolutions.com.au/why-the-aws-close-account-api-is-a-big-deal/
