@@ -11,8 +11,10 @@
 </span>
 {{ if .Params.ogimage }}
 <meta itemprop="image" content="{{ .Params.ogimage }}" />
+<meta itemprop="og:image" content="{{ .Params.ogimage }}" />
 {{ else }}
     {{ range .Params.categories }}
         <meta itemprop="image" content="https://ig.nore.me/img/categories/category-{{ . | urlize }}-full.jpg" />
+        <meta itemprop="og:image" content="https://ig.nore.me/img/categories/category-{{ . | urlize }}-full.jpg" />
     {{ end }}
 {{ end }}
