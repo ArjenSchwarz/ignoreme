@@ -11,7 +11,7 @@ keywords:
   - serverless
   - aws
 Description:  "At the Serverless meetup in February I gave an overview of what was announced at re:Invent (and in the pre:Invent period). I tried to keep it entertaining instead of a simple rundown, so have a look and hopefully you'll see something interesting."
-ogimage: https://ig.nore.me/2023/02/all-the-cool-stuff-from-re-invent-aka-a-serverless-re-cap/serverless-or-not.png
+ogimage: https://ig.nore.me/presentations/2023/02/all-the-cool-stuff-from-re-invent-aka-a-serverless-re-cap/serverless-or-not.png
 ---
 
 At the Serverless meetup in February I gave an overview of what was announced at re:Invent (and in the pre:Invent period). I tried to keep it entertaining instead of a simple rundown, so have a look and hopefully you'll see something interesting.
