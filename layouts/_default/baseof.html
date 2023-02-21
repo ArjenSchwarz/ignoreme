@@ -49,9 +49,16 @@
 
                 <div class="col-left">
                     <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />All original writing on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+
                 </div>
 
                 <div id="credit" class="col-right"></div>
+                <div style="clear: both;">
+                <a rel="me" style="float:left;" href="https://mastodon.ig.nore.me/@feed">ig.nore.me on Mastodon</a>
+                <a rel="me" style="float:left; margin-left: 15em" href="https://mastodon.ig.nore.me/@arjen">Arjen on Mastodon</a>
+                <a style="clear: both; float:left;" href="https://www.linkedin.com/company/ig-nore-me">ig.nore.me on LinkedIn</a>
+                <a style="float:left; margin-left: 15.5em" href="https://www.linkedin.com/in/arjenschwarz/">Arjen on LinkedIn</a>
+                </div>
 
             </div>
 
@@ -63,6 +70,7 @@
         {{ $script := resources.Get "js/general.js" | minify | fingerprint }}
         <script type='text/javascript' src="{{ $script.RelPermalink }}"></script>
         <script type="text/javascript">jQuery.bigfoot()</script>
+
     {{ end }}
     {{ block "belowfooter" . }}{{end}}
   </body>

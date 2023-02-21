@@ -15,9 +15,17 @@ In case you want to know when I post new articles it's unlikely that you will wa
 
 If you use an RSS reader, there are feeds available. Either [traditional RSS feed](/index.xml) or [JSON Feed](/feed.json) which you should only use if you know your reader supports it.
 
+## Mastodon
+
+If you're on Mastodon, the feed will automatically be posted to [@ig.nore.me/@feed](https://mastodon.ig.nore.me/@feed).
+
+## LinkedIn
+
+Similarly, the feed will automatically post to the [LinkedIn page as well](https://www.linkedin.com/company/ig-nore-me).
+
 ## Twitter
 
-A second option is to follow the site's Twitter account [@ignoreme_site](https://twitter.com/ignoreme_site) to see the links appear there.
+Another option is to follow the site's Twitter account [@ignoreme_site](https://twitter.com/ignoreme_site) to see the links appear there.
 
 ## Email
 
