@@ -11,7 +11,7 @@ keywords:
   - serverless
   - cloudformation
   - aws
-Description:  "At the Serverless meetup in February I gave an overview of what was announced at re:Invent (and in the pre:Invent period). I tried to keep it entertaining instead of a simple rundown, so have a look and hopefully you'll see something interesting."
+Description:  "At the Community Builders APJ Open Mic night in April, I gave a demo of fog."
 ogimage: https://ig.nore.me/presentations/2023/04/automating-a-cloudformation-deployment-visualisation-dashboard/screenshot.png
 ---
 
