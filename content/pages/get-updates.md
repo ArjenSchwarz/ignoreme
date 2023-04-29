@@ -13,7 +13,7 @@ In case you want to know when I post new articles it's unlikely that you will wa
 
 ## RSS
 
-If you use an RSS reader, there are feeds available. Either [traditional RSS feed](/index.xml) or [JSON Feed](/feed.json) which you should only use if you know your reader supports it.
+If you use an RSS reader, there are feeds available. Either a [traditional RSS feed](/index.xml) or a [JSON Feed](/feed.json) which you should only use if you know your reader supports it and I mostly built to try things out.
 
 ## Mastodon
 
@@ -25,7 +25,7 @@ Similarly, the feed will automatically post to the [LinkedIn page as well](https
 
 ## Twitter
 
-Another option is to follow the site's Twitter account [@ignoreme_site](https://twitter.com/ignoreme_site) to see the links appear there.
+Unfortunately Twitter has removed the option to automatically post to an account (for free) and also blocked the bot user I had for it. As I don't use my personal account there anymore either, that means it's no longer a valid way of receiving updates.
 
 ## Email
 
