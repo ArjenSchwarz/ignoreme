@@ -13,6 +13,8 @@ Logo: "/img/awsug.png"
 
 When the COVID-19 pandemic broke out and we couldn't meet in person anymore, we (the organisers of the User Group) decided that having a podcast might help in keeping the community a bit more together. So, we started a podcast to fill that gap a bit more. You can subscribe below, or listen to the episodes right from this page.
 
+After our lockdowns ended, and some of the original group had left to work at AWS, there was a bit of a quiet period but this has since been restarted with season 2.
+
 <div class="center">
     <div>
         <a href="https://podcasts.apple.com/au/podcast/melbourne-aws-user-group/id1506903503"><img src="/img/podcastapps/applepodcasts_en.png" srcset="/img/podcastapps/applepodcasts_en@2x.png 2x, /img/podcastapps/applepodcasts_en@3x.png 3x"/></a>
