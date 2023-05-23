@@ -1,0 +1,17 @@
+flowchart TD
+  id1(("Idea 💡"))
+  q1{"Ideal world? 🌏"}
+  subgraph PDD
+      direction LR
+	  pdd1("No time ⏲️")
+	  pdd2("Talk opportunity 👀")
+	  pdd3("Propose talk 💍")
+	  pdd4("Accepted 🎉")
+	  pdd5("Better implement it! 🤦‍♂️")
+  end
+  id2("Implement 👨‍💻")
+  id3(("Present 🖥️"))
+  id1 --> q1 -->|Yes| id2
+  q1 -->|No| PDD --> id2
+  pdd1 --> pdd2 --> pdd3 --> pdd4 --> pdd5
+  id2 --> id3
