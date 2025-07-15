@@ -10,7 +10,7 @@ presentation_date: 18 May 2023
 categories:
   - golang
 description:
-ogimage: /presentations/2023/05/how-to-let-a-cli-tool-have-pretty-and-useful-output/screenshot.png
+ogimage: /presentations/2025/05/how-to-let-a-cli-tool-have-pretty-and-useful-output/screenshot.png
 ---
 
 
