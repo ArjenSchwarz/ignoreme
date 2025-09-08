@@ -9,7 +9,7 @@ Summary: Generative AI has changed the way we develop applications. Even if you 
 Keywords:
   - development
   - ai
-ogimage: https://ig.nore.me//2025/09/spec-workflow/workflow.png
+ogimage: https://ig.nore.me/2025/09/spec-workflow/workflow.png
 ---
 
 Generative AI has changed the way we develop applications. Even if you haven't embraced the hype yet, you can't avoid reading mentions of it, and this post is no different. The biggest challenge for AI-generated code is to get consistent, good-quality output with the least amount of effort. After all, what's the point of generating code if you then spend more time debugging it? This post explains how I try to achieve this goal.
